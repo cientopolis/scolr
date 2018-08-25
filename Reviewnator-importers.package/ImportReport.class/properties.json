@@ -1,15 +1,14 @@
 {
-	"commentStamp" : "<historical>",
+	"commentStamp" : "Casco 8/25/2018 17:10",
 	"super" : "Object",
 	"category" : "Reviewnator-importers",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"resultSet",
-		"filename",
-		"columnLabels"
+		"importErrors",
+		"shouldFail"
 	],
-	"name" : "ScopusImporter",
+	"name" : "ImportReport",
 	"type" : "normal"
 }

@@ -1,4 +1,3 @@
 accessing
 abstract
-
-	^abstract
+	^ abstract

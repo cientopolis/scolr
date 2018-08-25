@@ -9,7 +9,8 @@
 		"database",
 		"searchString",
 		"comment",
-		"resultSet"
+		"resultSet",
+		"importReport"
 	],
 	"name" : "ResultSetUploadComponent",
 	"type" : "normal"
