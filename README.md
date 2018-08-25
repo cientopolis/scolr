@@ -1,3 +1,3 @@
 # reviewnator
 
-A tool to suport collaborative systematic reviews
+A tool to suport collaborative systematic reviews#Dependenciesdepends on Seaside3 and NeoCSV```Gofer it smalltalkhubUser: 'SvenVanCaekenberghe' project: 'Neo'; configurationOf: 'NeoCSV'; loadStable.Gofer new url:'http://www.smalltalkhub.com/mc/Seaside/MetacelloConfigurations/main'; package: 'ConfigurationOfSeaside3'; load. ((Smalltalk at: #ConfigurationOfSeaside3) project version: #stable) load.```It also depends on BootstrapDeployer in https://bitbucket.org/casco/pharo-utilities
