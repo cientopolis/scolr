@@ -1,0 +1,4 @@
+accessing
+articles
+
+	^resultSet articles

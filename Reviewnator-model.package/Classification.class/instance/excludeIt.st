@@ -1,0 +1,3 @@
+accessing
+excludeIt
+	^decision := #exclude

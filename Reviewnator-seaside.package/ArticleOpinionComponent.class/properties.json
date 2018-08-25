@@ -1,0 +1,16 @@
+{
+	"commentStamp" : "",
+	"super" : "AbstractReviewnatorComponent",
+	"category" : "Reviewnator-seaside",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"article",
+		"user",
+		"opinion",
+		"opinionToEdit"
+	],
+	"name" : "ArticleOpinionComponent",
+	"type" : "normal"
+}

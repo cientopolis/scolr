@@ -1,0 +1,16 @@
+{
+	"commentStamp" : "",
+	"super" : "Object",
+	"category" : "Reviewnator-model",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"searchString",
+		"database",
+		"comments",
+		"articles"
+	],
+	"name" : "ResultSet",
+	"type" : "normal"
+}

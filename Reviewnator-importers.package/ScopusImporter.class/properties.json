@@ -1,0 +1,15 @@
+{
+	"commentStamp" : "<historical>",
+	"super" : "Object",
+	"category" : "Reviewnator-importers",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"resultSet",
+		"getters",
+		"filename"
+	],
+	"name" : "ScopusImporter",
+	"type" : "normal"
+}

@@ -1,0 +1,3 @@
+accessing
+coReview
+  ^CollaborativeReview singleton. 

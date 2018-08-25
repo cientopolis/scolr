@@ -1,0 +1,13 @@
+{
+	"commentStamp" : "",
+	"super" : "BackupRestoreComponent",
+	"category" : "Reviewnator-seaside",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"fileToRestoreFrom"
+	],
+	"name" : "RestoreComponent",
+	"type" : "normal"
+}

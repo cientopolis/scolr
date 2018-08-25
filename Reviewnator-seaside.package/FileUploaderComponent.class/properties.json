@@ -1,0 +1,15 @@
+{
+	"commentStamp" : "",
+	"super" : "WAComponent",
+	"category" : "Reviewnator-seaside",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"article",
+		"file",
+		"desiredFilename"
+	],
+	"name" : "FileUploaderComponent",
+	"type" : "normal"
+}

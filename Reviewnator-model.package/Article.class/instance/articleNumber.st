@@ -1,0 +1,4 @@
+accessing
+articleNumber
+
+	^articleNumber

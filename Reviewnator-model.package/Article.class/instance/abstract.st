@@ -1,0 +1,4 @@
+accessing
+abstract
+
+	^abstract

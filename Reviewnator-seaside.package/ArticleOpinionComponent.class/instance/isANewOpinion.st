@@ -1,0 +1,4 @@
+callbacks
+isANewOpinion
+
+	^opinion isNil

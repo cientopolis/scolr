@@ -1,0 +1,13 @@
+{
+	"commentStamp" : "",
+	"super" : "Opinion",
+	"category" : "Reviewnator-model",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"decision"
+	],
+	"name" : "Classification",
+	"type" : "normal"
+}

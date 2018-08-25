@@ -1,0 +1,3 @@
+accessing
+allOpinions
+	^ self subclassResponsibility 

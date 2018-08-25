@@ -1,0 +1,22 @@
+{
+	"commentStamp" : "",
+	"super" : "Object",
+	"category" : "Reviewnator-model",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"user",
+		"subject",
+		"included",
+		"excluded",
+		"disagreement",
+		"waiting",
+		"classificationComments",
+		"classificationTags",
+		"reviewComments",
+		"reviewTags"
+	],
+	"name" : "ClassificationSummary",
+	"type" : "normal"
+}

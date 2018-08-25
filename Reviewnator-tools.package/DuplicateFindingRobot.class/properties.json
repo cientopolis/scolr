@@ -1,0 +1,14 @@
+{
+	"commentStamp" : "",
+	"super" : "Object",
+	"category" : "Reviewnator-tools",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"alreadySeen",
+		"classifications"
+	],
+	"name" : "DuplicateFindingRobot",
+	"type" : "normal"
+}

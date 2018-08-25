@@ -1,0 +1,19 @@
+{
+	"commentStamp" : "",
+	"super" : "Object",
+	"category" : "Reviewnator-seaside",
+	"classinstvars" : [
+		"singleton"
+	],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"backupFilename",
+		"backupFolderName",
+		"autosaveFilename",
+		"uploadFolderName",
+		"defaultPassword"
+	],
+	"name" : "Preferences",
+	"type" : "normal"
+}
