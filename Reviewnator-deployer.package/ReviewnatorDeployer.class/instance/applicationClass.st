@@ -1,0 +1,3 @@
+hooks
+applicationClass
+	^SystematicReviewFullInspectorComponent
