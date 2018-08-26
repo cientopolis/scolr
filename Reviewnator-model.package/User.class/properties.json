@@ -6,7 +6,8 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"username"
+		"username",
+		"lastLoginTimeStamp"
 	],
 	"name" : "User",
 	"type" : "normal"

@@ -1,0 +1,24 @@
+{
+	"commentStamp" : "Casco 9/22/2015 13:35",
+	"super" : "AbstractReviewnatorComponent",
+	"category" : "Reviewnator-seaside-core",
+	"classinstvars" : [
+		"includedFilter",
+		"excludedFilter",
+		"alreadyClassifiedFilter"
+	],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"repository",
+		"currentUser",
+		"selectedResulSets",
+		"uploadComponent",
+		"resultSetUploadComponent",
+		"reportsComponent",
+		"setSelectorSubcomponent",
+		"articleListSubComponent"
+	],
+	"name" : "ReviewnatorMainComponent",
+	"type" : "normal"
+}

@@ -26,9 +26,10 @@ renderUploadFormOn: html
 			html break.
 			html submitButton
 				callback: [ resultSet
-						database: database;
-						searchString: searchString;
-						comments: comment ];
+						ifNotNil: [ resultSet
+								database: database;
+								searchString: searchString;
+								comments: comment ] ];
 				with: 'Submit'.
 			html cancelButton
 				callback: [ self answer ];

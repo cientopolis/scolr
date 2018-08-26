@@ -1,0 +1,4 @@
+children
+children
+	^ {setSelectorSubcomponent.
+	articleListSubComponent}

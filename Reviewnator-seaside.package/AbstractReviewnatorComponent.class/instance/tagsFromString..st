@@ -1,4 +1,4 @@
-rendering
+private
 tagsFromString: value
 	| tags |
 	tags := value findTokens: Character space escapedBy: nil.

@@ -1,11 +1,13 @@
 {
 	"commentStamp" : "",
-	"super" : "ReviewnatorAbstractComponent",
-	"category" : "Reviewnator-seaside",
+	"super" : "WAComponent",
+	"category" : "Reviewnator-seaside-core",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
-	"instvars" : [ ],
+	"instvars" : [
+		"errorOrWarningMessage"
+	],
 	"name" : "AbstractReviewnatorComponent",
 	"type" : "normal"
 }

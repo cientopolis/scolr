@@ -1,7 +1,7 @@
 {
 	"commentStamp" : "",
 	"super" : "AbstractReviewnatorComponent",
-	"category" : "Reviewnator-seaside",
+	"category" : "Reviewnator-seaside-core",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],

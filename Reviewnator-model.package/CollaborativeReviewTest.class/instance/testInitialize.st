@@ -6,3 +6,4 @@ testInitialize
 	self assert: thisReview classifications isEmpty.
 	self assert: thisReview resultSets isEmpty.
 	self assert: thisReview reviews isEmpty.
+	self assert: thisReview notes equals: ''

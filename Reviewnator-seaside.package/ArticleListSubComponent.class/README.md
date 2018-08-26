@@ -1,0 +1,1 @@
+I am the subcomponent that displays the list of selected articles. With filters, sorting, etc.

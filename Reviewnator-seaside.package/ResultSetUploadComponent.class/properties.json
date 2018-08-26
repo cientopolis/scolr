@@ -1,7 +1,7 @@
 {
-	"commentStamp" : "",
-	"super" : "WAComponent",
-	"category" : "Reviewnator-seaside",
+	"commentStamp" : "Casco 8/26/2018 15:21",
+	"super" : "AbstractReviewnatorComponent",
+	"category" : "Reviewnator-seaside-dialogs",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],

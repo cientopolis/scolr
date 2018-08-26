@@ -1,4 +1,0 @@
-callbacks
-cancel
-
-	self answer

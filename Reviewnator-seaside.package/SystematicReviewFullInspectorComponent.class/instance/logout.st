@@ -1,4 +1,0 @@
-callbacks
-logout
-
-	currentUser := nil.

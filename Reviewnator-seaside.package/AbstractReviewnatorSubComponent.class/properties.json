@@ -1,0 +1,13 @@
+{
+	"commentStamp" : "Casco 8/26/2018 16:15",
+	"super" : "WAComponent",
+	"category" : "Reviewnator-seaside-core",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"parent"
+	],
+	"name" : "AbstractReviewnatorSubComponent",
+	"type" : "normal"
+}
