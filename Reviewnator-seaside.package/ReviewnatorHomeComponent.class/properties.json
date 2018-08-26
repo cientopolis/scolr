@@ -1,11 +1,14 @@
 {
 	"commentStamp" : "Casco 8/25/2018 18:59",
-	"super" : "WAComponent",
+	"super" : "ReviewnatorAbstractComponent",
 	"category" : "Reviewnator-seaside",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
-	"instvars" : [ ],
+	"instvars" : [
+		"accessCode",
+		"fullName"
+	],
 	"name" : "ReviewnatorHomeComponent",
 	"type" : "normal"
 }

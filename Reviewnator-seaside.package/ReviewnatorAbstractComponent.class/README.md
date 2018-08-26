@@ -1,0 +1,1 @@
+A superclass for all Reviewnator components, to show the toolbar and other things

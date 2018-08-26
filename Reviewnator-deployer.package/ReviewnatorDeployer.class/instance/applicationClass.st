@@ -1,3 +1,3 @@
 hooks
 applicationClass
-	^SystematicReviewFullInspectorComponent
+	^ReviewnatorHomeComponent
