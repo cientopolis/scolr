@@ -4,17 +4,17 @@ renderActionsMenuOn: html
 	menu := [ html
 		tbsDropdownMenuItem: [ html anchor
 				callback: [ self uploadResultSet ];
-				with: 'Upload' ].
+				with: 'Upload list' ].
 	html
 		tbsDropdownMenuItem: [ html anchor
-				callback: [ self reportsPage ];
-				with: 'Reports' ] ].
+				callback: [ self dumpToCsv ];
+				with: 'Dump to CSV' ] ].
 	html tbsButtonGroup
 		with: [ html tbsDropdownButton
 				beNavbarButton;
 				beDefault;
 				with: [ html
-						text: 'Actions';
+						text: 'File';
 						tbsCaret ].
 			html
 				tbsDropdownMenu: menu;

@@ -1,5 +1,5 @@
 rendering
-renderContentOn: html
+renderMainContentOn: html
 	self renderArticleDataOn: html.
 	html horizontalRule.
 	html

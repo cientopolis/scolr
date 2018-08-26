@@ -10,12 +10,9 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"repository",
-		"currentUser",
 		"selectedResulSets",
 		"uploadComponent",
 		"resultSetUploadComponent",
-		"reportsComponent",
 		"setSelectorSubcomponent",
 		"articleListSubComponent"
 	],

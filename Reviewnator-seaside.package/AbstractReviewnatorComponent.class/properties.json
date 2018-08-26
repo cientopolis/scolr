@@ -6,7 +6,9 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"errorOrWarningMessage"
+		"errorOrWarningMessage",
+		"repository",
+		"currentUser"
 	],
 	"name" : "AbstractReviewnatorComponent",
 	"type" : "normal"

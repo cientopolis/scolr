@@ -7,7 +7,7 @@ renderAllOpinionsOn: html
 				with:
 						'by ' , op author username
 								,
-									(op author == user
+									(op author == currentUser
 										ifTrue: [ ' (you)' ]
 										ifFalse: [ '' ]).
 			self renderOpinion: op on: html ]

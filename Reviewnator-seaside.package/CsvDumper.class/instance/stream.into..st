@@ -1,4 +1,4 @@
-callbacks
+private
 stream: row into: stream
 	1 to: row size do: [ :i | 
 		stream nextPutAll: '"' , (row at: i) asString , '"'.

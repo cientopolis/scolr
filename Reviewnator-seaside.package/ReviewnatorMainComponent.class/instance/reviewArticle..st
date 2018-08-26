@@ -1,10 +1,7 @@
 callbacks
 reviewArticle: article
-
 	| reviewComponent |
-	reviewComponent := ArticleReviewComponent new.
-	reviewComponent
-		article: article
-		user: currentUser.
+	reviewComponent := ArticleReviewComponent repository: self repository currentUser: self currentUser.
+	reviewComponent article: article.
 	self call: reviewComponent.
-	repository save.
+	repository save
