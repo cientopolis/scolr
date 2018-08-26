@@ -1,4 +1,4 @@
-accessing
+querying
 resultSets
 
 	^resultSets

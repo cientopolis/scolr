@@ -1,4 +1,3 @@
 accessing
 reviews: anObject
-
-	reviews := anObject
+	reviews := anObject.

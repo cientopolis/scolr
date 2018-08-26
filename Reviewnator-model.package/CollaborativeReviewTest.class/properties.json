@@ -1,0 +1,14 @@
+{
+	"commentStamp" : "",
+	"super" : "TestCase",
+	"category" : "Reviewnator-model-tests",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"aCoReview",
+		"announcements"
+	],
+	"name" : "CollaborativeReviewTest",
+	"type" : "normal"
+}

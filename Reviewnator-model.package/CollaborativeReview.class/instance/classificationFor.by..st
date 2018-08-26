@@ -1,4 +1,4 @@
-classifications
+querying-classifications
 classificationFor: article by: user
   
 

@@ -10,6 +10,6 @@
 		"accessCode",
 		"storageFolderName"
 	],
-	"name" : "ObservingFileRepository",
+	"name" : "ChangeUnawareFileRepository",
 	"type" : "normal"
 }

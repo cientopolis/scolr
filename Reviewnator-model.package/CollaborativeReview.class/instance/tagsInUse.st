@@ -1,4 +1,4 @@
-accessing
+querying
 tagsInUse
 	^ (reviews , classifications
 		inject: Set new

@@ -1,4 +1,4 @@
-classifications
+querying-classifications
 mostPeopleAgreeToInclude: anArticle
 	| cl in |
 	cl := self classificationsFor: anArticle.

@@ -1,7 +1,7 @@
 {
 	"commentStamp" : "Casco 9/22/2015 14:47",
 	"super" : "Object",
-	"category" : "Reviewnator-model",
+	"category" : "Reviewnator-model-model",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
@@ -10,8 +10,7 @@
 		"users",
 		"classifications",
 		"reviews",
-		"resultSets",
-		"announcer"
+		"resultSets"
 	],
 	"name" : "CollaborativeReview",
 	"type" : "normal"

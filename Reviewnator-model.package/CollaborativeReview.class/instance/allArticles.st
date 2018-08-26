@@ -1,4 +1,4 @@
-accessing
+querying
 allArticles
 	^ self resultSets
 		inject: Set new

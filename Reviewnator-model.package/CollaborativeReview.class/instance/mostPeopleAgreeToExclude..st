@@ -1,4 +1,4 @@
-classifications
+querying-classifications
 mostPeopleAgreeToExclude: anArticle
 
 	| cl out |

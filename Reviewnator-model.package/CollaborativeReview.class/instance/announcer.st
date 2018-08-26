@@ -1,3 +1,0 @@
-announcement
-announcer
-	^ announcer

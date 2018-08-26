@@ -1,1 +1,0 @@
-I model announcements of events that are of interest inside reviewnator. 

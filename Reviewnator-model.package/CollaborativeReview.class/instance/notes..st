@@ -1,3 +1,3 @@
 accessing
 notes: anObject
-	notes := anObject
+	notes := anObject.
