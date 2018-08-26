@@ -1,0 +1,14 @@
+{
+	"commentStamp" : "Casco 8/26/2018 00:06",
+	"super" : "Object",
+	"category" : "Reviewnator-persistence",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"coReview",
+		"accessCode"
+	],
+	"name" : "ObservingSaver",
+	"type" : "normal"
+}
