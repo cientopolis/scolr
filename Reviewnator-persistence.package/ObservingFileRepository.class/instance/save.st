@@ -1,4 +1,4 @@
-load and save
+private
 save
 	FileStream
 		forceNewFileNamed: self storageFileFullName

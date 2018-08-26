@@ -1,3 +1,3 @@
-load and save
+private
 storageFileFullName
 	^ (self storageFolder / (self accessCode , '.fuel')) fullName

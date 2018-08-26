@@ -1,0 +1,17 @@
+{
+	"commentStamp" : "",
+	"super" : "TestCase",
+	"category" : "Reviewnator-persistence-tests",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"storage",
+		"storageFolderName",
+		"aCoReview",
+		"anAccessCode",
+		"fileReferenceWithDummyCoReview"
+	],
+	"name" : "ObservingFileRepositoryTest",
+	"type" : "normal"
+}

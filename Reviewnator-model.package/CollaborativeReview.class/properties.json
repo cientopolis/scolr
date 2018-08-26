@@ -2,16 +2,16 @@
 	"commentStamp" : "Casco 9/22/2015 14:47",
 	"super" : "Object",
 	"category" : "Reviewnator-model",
-	"classinstvars" : [
-		"singleton"
-	],
+	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
+		"notes",
 		"users",
 		"classifications",
 		"reviews",
-		"resultSets"
+		"resultSets",
+		"announcer"
 	],
 	"name" : "CollaborativeReview",
 	"type" : "normal"

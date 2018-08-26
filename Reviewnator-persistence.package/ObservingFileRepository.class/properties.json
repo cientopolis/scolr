@@ -1,14 +1,15 @@
 {
 	"commentStamp" : "Casco 8/26/2018 00:06",
 	"super" : "Object",
-	"category" : "Reviewnator-persistence",
+	"category" : "Reviewnator-persistence-model",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
 		"coReview",
-		"accessCode"
+		"accessCode",
+		"storageFolderName"
 	],
-	"name" : "ObservingSaver",
+	"name" : "ObservingFileRepository",
 	"type" : "normal"
 }

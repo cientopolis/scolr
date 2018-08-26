@@ -7,4 +7,5 @@ initialize
 	classifications := Set new.
 	reviews := Set new.
 	resultSets := Set new.
-	^self
+	announcer := Announcer new.
+	^ self

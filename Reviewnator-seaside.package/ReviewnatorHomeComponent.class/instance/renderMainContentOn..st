@@ -10,7 +10,7 @@ renderMainContentOn: html
 								on: #fullName of: self;
 								id: 'fullName';
 								size: 40;
-								placeholder: 'your full name'.
+								placeholder: 'your name'.
 							html space.
 							html passwordInput
 								on: #accessCode of: self;
