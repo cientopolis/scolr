@@ -17,5 +17,4 @@ renderDisplayingOn: html
 	html paragraph: [ html strong: 'Exclusion criteria' ].
 	html paragraph: self coReview exclusionCriteria.
 	html paragraph: [ html strong: 'Contributors' ].
-	html paragraph: 'The following users contributed to this review'.
-	html unorderedList: [ self coReview users do: [ :user | html listItem: user username ] ]
+	html paragraph: [ self coReview users do: [ :user | html text: user username ] separatedBy: [ html text: ', ' ] ]
