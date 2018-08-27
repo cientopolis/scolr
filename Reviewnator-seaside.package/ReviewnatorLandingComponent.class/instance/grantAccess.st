@@ -1,8 +1,8 @@
 callback
 grantAccess
-	| user mainComponent repository coReview |
+	| user mainComponent coReview |
 	self credentialsAreValid
-		ifTrue: [ repository := ChangeUnawareFileRepository storageFolderName: 'reviewnator-files' accessCode: accessCode.
+		ifTrue: [ repository := ChangeUnawareFileRepository storageFolderName: (self preferenceAt: #storageFolderName) accessCode: accessCode.
 			coReview := repository coReview.
 			user := coReview newOrExistingUserNamed: fullName.
 			user lastLoginTimeStamp: DateAndTime now.

@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "",
+	"super" : "WASystemConfiguration",
+	"category" : "Reviewnator-seaside-configuration",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "ReviewnatorConfiguration",
+	"type" : "normal"
+}
