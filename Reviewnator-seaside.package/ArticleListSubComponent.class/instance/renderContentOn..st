@@ -2,7 +2,7 @@ renderning
 renderContentOn: html
 	html heading
 		level: 3;
-		with: 'Articles in selected lists'.
+		with: 'Opinions and reviews'.
 	self renderSortingCriteriaOn: html.
 	html break.
 	self renderFiltersOn: html.

@@ -8,6 +8,8 @@
 	"instvars" : [
 		"notes",
 		"users",
+		"inclusionCriteria",
+		"exclusionCriteria",
 		"classifications",
 		"reviews",
 		"resultSets"

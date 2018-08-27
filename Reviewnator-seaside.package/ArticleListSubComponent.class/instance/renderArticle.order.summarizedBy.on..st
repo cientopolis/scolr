@@ -8,7 +8,7 @@ renderArticle: article order: n summarizedBy: summary on: html
 			html
 				tableData: [ self renderClassificationSummaryFor: article on: html.
 					html tbsButton
-						beDefault;
+						beExtraSmall;
 						with: [ html anchor
 								callback: [ self parent classifyArticle: article ];
 								with: [ summary waiting == 0
@@ -17,7 +17,7 @@ renderArticle: article order: n summarizedBy: summary on: html
 			html
 				tableData: [ html paragraph: 'Available: ' , (self coReview reviewsFor: article) size printString.
 					html tbsButton
-						beDefault;
+						beExtraSmall;
 						with: [ html anchor
 								callback: [ self parent reviewArticle: article ];
 								with: [ (self coReview hasReviewFor: article by: self currentUser)

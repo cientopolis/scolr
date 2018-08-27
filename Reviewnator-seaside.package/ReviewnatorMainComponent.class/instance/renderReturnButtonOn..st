@@ -4,4 +4,4 @@ renderReturnButtonOn: html
 		tbsPullRight;
 		with: [ html anchor
 				callback: [ self logout ];
-				with: 'Log out' ]
+				with: 'Log out ' , currentUser username ]

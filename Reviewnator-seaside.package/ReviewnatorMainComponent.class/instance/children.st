@@ -1,4 +1,5 @@
 children
 children
 	^ {setSelectorSubcomponent.
-	articleListSubComponent}
+	articleListSubComponent.
+	reviewSummarySubComponent}

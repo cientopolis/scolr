@@ -14,7 +14,8 @@
 		"uploadComponent",
 		"resultSetUploadComponent",
 		"setSelectorSubcomponent",
-		"articleListSubComponent"
+		"articleListSubComponent",
+		"reviewSummarySubComponent"
 	],
 	"name" : "ReviewnatorMainComponent",
 	"type" : "normal"

@@ -2,7 +2,7 @@ rendering
 renderContentOn: html
 	html heading
 		level: 3;
-		with: 'Available article sets'.
+		with: 'Lists of articles'.
 	html tbsTable
 		beBordered;
 		beHover;
