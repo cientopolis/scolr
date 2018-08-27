@@ -2,7 +2,7 @@ callback
 grantAccess
 	| user mainComponent coReview |
 	self credentialsAreValid
-		ifTrue: [ repository := ChangeUnawareFileRepository storageFolderName: (self preferenceAt: #storageFolderName) accessCode: accessCode.
+		ifTrue: [ repository := ChangeUnawareFileRepository storageFolderName: (self configuration storageFolder) accessCode: accessCode.
 			coReview := repository coReview.
 			user := coReview newOrExistingUserNamed: fullName.
 			user lastLoginTimeStamp: DateAndTime now.
