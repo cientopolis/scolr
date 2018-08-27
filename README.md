@@ -20,10 +20,10 @@ To install evaluate this in a playground after dependencies are met:
 (IceRepositoryCreator new
    url: 'https://casco@bitbucket.org/casco/reviewnator.git';
    createRepository) updatePackage: 'Reviewnator-PharoExtensions';
-   createRepository) updatePackage: 'Reviewnator-model';
-   createRepository) updatePackage: 'Reviewnator-importers';
-   createRepository) updatePackage: 'Reviewnator-persistence';
-   createRepository) updatePackage: 'Reviewnator-seaside';
-   createRepository) updatePackage: 'Reviewnator-tools';
-   createRepository) updatePackage: 'Reviewnator-deployer'.
+   updatePackage: 'Reviewnator-model';
+   updatePackage: 'Reviewnator-importers';
+   updatePackage: 'Reviewnator-persistence';
+   updatePackage: 'Reviewnator-seaside';
+   updatePackage: 'Reviewnator-tools';
+   updatePackage: 'Reviewnator-deployer'.
 ```
