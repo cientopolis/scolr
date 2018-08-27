@@ -1,3 +1,0 @@
-hooks
-configurationClasses
-	^ super configurationClasses copyWith: ReviewnatorConfiguration

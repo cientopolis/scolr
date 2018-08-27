@@ -1,0 +1,15 @@
+{
+	"commentStamp" : "Casco 8/26/2018 22:06",
+	"super" : "Object",
+	"category" : "Reviewnator-seaside-configuration",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"adminAccessCode",
+		"activeAccessCodes",
+		"storageFolder"
+	],
+	"name" : "ReviewnatorFileBasedConfiguration",
+	"type" : "normal"
+}

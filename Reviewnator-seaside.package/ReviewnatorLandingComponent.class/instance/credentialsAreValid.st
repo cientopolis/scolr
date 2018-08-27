@@ -1,4 +1,5 @@
 private
 credentialsAreValid
-	^accessCode notEmpty & fullName notEmpty
-		
+	accessCode isEmpty | fullName isEmpty
+		ifTrue: [ ^ false ].
+	^ (configuration activeAccessCodes includes: accessCode) | (accessCode = configuration adminAccessCode)

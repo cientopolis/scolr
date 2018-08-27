@@ -1,0 +1,3 @@
+callbacks
+editGlobalConfiguration
+	self call: ReviewnatorAdminComponent new

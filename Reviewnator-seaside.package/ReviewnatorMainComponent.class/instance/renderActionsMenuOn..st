@@ -8,7 +8,12 @@ renderActionsMenuOn: html
 	html
 		tbsDropdownMenuItem: [ html anchor
 				callback: [ self dumpToCsv ];
-				with: 'Dump to CSV' ] ].
+				with: 'Dump to CSV' ].
+	self isAdmin
+		ifTrue: [ html
+				tbsDropdownMenuItem: [ html anchor
+						callback: [ self editGlobalConfiguration ];
+						with: 'Admin' ] ] ].
 	html tbsButtonGroup
 		with: [ html tbsDropdownButton
 				beNavbarButton;
