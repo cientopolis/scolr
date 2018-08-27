@@ -3,9 +3,9 @@ readReportingTo: anImportReport
 	| inStream reader |
 	inStream := filename asFileReference readStream.
 	reader := NeoCSVReader on: inStream.
-	columnLabels := reader readHeader.
+	columnLabels := reader readHeader collect: [ :each | each asLowercase ].
 	self reportMissingColumnsTo: anImportReport.
 	self reportIgnoredColumnsTo: anImportReport.
-	anImportReport shouldFail
+	anImportReport failed
 		ifFalse: [ reader select: [ :each | true ] thenDo: [ :each | self importRow: each reportingTo: anImportReport ] ]
 		ifTrue: [ resultSet := nil ]

@@ -1,15 +1,16 @@
 {
-	"commentStamp" : "",
+	"commentStamp" : "Casco 8/27/2018 15:54",
 	"super" : "WAComponent",
-	"category" : "Reviewnator-seaside-core",
+	"category" : "Reviewnator-seaside-components",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"errorOrWarningMessage",
 		"repository",
 		"currentUser",
-		"configuration"
+		"configuration",
+		"errorMessage",
+		"warningMessage"
 	],
 	"name" : "AbstractReviewnatorComponent",
 	"type" : "normal"

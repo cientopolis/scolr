@@ -1,4 +1,5 @@
-initialize
+initialization
 initialize
 	importErrors := OrderedCollection new.
-	shouldFail := false.
+	importWarnings := OrderedCollection new.
+	ignoredArticles := OrderedCollection new.

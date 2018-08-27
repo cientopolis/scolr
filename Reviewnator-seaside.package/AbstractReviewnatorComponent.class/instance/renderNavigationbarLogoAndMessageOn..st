@@ -6,4 +6,4 @@ renderNavigationbarLogoAndMessageOn: html
 				style: 'padding: 10px;';
 				url: ReviewnatorFileLibrary / #reviewnatorsmallPng.
 			html tbsNavbarBrand
-				with: 'Reviewnator: collaborative, systematic literature reviews' ]
+				with: 'Reviewnator: collaborative literature reviews' ]

@@ -1,8 +1,19 @@
 rendering
 renderErrorOrWarningOn: html
-	errorOrWarningMessage notNil
+	html break.
+	errorMessage notNil
 		ifTrue: [ html tbsAlert
 				beDanger;
-				with: [ html strong: 'Oh snap! '.
-					html text: errorOrWarningMessage ].
-			errorOrWarningMessage := nil ]
+				with: [ html
+						strong: 'Oh snap! ';
+						break.
+					html text: errorMessage ].
+			errorMessage := nil ].
+	warningMessage notNil
+		ifTrue: [ html tbsAlert
+				beWarning;
+				with: [ html
+						strong: 'Warning: ! ';
+						break.
+					html text: warningMessage ].
+			warningMessage := nil ]

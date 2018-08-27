@@ -1,3 +1,0 @@
-accessing
-uploadComponent
-	^ uploadComponent

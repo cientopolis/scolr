@@ -1,7 +1,10 @@
 reporting
 reportMissingColumnsTo: anImportReport
-	| missing |
+	| missing stream |
 	missing := self columnToSelectorMap keys asOrderedCollection.
 	missing removeAllFoundIn: columnLabels.
 	missing
-		ifNotEmpty: [ anImportReport reportUnrecoverableFailure: (missing inject: 'There were missing columns: ' into: [ :sub :label | sub , ', ' , label ]) ]
+		ifNotEmpty: [ stream := String new writeStream.
+			stream nextPutAll: 'Important columns were missing: '.
+			missing do: [ :label | stream nextPutAll: label ] separatedBy: [ stream nextPutAll: ', ' ].
+			anImportReport reportError: stream contents ]

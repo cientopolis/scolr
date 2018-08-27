@@ -1,3 +1,0 @@
-accessing
-succeeded
-	^ shouldFail not

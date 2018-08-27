@@ -5,7 +5,7 @@ importRow: row reportingTo: anImportReport
 	row
 		with: columnLabels
 		do: [ :value :label | 
-			selector := self columnToSelectorMap at: label ifAbsent: nil.
+			selector := self columnToSelectorMap at: label asLowercase ifAbsent: nil.
 			selector
 				ifNotNil: [ article perform: (selector , ':') asSymbol with: (value ifNil: [ '' ]) ] ].
 	self articles add: article

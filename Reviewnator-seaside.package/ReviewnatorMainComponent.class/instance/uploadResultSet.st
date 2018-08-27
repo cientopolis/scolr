@@ -1,7 +1,8 @@
 callbacks - up/downloading
 uploadResultSet
-	resultSetUploadComponent := ResultSetUploadComponent new.
-	self call: resultSetUploadComponent.
-	resultSetUploadComponent resultSet
-		ifNotNil: [ self coReview resultSets add: resultSetUploadComponent resultSet.
+	| component |
+	component := ResultSetUploadComponent new.
+	self call: component.
+	component resultSet
+		ifNotNil: [ self coReview resultSets add: component resultSet.
 			repository save ]
