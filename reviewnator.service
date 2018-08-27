@@ -1,0 +1,13 @@
+[Unit]
+Description=Reviewnator
+After=network.target
+
+[Service]
+Type=simple
+PIDFile=/var/run/application.pid
+Environment=appdir=/var/www/apps/reviewnator
+ExecStart=/var/www/apps/reviewnator/pharo /var/www/apps/ruc-aps-secondme
+nts/rucaps-base.image st /var/www/apps/ruc-aps-secondments/start.st
+
+[Install]
+WantedBy=multi-user.target
