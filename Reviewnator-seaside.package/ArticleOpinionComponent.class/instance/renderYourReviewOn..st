@@ -7,5 +7,5 @@ renderYourReviewOn: html
 						with: 'Your review' ].
 			html
 				tbsPanelBody: [ html
-						form: [ self renderTagsEditorOn: html.
+						tbsForm: [ self renderTagsEditorOn: html.
 							self renderOpinionEditorOn: html ] ] ]

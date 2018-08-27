@@ -10,13 +10,15 @@ renderImportReportOn: html
 						with: 'Try again'.
 					html space.
 					html tbsButton
-						callback: [ self answer ];
+						callback: [ self cancel ];
 						with: 'Cancel' ] ]
-		ifNotNil: [ html
-				paragraph: resultSet articles size printString , ' articles were found'.
-			html
-				unorderedList: [ resultSet articles do: [ :each | html listItem: each printString ] ].
+		ifNotNil: [ html paragraph: resultSet articles size printString , ' articles were found'.
+			html unorderedList: [ resultSet articles do: [ :each | html listItem: each printString ] ].
 			html
 				tbsForm: [ html tbsButton
 						callback: [ self answer ];
-						with: 'Import' ] ]
+						with: 'Import'.
+					html space.
+					html tbsButton
+						callback: [ self cancel ];
+						with: 'Cancel' ] ]

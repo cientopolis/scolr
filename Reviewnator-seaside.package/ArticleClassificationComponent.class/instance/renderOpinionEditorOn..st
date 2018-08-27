@@ -16,13 +16,13 @@ renderOpinionEditorOn: html
 		on: #comments of: opinionToEdit.
 	html break.
 	html break.
-	html submitButton
+	html tbsButton
 		callback: [ 
 					self
 						acceptChanges;
 						answer ];
 		value: 'Save new (replace old)'.
 	html space.
-	html cancelButton
+	html tbsButton
 		callback: [ self answer ];
 		value: 'Cancel (return)'

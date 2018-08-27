@@ -60,5 +60,5 @@ renderUploadFormOn: html
 				with: 'Submit'.
 			html space.
 			html tbsButton
-				callback: [ self answer ];
+				callback: [ self cancel ];
 				with: 'Cancel' ]
