@@ -1,5 +1,5 @@
 styles
-style 
+styleOld
 	^ 'body {
   font-family: Sans-Serif;
 }

@@ -5,20 +5,21 @@ renderArticle: article order: n summarizedBy: summary on: html
 		with: [ html tableData: [ html text: n printString ].
 			html tableData: [ self renderArticleSummary: article on: html ].
 			html tableData: [ self renderArticleTags: article on: html ].
-			html tableData: [ self renderClassificationSummaryFor: article on: html ].
 			html
-				tableData: [ html anchor
-						callback: [ self parent classifyArticle: article ];
-						with: 'classify'.
-					summary waiting == 0
-						ifTrue: [ html
-								break;
-								text: '(done)' ] ].
+				tableData: [ self renderClassificationSummaryFor: article on: html.
+					html tbsButton
+						beDefault;
+						with: [ html anchor
+								callback: [ self parent classifyArticle: article ];
+								with: [ summary waiting == 0
+										ifTrue: [ html text: '(re)classify' ]
+										ifFalse: [ html text: 'classify' ] ] ] ].
 			html
-				tableData: [ html anchor
-						callback: [ self parent reviewArticle: article ];
-						with: 'review'.
-					(self coReview hasReviewFor: article by: self currentUser)
-						ifTrue: [ html
-								break;
-								text: '(done)' ] ] ]
+				tableData: [ html paragraph: 'Available: ' , (self coReview reviewsFor: article) size printString.
+					html tbsButton
+						beDefault;
+						with: [ html anchor
+								callback: [ self parent reviewArticle: article ];
+								with: [ (self coReview hasReviewFor: article by: self currentUser)
+										ifTrue: [ html text: '(re)review' ]
+										ifFalse: [ html text: 'review' ] ] ] ] ]

@@ -11,7 +11,7 @@ renderFiltersOn: html
 			[(html anchor)
 				callback: [activeHidingFilters add: self class includedFilter];
 				with: 'yes'].
-	html text: ') hide excluded ('.
+	html text: '), or hide excluded ('.
 	(activeHidingFilters includes: self class excludedFilter)
 		ifTrue: 
 			[(html anchor)
@@ -21,7 +21,7 @@ renderFiltersOn: html
 			[(html anchor)
 				callback: [activeHidingFilters add: self class excludedFilter];
 				with: 'yes'].
-	html text: ') hide already classified by me ('.
+	html text: '), or hide already classified by me ('.
 	(activeHidingFilters includes: self class alreadyClassifiedFilter)
 		ifTrue: 
 			[(html anchor)

@@ -1,9 +1,10 @@
 summaries
 summaryFor: aUser on: aCoReview
-	| in out his cls sum coms tags |
+	| in out his cls sum coms tags undecided |
 	sum := ClassificationSummary for: aUser about: self.
 	in := 0.
 	out := 0.
+	undecided := 0.
 	his := 0.
 	coms := Set new.
 	tags := Set new.
@@ -14,6 +15,8 @@ summaryFor: aUser on: aCoReview
 				ifTrue: [ out := out + 1 ].
 			each toInclude
 				ifTrue: [ in := in + 1 ].
+			each undecided
+				ifTrue: [ undecided := undecided + 1 ].
 			each author == aUser
 				ifTrue: [ his := his + 1 ].
 			coms add: each comments.
@@ -21,6 +24,7 @@ summaryFor: aUser on: aCoReview
 	sum
 		included: in;
 		excluded: out;
+		undecided: undecided;
 		addClassificationComments: coms;
 		addClassificationTags: tags.
 	his == 0

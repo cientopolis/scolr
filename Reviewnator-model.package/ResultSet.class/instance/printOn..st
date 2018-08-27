@@ -1,4 +1,4 @@
 printing
 printOn: aStream
 
-  aStream nextPutAll: '(', articles size printString, ') @', self database, ' for: ', self searchString.
+  aStream nextPutAll: '(', articles size printString, ' articles) @', self database, ' for: ', self searchString.

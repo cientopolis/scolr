@@ -9,7 +9,7 @@ renderSortingCriteriaOn: html
 	(html anchor)
 		callback: [sortBlock := self sortDownByYearBlock];
 		with: 'down'.
-	html text: ') by title ('.
+	html text: '), or by title ('.
 	(html anchor)
 		callback: [sortBlock := self sortUpByTitleBlock];
 		with: 'up'.
@@ -17,7 +17,7 @@ renderSortingCriteriaOn: html
 	(html anchor)
 		callback: [sortBlock := self sortDownByTitleBlock];
 		with: 'down'.
-	html text: ') by authors ('.
+	html text: '), or by authors ('.
 	(html anchor)
 		callback: [sortBlock := self sortUpByAuthorBlock];
 		with: 'up'.

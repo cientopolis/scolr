@@ -1,5 +1,5 @@
 rendering
-renderResultSet: resultSet on: html
+renderTableRowFor: resultSet on: html
 	| sum |
 	sum := resultSet summaryFor: parent currentUser on: self parent coReview.
 	html
@@ -10,11 +10,13 @@ renderResultSet: resultSet on: html
 			html tableData: [ html text: sum waiting printString ].
 			html
 				tableData: [ (parent selectedResulSets includes: resultSet)
-						ifTrue: [ html anchor
-								callback: [ parent selectedResulSets remove: resultSet ];
-								with: 'unselect';
-								yourself ]
-						ifFalse: [ html anchor
-								callback: [ parent selectedResulSets add: resultSet ];
-								with: 'select';
-								yourself ] ] ]
+						ifTrue: [ html tbsButton
+								beDefault;
+								with: [ html anchor
+										callback: [ parent selectedResulSets remove: resultSet ];
+										with: 'Deselect' ] ]
+						ifFalse: [ html tbsButton
+								beDefault;
+								with: [ html anchor
+										callback: [ parent selectedResulSets add: resultSet ];
+										with: 'Select' ] ] ] ]

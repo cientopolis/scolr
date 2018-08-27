@@ -12,5 +12,7 @@ summaryFor: aUser on: aCoReview
 			itsSum isInclusion
 				ifTrue: [ summary included: summary included + 1 ].
 			itsSum isWaiting
-				ifTrue: [ summary waiting: summary waiting + 1 ] ].
+				ifTrue: [ summary waiting: summary waiting + 1 ].
+			itsSum isUndecided
+				ifTrue: [ summary undecided: summary undecided + 1 ] ].
 	^ summary

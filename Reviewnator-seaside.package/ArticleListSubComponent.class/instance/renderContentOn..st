@@ -1,8 +1,8 @@
 renderning
 renderContentOn: html
 	html heading
-		level: 2;
-		with: 'Articles in selected sets'.
+		level: 3;
+		with: 'Articles in selected lists'.
 	self renderSortingCriteriaOn: html.
 	html break.
 	self renderFiltersOn: html.
