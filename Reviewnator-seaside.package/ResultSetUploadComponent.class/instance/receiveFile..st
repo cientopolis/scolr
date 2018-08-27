@@ -1,6 +1,7 @@
 callbacks
 receiveFile: aFile
 	| uploadFile uploadStream importer |
+	importReport := nil.
 	(aFile contentType matches: WAMimeType textCsv)
 		ifTrue: [ uploadFile := Preferences singleton uploadFolder / aFile fileName.
 			uploadStream := FileSystem disk writeStreamOn: uploadFile.

@@ -56,11 +56,7 @@ renderUploadFormOn: html
 						on: #comment of: self;
 						placeholder: 'Any additional comments regarding this list of articles?' ].
 			html tbsButton
-				callback: [ resultSet
-						ifNotNil: [ resultSet
-								database: database;
-								searchString: searchString;
-								comments: comment ] ];
+				callback: [ self accept ];
 				with: 'Submit'.
 			html space.
 			html tbsButton
