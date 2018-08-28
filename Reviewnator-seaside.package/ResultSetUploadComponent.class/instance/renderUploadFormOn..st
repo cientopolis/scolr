@@ -10,13 +10,15 @@ renderUploadFormOn: html
 					html break.
 					html
 						small: [ html
-								text: 'Only CSV files (comma separated values) are accepted.';
+								text: 'Only CSV files (comma separated values) with UTF8 encoding are accepted.';
 								break;
 								text: 'The first row of the file should include the following mandatory column headers: ';
 								break;
 								strong: 'authors, title, abstract, year';
 								break;
-								text: 'Other column headers will be ignored' ].
+								text: 'Other column headers will be ignored.';
+								break;
+								text: 'Articles with missing values will be ignored.' ].
 					html
 						break;
 						break.
@@ -35,7 +37,7 @@ renderUploadFormOn: html
 						placeholder: 'Which bibliographic database does this list come from?' ].
 			html
 				tbsFormGroup: [ html label
-						with: 'Search string: ';
+						with: 'Search query: ';
 						for: 'searchString'.
 					html break.
 					html textArea
@@ -46,7 +48,7 @@ renderUploadFormOn: html
 						placeholder: 'What was the search string/query used to obtain the articles in this list?' ].
 			html
 				tbsFormGroup: [ html label
-						with: 'Comments: ';
+						with: 'Notes: ';
 						for: 'comments'.
 					html break.
 					html textArea
