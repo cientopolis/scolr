@@ -1,3 +1,3 @@
 saving
 save 
-  self repository save.
+  self configuration save.
