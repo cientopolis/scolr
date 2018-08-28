@@ -1,25 +1,25 @@
 reporting
 summaryReportFor: aCoReview
 	stream
-		nextPutAll: '#Review summary';
+		nextPutAll: '# Review summary';
 		crlf;
 		crlf;
-		nextPutAll: '##Notes';
+		nextPutAll: '## Notes';
 		crlf;
 		nextPutAll: aCoReview notes;
 		crlf;
 		crlf;
-		nextPutAll: '##Inclusion criteria';
+		nextPutAll: '## Inclusion criteria';
 		crlf;
 		nextPutAll: aCoReview inclusionCriteria;
 		crlf;
 		crlf;
-		nextPutAll: '##Exclusion criteria';
+		nextPutAll: '## Exclusion criteria';
 		crlf;
 		nextPutAll: aCoReview exclusionCriteria;
 		crlf;
 		crlf;
-		nextPutAll: '##Contributors';
+		nextPutAll: '## Contributors';
 		crlf.
 	aCoReview users
 		do: [ :each | 

@@ -6,7 +6,7 @@ reportReviewsWith: aCoReview
 	stream
 		crlf;
 		crlf;
-		nextPutAll: '#Reviews';
+		nextPutAll: '# Reviews';
 		crlf.
 	articles
 		do: [ :article | 
@@ -15,7 +15,7 @@ reportReviewsWith: aCoReview
 			stream
 				crlf;
 				crlf;
-				nextPutAll: '##' , article title;
+				nextPutAll: '## ' , article title;
 				crlf;
 				nextPutAll: article printString;
 				crlf.
@@ -24,7 +24,7 @@ reportReviewsWith: aCoReview
 					stream
 						crlf;
 						crlf;
-						nextPutAll: '###' , dimension;
+						nextPutAll: '### ' , dimension;
 						crlf.
 					itsReviews
 						do: [ :rev | 
