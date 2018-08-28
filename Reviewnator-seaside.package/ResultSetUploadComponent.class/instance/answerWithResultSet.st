@@ -1,4 +1,4 @@
-rendering-report
+callbacks
 answerWithResultSet
 	| result |
 	result := importer resultSet.
@@ -6,4 +6,5 @@ answerWithResultSet
 		database: database;
 		comments: comment;
 		searchString: searchString.
+	self deleteTempFileIfExists.
 	self answer: result

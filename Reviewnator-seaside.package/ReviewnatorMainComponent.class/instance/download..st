@@ -2,7 +2,7 @@ callbacks - up/downloading
 download: article
       | filename stream |
 
-	filename := self configuration uploadFolder / article uploadedFilename.
+	filename := self configuration storage / article uploadedFilename.
       filename exists ifTrue: [
 	stream := filename readStream.
 	stream binary.

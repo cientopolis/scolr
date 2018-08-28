@@ -1,3 +1,4 @@
 callbacks
 cancel
-	self answer: nil.
+	self deleteTempFileIfExists.
+	self answer: nil

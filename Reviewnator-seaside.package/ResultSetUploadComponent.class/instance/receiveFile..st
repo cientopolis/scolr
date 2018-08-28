@@ -2,7 +2,7 @@ callbacks
 receiveFile: aFile
 	| uploadStream |
 	(aFile contentType matches: WAMimeType textCsv)
-		ifTrue: [ uploadedFile := self configuration uploadFolder / aFile fileName.
+		ifTrue: [ uploadedFile := self repository randomTempFile.
 			uploadStream := FileSystem disk writeStreamOn: uploadedFile.
 			[ uploadStream
 				binary;

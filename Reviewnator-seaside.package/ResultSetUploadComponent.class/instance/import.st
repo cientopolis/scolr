@@ -2,8 +2,9 @@ callbacks
 import
 	importer := CSVImporter new.
 	importer
-		readFrom: uploadedFile 
+		readFrom: uploadedFile
 		ignoringDuplicatesIn:
 			(ignorePotentialDuplicates
 				ifTrue: [ self coReview allArticles ]
-				ifFalse: [ Set new ])
+				ifFalse: [ Set new ]).
+	self deleteTempFileIfExists
