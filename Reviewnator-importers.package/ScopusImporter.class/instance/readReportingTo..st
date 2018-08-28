@@ -7,5 +7,5 @@ readReportingTo: anImportReport
 	self reportMissingColumnsTo: anImportReport.
 	self reportIgnoredColumnsTo: anImportReport.
 	anImportReport failed
-		ifFalse: [ reader select: [ :each | true ] thenDo: [ :each | self importRow: each reportingTo: anImportReport ] ]
+		ifFalse: [ reader do: [ :each | self importRow: each reportingTo: anImportReport ] ]
 		ifTrue: [ resultSet := nil ]

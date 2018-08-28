@@ -14,7 +14,7 @@ renderUploadFormOn: html
 								break;
 								text: 'The first row of the file should include the following mandatory column headers: ';
 								break;
-								strong: 'authors, title, doi, abstract, document type, year';
+								strong: 'authors, title, abstract, year';
 								break;
 								text: 'Other column headers will be ignored' ].
 					html

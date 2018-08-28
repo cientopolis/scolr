@@ -6,6 +6,7 @@ importRow: row reportingTo: anImportReport
 		with: columnLabels
 		do: [ :value :label | 
 			selector := self columnToSelectorMap at: label asLowercase ifAbsent: nil.
-			selector
-				ifNotNil: [ article perform: (selector , ':') asSymbol with: (value ifNil: [ '' ]) ] ].
-	self articles add: article
+			selector ifNotNil: [ article perform: (selector , ':') asSymbol with: (value ifNil: [ '' ]) ] ].
+	(self shouldIgnore: article)
+		ifTrue: [ anImportReport ignoreArticle: article ]
+		ifFalse: [ self articles add: article ]

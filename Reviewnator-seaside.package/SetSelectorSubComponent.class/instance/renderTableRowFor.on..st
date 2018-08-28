@@ -3,7 +3,13 @@ renderTableRowFor: resultSet on: html
 	| sum |
 	sum := resultSet summaryFor: parent currentUser on: self parent coReview.
 	html
-		tableRow: [ html tableData: resultSet printString.
+		tableRow: [ html
+				tableData: [ html
+						text: '(' , resultSet articles size printString , ' articles) from: ' , resultSet database;
+						break;
+						text: 'Search query: ' , resultSet searchString;
+						break;
+						text: 'Notes: ' , resultSet comments ].
 			html tableData: [ html text: sum included printString ].
 			html tableData: [ html text: sum excluded printString ].
 			html tableData: [ html text: sum disagreement printString ].
