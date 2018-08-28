@@ -7,8 +7,8 @@ renderClassificationSummaryFor: article on: html
 	undecided := summary undecided.
 	total := in + out + undecided.
 	html
-		text: 'In: ' , in printString , '/' , total printString;
+		text: 'In:' , in printString , '/' , total printString;
 		break;
-		text: 'Out: ' , out printString , '/' , total printString;
+		text: 'Out:' , out printString , '/' , total printString;
 		break;
-		text: 'Undecided: ' , undecided printString , '/' , total printString
+		text: 'Undecided:' , undecided printString , '/' , total printString

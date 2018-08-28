@@ -7,6 +7,9 @@ renderArticle: article order: n summarizedBy: summary on: html
 			html tableData: [ self renderArticleTags: article on: html ].
 			html
 				tableData: [ self renderClassificationSummaryFor: article on: html.
+					html
+						break;
+						break.
 					html tbsButton
 						beExtraSmall;
 						with: [ html anchor
@@ -15,7 +18,7 @@ renderArticle: article order: n summarizedBy: summary on: html
 										ifTrue: [ html text: '(re)classify' ]
 										ifFalse: [ html text: 'classify' ] ] ] ].
 			html
-				tableData: [ html paragraph: 'Available: ' , (self coReview reviewsFor: article) size printString.
+				tableData: [ html paragraph: 'Available:' , (self coReview reviewsFor: article) size printString.
 					html tbsButton
 						beExtraSmall;
 						with: [ html anchor

@@ -19,10 +19,10 @@ renderTableRowFor: resultSet on: html
 						ifTrue: [ html tbsButton
 								beExtraSmall;
 								with: [ html anchor
-										callback: [ parent selectedResulSets remove: resultSet ];
+										callback: [ parent unselectResultSet: resultSet ];
 										with: 'Deselect' ] ]
 						ifFalse: [ html tbsButton
 								beExtraSmall;
 								with: [ html anchor
-										callback: [ parent selectedResulSets add: resultSet ];
+										callback: [ parent selectResultSet: resultSet ];
 										with: 'Select' ] ] ] ]

@@ -11,7 +11,7 @@ renderArticleDataOn: html
 						with: article title.
 					html
 						strong: 'Year: ';
-						text: article year , ' - Type: ' , article documentType.
+						text: article year.
 					html break.
 					html
 						strong: 'Authors: ';

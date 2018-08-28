@@ -3,6 +3,6 @@ initialize
 	authors := ''.
 	title := ''.
 	year := ''.
-	sourceTitle := ''.
+	documentType := ''.
 	doi := ''.
 	abstract := ''
