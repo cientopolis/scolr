@@ -7,8 +7,8 @@ renderActionsMenuOn: html
 				with: 'Upload list' ].
 	html
 		tbsDropdownMenuItem: [ html anchor
-				callback: [ self dumpToCsv ];
-				with: 'Dump to CSV' ].
+				callback: [ self generateReport ];
+				with: 'Generate report' ].
 	self isAdmin
 		ifTrue: [ html
 				tbsDropdownMenuItem: [ html anchor

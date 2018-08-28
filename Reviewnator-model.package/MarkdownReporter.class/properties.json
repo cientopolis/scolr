@@ -1,0 +1,13 @@
+{
+	"commentStamp" : "Casco 8/27/2018 18:17",
+	"super" : "Object",
+	"category" : "Reviewnator-model-model",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"stream"
+	],
+	"name" : "MarkdownReporter",
+	"type" : "normal"
+}
