@@ -5,6 +5,7 @@ reportReviewsWith: aCoReview
 	articles := aCoReview allArticles.
 	stream
 		crlf;
+		crlf;
 		nextPutAll: '#Reviews';
 		crlf.
 	articles
@@ -12,6 +13,7 @@ reportReviewsWith: aCoReview
 			| itsReviews |
 			itsReviews := aCoReview reviewsFor: article.
 			stream
+				crlf;
 				crlf;
 				nextPutAll: '##' , article title;
 				crlf;
@@ -21,6 +23,7 @@ reportReviewsWith: aCoReview
 				do: [ :dimension | 
 					stream
 						crlf;
+						crlf;
 						nextPutAll: '###' , dimension;
 						crlf.
 					itsReviews
@@ -29,7 +32,7 @@ reportReviewsWith: aCoReview
 							comment := rev commentInDimension: dimension.
 							comment notEmpty
 								ifTrue: [ stream
-										nextPutAll: '**' , rev author username , '**';
-										crlf;
+										nextPutAll: '**(' , rev author username , ')** ';
 										nextPutAll: comment;
+										crlf;
 										crlf ] ] ] ]
