@@ -1,15 +1,12 @@
 rendering
 renderOpinionEditorOn: html
-	html heading
-		level: 3;
-		with: 'Reviews'.
+	html label: 'Your notes'.
 	self renderCommentsTableOn: html.
 	html break.
 	html submitButton
-		callback: [ 
-					self
-						acceptChanges;
-						answer ];
+		callback: [ self
+				acceptChanges;
+				answer ];
 		value: 'Save new (replace old)'.
 	html space.
 	html cancelButton

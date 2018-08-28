@@ -2,7 +2,7 @@ reporting
 reportReviewsWith: aCoReview
 	| dimensions articles |
 	dimensions := aCoReview reviewDimensions asSortedCollection.
-	articles := aCoReview allArticles reject: [:each | aCoReview mostPeopleAgreeToExclude: each].
+	articles := aCoReview allArticles reject: [ :each | aCoReview mostPeopleAgreeToExclude: each ].
 	stream
 		crlf;
 		crlf;
@@ -18,6 +18,9 @@ reportReviewsWith: aCoReview
 				nextPutAll: '## ' , article title;
 				crlf;
 				nextPutAll: article printString;
+				crlf;
+				crlf;
+				nextPutAll: '**abstract** ' , article abstract;
 				crlf.
 			dimensions
 				do: [ :dimension | 
@@ -25,6 +28,7 @@ reportReviewsWith: aCoReview
 						crlf;
 						crlf;
 						nextPutAll: '### ' , dimension;
+						crlf;
 						crlf.
 					itsReviews
 						do: [ :rev | 

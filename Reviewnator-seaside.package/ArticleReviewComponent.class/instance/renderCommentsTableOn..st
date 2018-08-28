@@ -20,11 +20,14 @@ renderCommentsTableOn: html
 												columns: 80;
 												rows: 4;
 												value: (opinionToEdit commentInDimension: each);
-												callback: [ :value | opinionToEdit comment: value inDimension: each ] ] ] ].
+												callback: [ :value | opinionToEdit comment: value inDimension: each ].
+											html
+												break;
+												small: 'Use two new lines if you want to separate paragraphs.';
+												break ] ] ].
 					html
 						tableRow: [ html
 								tableData: [ html anchor
 										callback: [ self addNewReviewDimension ];
 										with: 'Add new' ].
-							html
-								tableData: [ html text: 'only add a new dimension if you are really sure about it - it will be available for now on' ] ] ] ]
+							html tableData: [ html text: 'only add a new dimension if you are really sure about it - it will be available for now on' ] ] ] ]
