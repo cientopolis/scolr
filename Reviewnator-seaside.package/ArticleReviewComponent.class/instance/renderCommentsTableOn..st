@@ -1,7 +1,7 @@
 rendering
 renderCommentsTableOn: html
 	| dimensions |
-	dimensions := Set withAll: self coReview reviewDimensions.
+	dimensions := Set withAll: (self coReview reviewDimensions ifEmpty: [ Set with: 'General remarks' ]).
 	dimensions addAll: opinionToEdit dimensions.
 	html tbsTable
 		beBordered;
@@ -26,4 +26,5 @@ renderCommentsTableOn: html
 								tableData: [ html anchor
 										callback: [ self addNewReviewDimension ];
 										with: 'Add new' ].
-							html tableData: [ html text: 'only add a new dimension if you are really sure about it - it will be available for now on' ] ] ] ]
+							html
+								tableData: [ html text: 'only add a new dimension if you are really sure about it - it will be available for now on' ] ] ] ]
