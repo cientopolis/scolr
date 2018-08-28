@@ -7,9 +7,9 @@
 	"classvars" : [ ],
 	"instvars" : [
 		"resultSet",
-		"filename",
-		"columnLabels"
+		"columnLabels",
+		"importReport"
 	],
-	"name" : "ScopusImporter",
+	"name" : "CSVImporter",
 	"type" : "normal"
 }

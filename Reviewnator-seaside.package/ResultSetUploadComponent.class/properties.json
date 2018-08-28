@@ -8,9 +8,10 @@
 	"instvars" : [
 		"database",
 		"searchString",
+		"importer",
 		"comment",
-		"resultSet",
-		"importReport"
+		"ignorePotentialDuplicates",
+		"uploadedFile"
 	],
 	"name" : "ResultSetUploadComponent",
 	"type" : "normal"

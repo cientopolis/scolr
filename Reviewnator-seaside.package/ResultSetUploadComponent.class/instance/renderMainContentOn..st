@@ -1,3 +1,3 @@
 rendering
 renderMainContentOn: html
-	importReport ifNil: [ self renderUploadFormOn: html ] ifNotNil: [ self renderImportReportOn: html ]
+	importer ifNil: [ self renderUploadFormOn: html ] ifNotNil: [ self renderImportReportOn: html ]

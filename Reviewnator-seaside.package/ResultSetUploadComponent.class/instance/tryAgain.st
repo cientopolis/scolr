@@ -1,4 +1,3 @@
 callbacks
 tryAgain
-	importReport := nil.
-	resultSet := nil.
+	self resetProperties

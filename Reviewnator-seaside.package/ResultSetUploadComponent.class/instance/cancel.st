@@ -1,4 +1,3 @@
 callbacks
 cancel
-	resultSet := nil.
-	self answer
+	self answer: nil.

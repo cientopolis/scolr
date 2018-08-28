@@ -1,5 +1,5 @@
 reading
-importRow: row reportingTo: anImportReport
+importRow: row ignoreDuplicatesIn: articles
 	| article selector |
 	article := Article new.
 	row
@@ -7,6 +7,6 @@ importRow: row reportingTo: anImportReport
 		do: [ :value :label | 
 			selector := self columnToSelectorMap at: label asLowercase ifAbsent: nil.
 			selector ifNotNil: [ article perform: (selector , ':') asSymbol with: (value ifNil: [ '' ]) ] ].
-	(self shouldIgnore: article)
-		ifTrue: [ anImportReport ignoreArticle: article ]
+	(self hasCrititalMissingProperties: article) | (articles select: [ :each | each mightBeADuplicateOf: article ]) notEmpty
+		ifTrue: [ importReport ignoreArticle: article ]
 		ifFalse: [ self articles add: article ]

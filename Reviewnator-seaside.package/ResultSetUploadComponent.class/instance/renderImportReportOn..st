@@ -1,9 +1,11 @@
-rendering
+rendering-report
 renderImportReportOn: html
-	resultSet
+	importer resultSet
 		ifNil: [ html heading
 				level: 2;
 				with: 'Import failed'.
+			html break.
+			self reportWarningsAndErrorsFromImportReport.
 			html
 				tbsForm: [ html tbsButton
 						callback: [ self tryAgain ];
@@ -15,9 +17,9 @@ renderImportReportOn: html
 		ifNotNil: [ self renderListOfFoundArticlesOn: html.
 			self renderListOfIgnoredArticlesOn: html.
 			html
-				tbsForm: [ resultSet articles notEmpty
+				tbsForm: [ importer resultSet articles notEmpty
 						ifTrue: [ html tbsButton
-								callback: [ self answer ];
+								callback: [ self answerWithResultSet ];
 								with: 'Import'.
 							html space ].
 					html tbsButton

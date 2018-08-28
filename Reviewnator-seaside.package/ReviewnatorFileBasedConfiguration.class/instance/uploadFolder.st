@@ -1,0 +1,3 @@
+constants
+uploadFolder
+	^ './uploads' asFileReference

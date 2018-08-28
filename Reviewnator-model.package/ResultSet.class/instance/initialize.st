@@ -4,5 +4,6 @@ initialize
 
 	super initialize.
 	articles := Set new.
-
-	^self
+	searchString := ''.
+	database := ''.
+	comments := ''

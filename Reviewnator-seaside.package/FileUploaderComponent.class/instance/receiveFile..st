@@ -1,7 +1,7 @@
 callbacks
 receiveFile: aFile
 	| uploadStream desiredFile |
-	desiredFile := Preferences singleton uploadFolder / self desiredFilename.
+	desiredFile := self configuration uploadFolder / self desiredFilename.
 	uploadStream := FileSystem disk writeStreamOn: desiredFile.
 	[ 
 	uploadStream
