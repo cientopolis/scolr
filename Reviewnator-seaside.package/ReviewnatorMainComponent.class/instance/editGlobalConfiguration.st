@@ -1,3 +1,5 @@
 callbacks
 editGlobalConfiguration
-	self call: ReviewnatorAdminComponent new
+	self
+		call:
+			(ReviewnatorAdminComponent repository: repository currentUser: currentUser)
