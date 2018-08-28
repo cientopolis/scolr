@@ -21,7 +21,7 @@ summaryReportFor: aCoReview
 		crlf;
 		nextPutAll: '## Contributors';
 		crlf.
-	aCoReview users
+	aCoReview contributors
 		do: [ :each | 
 			stream
 				nextPutAll: '* ' , each username;
