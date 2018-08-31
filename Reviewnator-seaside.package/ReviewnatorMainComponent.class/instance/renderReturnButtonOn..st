@@ -1,7 +1,16 @@
 rendering
 renderReturnButtonOn: html
-	html tbsNavbarButton
+	| button |
+	button := html tbsNavbarButton.
+	self isAdmin
+		ifTrue: [ button beWarning ].
+	button
 		tbsPullRight;
 		with: [ html anchor
 				callback: [ self logout ];
-				with: 'Log out ' , currentUser username ]
+				with:
+					'Log out '
+						,
+							(self isAdmin
+								ifTrue: [ 'Admin' ]
+								ifFalse: [ currentUser username ]) ]
