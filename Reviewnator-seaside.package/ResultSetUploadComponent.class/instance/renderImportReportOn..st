@@ -16,6 +16,8 @@ renderImportReportOn: html
 						with: 'Cancel' ] ]
 		ifNotNil: [ self renderListOfFoundArticlesOn: html.
 			self renderListOfIgnoredArticlesOn: html.
+			html break.
+			self reportWarningsAndErrorsFromImportReport.
 			html
 				tbsForm: [ importer resultSet articles notEmpty
 						ifTrue: [ html tbsButton
