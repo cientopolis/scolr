@@ -21,4 +21,8 @@ renderMainContentOn: html
 								beSmall;
 								bePrimary;
 								callback: [ self grantAccess ];
-								with: 'Open!' ] ] ]
+								with: 'Open!' ] ];
+				paragraph: [ html
+						text: 'Use access code ';
+						strong: 'demogorgon';
+						text: ' for demo access (data will be erased at some point)' ] ]

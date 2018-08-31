@@ -13,7 +13,11 @@ renderActionsMenuOn: html
 		ifTrue: [ html
 				tbsDropdownMenuItem: [ html anchor
 						callback: [ self editGlobalConfiguration ];
-						with: 'Admin' ] ] ].
+						with: 'Admin' ].
+			html
+				tbsDropdownMenuItem: [ html anchor
+						callback: [ self resetDemo ];
+						with: 'Reset demo' ] ] ].
 	html tbsButtonGroup
 		with: [ html tbsDropdownButton
 				beNavbarButton;

@@ -16,7 +16,7 @@ renderEditingOn: html
 			html
 				tbsFormGroup: [ html label
 						for: 'inclusionCriteria';
-						with: 'Inclusion criteteria'.
+						with: 'Inclusion criteria'.
 					html textArea
 						on: #inclusionCriteria of: self;
 						tbsFormControl;
