@@ -1,5 +1,5 @@
 initialize
 initialize
    adminAccessCode := 'admin'.
-   activeAccessCodes := OrderedCollection new. 
+   activeAccessCodes := Set new. 
    storageFolder := 'reviewnator'
