@@ -17,4 +17,4 @@ renderDisplayingOn: html
 	html paragraph: [ html strong: 'Exclusion criteria' ].
 	html paragraph: self coReview exclusionCriteria.
 	html paragraph: [ html strong: 'Contributors' ].
-	html paragraph: [ self coReview users do: [ :user | html text: user username ] separatedBy: [ html text: ', ' ] ]
+	html paragraph: [ self coReview contributors do: [ :user | html text: user username ] separatedBy: [ html text: ', ' ] ]
