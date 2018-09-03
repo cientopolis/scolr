@@ -5,5 +5,5 @@ renderTableHeaderOn: html
 			html tableHeading: 'In'.
 			html tableHeading: 'Out'.
 			html tableHeading: 'Conflict'.
-			html tableHeading: 'Waiting'.
+			html tableHeading: 'Waiting for you'.
 			html tableHeading: 'Actions' ]

@@ -1,6 +1,6 @@
 rendering
 renderTableRowFor: resultSet on: html
-	| sum |
+	| sum td |
 	sum := resultSet summaryFor: parent currentUser on: self parent coReview.
 	html
 		tableRow: [ html
@@ -13,7 +13,10 @@ renderTableRowFor: resultSet on: html
 			html tableData: [ html text: sum included printString ].
 			html tableData: [ html text: sum excluded printString ].
 			html tableData: [ html text: sum disagreement printString ].
-			html tableData: [ html text: sum waiting printString ].
+			td := html tableData.
+			sum waiting > 0
+				ifTrue: [ td style: 'background-color: rgba(255, 0, 0, 0.59);' ].
+			td with: [ html text: sum waiting printString ].
 			html
 				tableData: [ (parent selectedResulSets includes: resultSet)
 						ifTrue: [ html tbsButton
