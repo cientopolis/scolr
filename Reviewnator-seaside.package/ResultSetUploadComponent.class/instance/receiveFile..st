@@ -1,7 +1,7 @@
 callbacks
 receiveFile: aFile
 	| uploadStream |
-	(aFile contentType matches: WAMimeType textCsv)
+	((aFile contentType matches: WAMimeType textCsv) or: [ aFile fileName asLowercase endsWith: 'csv' ])
 		ifTrue: [ uploadedFile := self repository randomTempFile.
 			uploadStream := FileSystem disk writeStreamOn: uploadedFile.
 			[ uploadStream
