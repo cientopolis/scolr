@@ -29,10 +29,10 @@ baseline10: spec
 			spec
 				package: 'Reviewnator-model';
 				package: 'Reviewnator-importers' with: [ spec requires: #('NeoCSV') ];
-				package: 'Reviewnator-persistense';
+				package: 'Reviewnator-persistence';
 				package: 'Reviewnator-seaside'
 					with: [ spec
 						requires:
-							#('Seaside3' 'Bootstrap' 'Reviewnator-model' 'Reviewnator-importers' 'Reviewnator-persistense' 'Reviewnator-deployer' 'Reviewnator-PharoExtensions') ];
+							#('Seaside3' 'Bootstrap' 'Reviewnator-model' 'Reviewnator-importers' 'Reviewnator-persistence' 'Reviewnator-deployer' 'Reviewnator-PharoExtensions') ];
 				package: 'Reviewnator-deployer' with: [ spec requires: #('SeasideDeployer') ];
 				package: 'Reviewnator-PharoExtensions' ]
