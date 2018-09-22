@@ -1,8 +1,7 @@
 reporting
 reportIgnoredColumnsTo: anImportReport
 	| ignored stream |
-	ignored := columnLabels asOrderedCollection.
-	ignored removeAllFoundIn: self columnToSelectorMap keys asOrderedCollection.
+	ignored := mapper ignoredColumns .
 	ignored
 		ifNotEmpty: [ stream := String new writeStream.
 			stream nextPutAll: 'Some columns were ignored: '.

@@ -1,7 +1,7 @@
 {
 	"commentStamp" : "Casco 8/25/2018 17:10",
 	"super" : "Object",
-	"category" : "Reviewnator-importers",
+	"category" : "Reviewnator-importers-model",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],

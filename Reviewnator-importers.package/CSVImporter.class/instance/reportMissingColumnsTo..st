@@ -1,8 +1,7 @@
 reporting
 reportMissingColumnsTo: anImportReport
 	| missing stream |
-	missing := self columnToSelectorMap keys asOrderedCollection.
-	missing removeAllFoundIn: columnLabels.
+	missing := mapper missingColumns. 
 	missing
 		ifNotEmpty: [ stream := String new writeStream.
 			stream nextPutAll: 'Important columns were missing: '.

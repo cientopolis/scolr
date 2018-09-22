@@ -1,16 +1,15 @@
 {
-	"commentStamp" : "<historical>",
+	"commentStamp" : "Casco 9/22/2018 17:49",
 	"super" : "Object",
 	"category" : "Reviewnator-importers-model",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"resultSet",
-		"columnLabels",
-		"importReport",
-		"mapper"
+		"labelsToPositionsDictionary",
+		"missingColumns",
+		"ignoredColumns"
 	],
-	"name" : "CSVImporter",
+	"name" : "ScopusMapper",
 	"type" : "normal"
 }

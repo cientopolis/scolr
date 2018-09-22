@@ -1,5 +1,5 @@
 {
-	"commentStamp" : "",
+	"commentStamp" : "Casco 9/22/2018 16:11",
 	"super" : "Object",
 	"category" : "Reviewnator-model-model",
 	"classinstvars" : [ ],
@@ -9,10 +9,7 @@
 		"authors",
 		"title",
 		"year",
-		"doi",
 		"abstract",
-		"uploadedFilename",
-		"mimeType",
 		"documentType"
 	],
 	"name" : "Article",

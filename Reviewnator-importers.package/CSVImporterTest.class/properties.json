@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "Casco 9/22/2018 16:46",
+	"super" : "TestCase",
+	"category" : "Reviewnator-importers-tests",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "CSVImporterTest",
+	"type" : "normal"
+}

@@ -4,5 +4,4 @@ initialize
 	title := ''.
 	year := ''.
 	documentType := ''.
-	doi := ''.
 	abstract := ''
