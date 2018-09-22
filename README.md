@@ -3,27 +3,31 @@
 A tool to suport collaborative systematic reviews
 
 #Dependencies
+Dependencies are now handled via the monticello configuration: ConfigurationOfReviewnator. 
 
-depends on Bootstrap and NeoCSV. Load them from the Pharo6.01 catalog. 
+#Building
 
-It also depends on BootstrapDeployer in https://bitbucket.org/casco/pharo-utilities
-
-```
-(IceRepositoryCreator new
-   url: 'https://bitbucket.org/casco/pharo-utilities.git';
-   createRepository) updatePackage: 'SeasideDeployer'.
-```
-
-To install evaluate this in a playground after dependencies are met:
+To build, evaluate the following expresions:
 
 ```
 (IceRepositoryCreator new
    url: 'https://casco@bitbucket.org/casco/reviewnator.git';
-   createRepository) updatePackage: 'Reviewnator-PharoExtensions';
-   updatePackage: 'Reviewnator-model';
-   updatePackage: 'Reviewnator-importers';
-   updatePackage: 'Reviewnator-persistence';
-   updatePackage: 'Reviewnator-seaside';
-   updatePackage: 'Reviewnator-tools';
-   updatePackage: 'Reviewnator-deployer'.
+   createRepository) updatePackage: 'ConfigurationOfReviewnator'.
+
+(ConfigurationOfReviewnator project version: '1.0') load.
+
+ReviewnatorDeployer prepareForDeployment.
 ```
+
+Then save your image. 
+
+When you open your image again, Reviewnator will be running on:
+ http://localhost:8080/reviewnator
+
+
+# Contributing
+Checkout the repository to your local machine. 
+
+From the command line, using git commands, checkout the branch/revision you want to work with.
+
+Then, add the cloned repository as a an Iceberg local repository.
