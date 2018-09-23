@@ -3,8 +3,7 @@ testImportFromScopusWithTitleCaseHeaders
 	| importer someArticle |
 	importer := CSVImporter new.
 	importer
-		readFrom: '/Users/alejandrofernandez/Development/reviewnator/example-files/scopus-haptics-agriculture_TITLE_CASE_HEADERS.csv' asFileReference
-		ignoringDuplicatesIn: Set new.
+		readFrom: FileSystem disk workingDirectory / 'scopusHapticAgricultireTitleCaseHeaders.csv' ignoringDuplicatesIn: Set new.
 	self assert: importer articles size equals: 2.
 	self assert: importer importReport importErrors isEmpty.
 	self assert: importer importReport importWarnings size equals: 1.

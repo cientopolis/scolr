@@ -2,4 +2,5 @@ testing
 testImport
 	self testImportFromScopusWithTitleCaseHeaders.
 	self testImportFromScopusWithMissingHeaders.
-	self testImportFromScopusWithDuplicated
+	self testImportFromScopusWithDuplicated.
+	self testImportFromScopusOnlyMandatoryHeadersFrenchUTF8Text

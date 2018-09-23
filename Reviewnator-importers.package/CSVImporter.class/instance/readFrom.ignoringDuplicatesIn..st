@@ -12,7 +12,7 @@ readFrom: aFileReference ignoringDuplicatesIn: articles
 				ifTrue:
 					[ importReport reportWarning: 'Found over 50 articles. Are you sure you will be able to read that many? Be sure before importing the list' ] ]
 				on: Error
-				do: [ :er | 
+				do: [ :er | self halt.
 					importReport reportError: er description.
 					resultSet := nil ] ]
 		ifTrue: [ resultSet := nil ]

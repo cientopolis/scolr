@@ -1,3 +1,5 @@
 mapping
 documentTypeFrom: aCollection
-    ^aCollection at: (labelsToPositionsDictionary at: self labelForDocumentType)
+	^ (labelsToPositionsDictionary includesKey: self labelForDocumentType)
+		ifTrue: [ aCollection at: (labelsToPositionsDictionary at: self labelForDocumentType) ]
+		ifFalse: [ '' ]
