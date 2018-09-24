@@ -13,7 +13,8 @@
 		"selectedResulSets",
 		"setSelectorSubcomponent",
 		"articleListSubComponent",
-		"reviewSummarySubComponent"
+		"reviewSummarySubComponent",
+		"selectedActivity"
 	],
 	"name" : "ReviewnatorMainComponent",
 	"type" : "normal"
