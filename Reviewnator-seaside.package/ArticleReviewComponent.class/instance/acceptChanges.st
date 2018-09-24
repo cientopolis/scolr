@@ -1,5 +1,5 @@
 callbacks
 acceptChanges
 	self isANewOpinion
-		ifTrue: [ self coReview reviews add: opinionToEdit.
+		ifTrue: [ article addReview: opinionToEdit.
 			self save ]

@@ -9,10 +9,10 @@ readFrom: aFileReference ignoringDuplicatesIn: articles
 	importReport failed
 		ifFalse: [ [ reader do: [ :each | self importRow: each ignoreDuplicatesIn: articles ].
 			resultSet articles size > 50
-				ifTrue:
-					[ importReport reportWarning: 'Found over 50 articles. Are you sure you will be able to read that many? Be sure before importing the list' ] ]
+				ifTrue: [ importReport
+						reportWarning: 'Found over 50 articles. Are you sure you will be able to read that many? Be sure before importing the list' ] ]
 				on: Error
-				do: [ :er | self halt.
+				do: [ :er | 
 					importReport reportError: er description.
 					resultSet := nil ] ]
 		ifTrue: [ resultSet := nil ]
