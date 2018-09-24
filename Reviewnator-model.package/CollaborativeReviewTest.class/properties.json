@@ -7,7 +7,12 @@
 	"classvars" : [ ],
 	"instvars" : [
 		"aCoReview",
-		"announcements"
+		"announcements",
+		"aResultSet",
+		"anotherResultSet",
+		"articleOne",
+		"articleTwo",
+		"articleThree"
 	],
 	"name" : "CollaborativeReviewTest",
 	"type" : "normal"

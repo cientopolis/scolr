@@ -6,5 +6,5 @@ uploadResultSet
 		currentUser: currentUser.
 	resultSet := self call: component.
 	resultSet
-		ifNotNil: [ self coReview resultSets add: resultSet.
+		ifNotNil: [ self coReview addResultSet: resultSet.
 			repository save ]

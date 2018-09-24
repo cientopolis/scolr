@@ -10,7 +10,9 @@
 		"title",
 		"year",
 		"abstract",
-		"documentType"
+		"documentType",
+		"classifications",
+		"reviews"
 	],
 	"name" : "Article",
 	"type" : "normal"

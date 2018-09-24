@@ -1,7 +1,7 @@
 reporting
 reportExcludedArticlesWith: aCoReview
 	| articles |
-	articles := aCoReview allArticles reject: [ :each | aCoReview mostPeopleAgreeToInclude: each ].
+	articles := aCoReview allArticles reject: [ :each | aCoReview everyoneAgreesToInclude: each ].
 	stream
 		crlf;
 		crlf;

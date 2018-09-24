@@ -1,5 +1,5 @@
-querying-classifications
-mostPeopleAgreeToInclude: anArticle
+classifications
+everyoneAgreesToInclude: anArticle
 	| cl in |
 	cl := self classificationsFor: anArticle.
 	cl isEmpty ifTrue: [^false].

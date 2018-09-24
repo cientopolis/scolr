@@ -1,8 +1,6 @@
 querying
 tagsInUse
-	^ (reviews , classifications
-		inject: Set new
-		into: [ :set :op | 
-			set
-				addAll: op tags;
-				yourself ]) asSortedCollection
+	| tags |
+	tags := Set new.
+	self allArticles do: [ :each | each collectTagsIn: tags ].
+	^ tags asSortedCollection

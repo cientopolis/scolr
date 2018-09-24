@@ -2,7 +2,7 @@ reporting
 reportReviewsWith: aCoReview
 	| dimensions articles |
 	dimensions := aCoReview reviewDimensions asSortedCollection.
-	articles := aCoReview allArticles reject: [ :each | aCoReview mostPeopleAgreeToExclude: each ].
+	articles := aCoReview allArticles reject: [ :each | aCoReview everyoneAgreesToExclude: each ].
 	stream
 		crlf;
 		crlf;

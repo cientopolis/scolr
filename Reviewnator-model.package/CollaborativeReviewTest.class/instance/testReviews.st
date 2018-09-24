@@ -1,4 +1,7 @@
-testing
+testing-reviews
 testReviews
-	aCoReview reviews: (Set with: 1).
-	self assertCollection: aCoReview reviews equals: (Set with: 1).
+	self assert: aCoReview reviews isEmpty.
+	articleOne addReview: Review new.
+	self assert: aCoReview reviews size equals: 1.
+	articleThree addReview: Review new.
+	self assert: aCoReview reviews size equals: 2

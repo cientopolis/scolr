@@ -1,6 +1,6 @@
-querying-reviews
+reviews
 reviewDimensions
-	^ reviews
+	^ self reviews
 		inject: Set new
 		into: [ :sub :each | 
 			sub

@@ -10,8 +10,6 @@
 		"users",
 		"inclusionCriteria",
 		"exclusionCriteria",
-		"classifications",
-		"reviews",
 		"resultSets"
 	],
 	"name" : "CollaborativeReview",

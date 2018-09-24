@@ -4,8 +4,6 @@ initialize
 
 	super initialize.
 	users := Set new.
-	classifications := Set new.
-	reviews := Set new.
 	resultSets := Set new.
 	notes := ''.
 	inclusionCriteria := ''.

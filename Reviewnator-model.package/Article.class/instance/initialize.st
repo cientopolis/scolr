@@ -4,4 +4,6 @@ initialize
 	title := ''.
 	year := ''.
 	documentType := ''.
-	abstract := ''
+	abstract := ''.
+	classifications := OrderedCollection new.
+	reviews := OrderedCollection new

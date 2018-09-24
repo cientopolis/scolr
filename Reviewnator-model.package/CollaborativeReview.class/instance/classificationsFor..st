@@ -1,4 +1,4 @@
-querying-classifications
+classifications
 classificationsFor: article
 
-	^classifications select: [:each | each article == article]
+	^article classifications 

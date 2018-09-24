@@ -4,4 +4,4 @@ importRow: row ignoreDuplicatesIn: articles
 	article := mapper map: row.
 	article isNil | (articles select: [ :each | each mightBeADuplicateOf: article ]) notEmpty
 		ifTrue: [ importReport ignoreArticle: article ]
-		ifFalse: [ self articles add: article ]
+		ifFalse: [ self addArticle: article ]
