@@ -9,7 +9,7 @@ renderSelectedArticlesOn: html
 			html
 				tableBody: [ articles
 						do: [ :each | 
-							summary := each summaryFor: parent currentUser on: self coReview.
+							summary := each summaryFor: parent currentUser.
 							self
 								renderArticle: each
 								order: order

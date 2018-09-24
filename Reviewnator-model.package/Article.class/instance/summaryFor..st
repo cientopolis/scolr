@@ -1,6 +1,6 @@
 summaries
-summaryFor: aUser on: aCoReview
-	| in out his cls sum coms tags undecided |
+summaryFor: aUser
+	| in out his  sum coms tags undecided |
 	sum := ClassificationSummary for: aUser about: self.
 	in := 0.
 	out := 0.
@@ -8,8 +8,8 @@ summaryFor: aUser on: aCoReview
 	his := 0.
 	coms := Set new.
 	tags := Set new.
-	cls := aCoReview classificationsFor: self.
-	cls
+
+	classifications 
 		do: [ :each | 
 			each toExclude
 				ifTrue: [ out := out + 1 ].
@@ -29,6 +29,6 @@ summaryFor: aUser on: aCoReview
 		addClassificationTags: tags.
 	his == 0
 		ifTrue: [ sum waiting: 1 ].
-	cls size ~= in & (cls size ~= out)
+	classifications size ~= in & (classifications size ~= out)
 		ifTrue: [ sum disagreement: 1 ].
 	^ sum

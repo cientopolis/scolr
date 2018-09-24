@@ -4,7 +4,7 @@ summaryFor: aUser on: aCoReview
 	summary := ClassificationSummary for: aUser about: self.
 	articles
 		do: [ :each | 
-			itsSum := each summaryFor: aUser on: aCoReview.
+			itsSum := each summaryFor: aUser.
 			itsSum isDisagreement
 				ifTrue: [ summary disagreement: summary disagreement + 1 ].
 			itsSum isExclusion

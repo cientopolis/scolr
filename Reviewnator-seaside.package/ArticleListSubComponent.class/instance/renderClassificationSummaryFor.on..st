@@ -1,7 +1,7 @@
 renderning
 renderClassificationSummaryFor: article on: html
 	| summary in out total undecided |
-	summary := article summaryFor: self currentUser on: self coReview.
+	summary := article summaryFor: self currentUser .
 	in := summary included.
 	out := summary excluded.
 	undecided := summary undecided.
