@@ -1,3 +1,3 @@
-opinions
+opinions-classifications
 classifications
 	^ classifications

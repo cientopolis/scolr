@@ -1,7 +1,8 @@
 reporting
 reportExcludedArticlesWith: aCoReview
 	| articles |
-	articles := aCoReview allArticles reject: [ :each | aCoReview everyoneAgreesToInclude: each ].
+	articles := aCoReview allArticles
+		reject: [ :each | each everyoneAgreesToIncludeIt ].
 	stream
 		crlf;
 		crlf;
@@ -12,4 +13,5 @@ reportExcludedArticlesWith: aCoReview
 			'The following articles were excluded from this review. All contributors either vote to exclude them or did not reach agreement for inclusion.';
 		crlf;
 		crlf.
-	articles do: [ :article | stream nextPutAll: '* ' , article printString ]
+	articles
+		do: [ :article | stream nextPutAll: '* ' , article printString ]

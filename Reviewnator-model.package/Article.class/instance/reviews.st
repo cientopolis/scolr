@@ -1,3 +1,3 @@
-opinions
+opinions-reviews
 reviews
 	^ reviews

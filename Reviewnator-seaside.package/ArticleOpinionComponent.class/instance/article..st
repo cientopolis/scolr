@@ -7,5 +7,4 @@ article: anObject
 		ifNil: [ opinionToEdit := self newOpinion
 				author: currentUser;
 				date: Date today;
-				article: article;
-				comments: '' ]
+				article: article ]

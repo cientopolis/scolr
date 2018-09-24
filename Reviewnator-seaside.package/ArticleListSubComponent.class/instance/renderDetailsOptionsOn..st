@@ -1,4 +1,4 @@
-renderning
+rendering-selectors
 renderDetailsOptionsOn: html
 	html text: 'Show classification comments  ('.
 	showClassificationComments

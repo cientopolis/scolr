@@ -1,14 +1,11 @@
-renderning
+renderning-list
 renderClassificationSummaryFor: article on: html
-	| summary in out total undecided |
-	summary := article summaryFor: self currentUser .
-	in := summary included.
-	out := summary excluded.
-	undecided := summary undecided.
-	total := in + out + undecided.
+	| in out total undecided |
+	in := article includeItCount.
+	out := article excludeItCount.
+	total := article classifications size.
+	undecided := total - in - out.
 	html
-		text: 'In:' , in printString , '/' , total printString;
+		text: 'In: ' , in printString;
 		break;
-		text: 'Out:' , out printString , '/' , total printString;
-		break;
-		text: 'Undecided:' , undecided printString , '/' , total printString
+		text: 'Out: ' , out printString.

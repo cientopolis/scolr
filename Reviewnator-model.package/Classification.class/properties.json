@@ -6,7 +6,8 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"decision"
+		"decision",
+		"comments"
 	],
 	"name" : "Classification",
 	"type" : "normal"

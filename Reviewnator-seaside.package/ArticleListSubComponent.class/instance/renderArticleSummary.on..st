@@ -1,20 +1,14 @@
-renderning
+renderning-list
 renderArticleSummary: article on: html
-	| classificacions |
 	html
 		emphasis: article title , '. ';
 		text: article authors , ' (' , article year , ') '.
 	showClassificationComments
-		ifTrue: [ 
-			classificacions := self coReview classificationsFor: article.
-			classificacions notEmpty
-				ifTrue: [ 
-					html orderedList
-						with: [ 
-							classificacions
+		ifTrue: [ article classifications notEmpty
+				ifTrue: [ html orderedList
+						with: [ article classifications
 								do: [ :each | 
 									html
-										listItem: [ 
-											html
-												strong: each author username;
-												text: ': ' , each comments ] ] ] ] ]
+										listItem: [ html
+												strong: each author username , ': (' , each decision , ') ';
+												text: each comments ] ] ] ] ]

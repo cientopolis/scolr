@@ -1,3 +1,3 @@
 private
 allOpinions
-	^ (self coReview reviewsFor: article) copy
+	^ article reviews copy

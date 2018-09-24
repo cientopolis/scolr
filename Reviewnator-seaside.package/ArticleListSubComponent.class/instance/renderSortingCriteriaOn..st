@@ -1,4 +1,4 @@
-renderning
+rendering-selectors
 renderSortingCriteriaOn: html
 
 	html text: 'Sort by year ('.

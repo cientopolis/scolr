@@ -1,4 +1,4 @@
-renderning
+rendering-selectors
 renderFiltersOn: html
 
 	html text: 'Hide included ('.

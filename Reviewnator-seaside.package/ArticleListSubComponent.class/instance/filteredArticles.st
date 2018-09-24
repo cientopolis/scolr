@@ -1,4 +1,4 @@
-renderning
+accessing
 filteredArticles
 	^ self selectedArticles
 		reject: [ :each | 

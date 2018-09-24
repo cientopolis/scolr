@@ -1,7 +1,10 @@
 rendering
 renderTableRowFor: resultSet on: html
-	| sum td |
-	sum := resultSet summaryFor: parent currentUser on: self parent coReview.
+	| td total agreedToInclude agreedToExclude waitingForTheUser |
+	total := resultSet articles size.
+	agreedToInclude := resultSet countOfArticlesEveryoneAgreesToInclude.
+	agreedToExclude := resultSet countOfArticlesEveryoneAgreesToExclude.
+	waitingForTheUser := resultSet countOfArticlesWaitingForClassificationBy: self parent currentUser.
 	html
 		tableRow: [ html
 				tableData: [ html
@@ -10,13 +13,13 @@ renderTableRowFor: resultSet on: html
 						text: 'Search query: ' , resultSet searchString;
 						break;
 						text: 'Notes: ' , resultSet comments ].
-			html tableData: [ html text: sum included printString ].
-			html tableData: [ html text: sum excluded printString ].
-			html tableData: [ html text: sum disagreement printString ].
+			html tableData: [ html text: agreedToInclude printString ].
+			html tableData: [ html text: agreedToExclude printString ].
+			html tableData: [ html text: (total - agreedToInclude - agreedToExclude) printString ].
 			td := html tableData.
-			sum waiting > 0
-				ifTrue: [ td style: 'background-color: rgba(255, 0, 0, 0.59);' ].
-			td with: [ html text: sum waiting printString ].
+			waitingForTheUser > 0
+				ifTrue: [ td style: 'color: rgba(255, 0, 0, 0.59);' ].
+			td with: [ html text: waitingForTheUser printString ].
 			html
 				tableData: [ (parent selectedResulSets includes: resultSet)
 						ifTrue: [ html tbsButton

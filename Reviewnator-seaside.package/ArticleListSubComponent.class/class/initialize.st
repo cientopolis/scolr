@@ -1,6 +1,5 @@
 initialize
 initialize
-
-   includedFilter := [:coReview :article :user | (coReview everyoneAgreesToInclude: article)].
-   excludedFilter := [:coReview :article :user | (coReview everyoneAgreesToExclude: article)].
-   alreadyClassifiedFilter := [:coReview :article :user | (coReview classificationFor: article by: user) notNil]. 
+	includedFilter := [ :coReview :article :user | article everyoneAgreesToIncludeIt ].
+	excludedFilter := [ :coReview :article :user | article everyoneAgreesToExcludeIt ].
+	alreadyClassifiedFilter := [ :coReview :article :user | (article classificationBy: user) notNil ]
