@@ -14,7 +14,7 @@ renderArticle: article order: n on: html
 						beExtraSmall;
 						with: [ html anchor
 								callback: [ self parent classifyArticle: article ];
-								with: [ (article isWaitingForClassificationBy: self parent currentUser)
+								with: [ (article isWaitingForDecisionBy: self currentUser)
 										ifTrue: [ html text: 'classify' ]
 										ifFalse: [ html text: 'update' ] ] ] ].
 			html

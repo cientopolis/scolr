@@ -6,4 +6,6 @@ renderMainContentOn: html
 	html heading
 		level: 2;
 		with: 'All opinions'.
-	self renderAllOpinionsOn: html
+	(self shouldConceal: article)
+		ifTrue: [ html paragraph: 'You will see all opinions once you make a decision' ]
+		ifFalse: [ self renderAllOpinionsOn: html ]

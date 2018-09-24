@@ -3,7 +3,7 @@ renderArticleSummary: article on: html
 	html
 		emphasis: article title , '. ';
 		text: article authors , ' (' , article year , ') '.
-	showClassificationComments
+	showClassificationComments & (self shouldConceal: article) not
 		ifTrue: [ article classifications notEmpty
 				ifTrue: [ html orderedList
 						with: [ article classifications

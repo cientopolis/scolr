@@ -4,7 +4,7 @@ renderTableRowFor: resultSet on: html
 	total := resultSet articles size.
 	agreedToInclude := resultSet countOfArticlesEveryoneAgreesToInclude.
 	agreedToExclude := resultSet countOfArticlesEveryoneAgreesToExclude.
-	waitingForTheUser := resultSet countOfArticlesWaitingForClassificationBy: self parent currentUser.
+	waitingForTheUser := resultSet countOfArticlesWaitingForClassificationBy: self  currentUser.
 	html
 		tableRow: [ html
 				tableData: [ html

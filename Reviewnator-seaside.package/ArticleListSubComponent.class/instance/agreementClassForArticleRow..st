@@ -1,9 +1,10 @@
 styles
-agreementClassForArticleRow: article 
-	article hasClassificationConflict  
+agreementClassForArticleRow: article
+	(article isWaitingForDecisionBy: self currentUser)
+		ifTrue: [ ^ 'missing' ].
+	article hasClassificationConflict
 		ifTrue: [ ^ 'disagree' ].
-	article everyoneAgreesToIncludeIt 
+	article everyoneAgreesToIncludeIt
 		ifTrue: [ ^ 'in' ].
-	article everyoneAgreesToExcludeIt 
+	article everyoneAgreesToExcludeIt
 		ifTrue: [ ^ 'out' ].
-	^ 'missing'

@@ -10,7 +10,8 @@
 		"users",
 		"inclusionCriteria",
 		"exclusionCriteria",
-		"resultSets"
+		"resultSets",
+		"isPromiscuous"
 	],
 	"name" : "CollaborativeReview",
 	"type" : "normal"

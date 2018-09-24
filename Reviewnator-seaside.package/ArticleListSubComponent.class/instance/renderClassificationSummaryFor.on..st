@@ -5,7 +5,12 @@ renderClassificationSummaryFor: article on: html
 	out := article excludeItCount.
 	total := article classifications size.
 	undecided := total - in - out.
-	html
-		text: 'In: ' , in printString;
-		break;
-		text: 'Out: ' , out printString.
+	(self shouldConceal: article)
+		ifTrue: [ html
+				text: 'In: ?';
+				break;
+				text: 'Out: ?' ]
+		ifFalse: [ html
+				text: 'In: ' , in printString;
+				break;
+				text: 'Out: ' , out printString ]
