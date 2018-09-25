@@ -7,8 +7,8 @@
 	"classvars" : [ ],
 	"instvars" : [
 		"article",
-		"opinion",
-		"opinionToEdit"
+		"opinionToEdit",
+		"tags"
 	],
 	"name" : "ArticleOpinionComponent",
 	"type" : "normal"

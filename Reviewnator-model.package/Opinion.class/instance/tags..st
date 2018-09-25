@@ -1,4 +1,4 @@
 accessing
-tags: aSetOfSymbols
+tags: aCollectionOfStrings
 
-	tags := aSetOfSymbols.
+	tags := aCollectionOfStrings asSet.

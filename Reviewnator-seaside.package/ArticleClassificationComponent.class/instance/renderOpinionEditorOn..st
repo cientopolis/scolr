@@ -13,7 +13,7 @@ renderOpinionEditorOn: html
 	html textArea
 		columns: 80;
 		rows: 6;
-		on: #comments of: opinionToEdit.
+		on: #comments of: self.
 	html break.
 	html break.
 	html tbsButton

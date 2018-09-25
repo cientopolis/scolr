@@ -1,10 +1,12 @@
 initialize-release
 article: anObject
 	article := anObject.
-	opinion := self existingOpinionOrNil.
-	opinionToEdit := opinion.
+	self opinionToEdit: self existingOpinionOrNil.
 	opinionToEdit
-		ifNil: [ opinionToEdit := self newOpinion
-				author: currentUser;
-				date: Date today;
-				article: article ]
+		ifNil: [ self
+				opinionToEdit:
+					(self newOpinion
+						author: currentUser;
+						date: Date today;
+						article: article;
+						yourself) ]

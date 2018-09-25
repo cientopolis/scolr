@@ -1,14 +1,15 @@
 testing
 testCountOfArticlesWaitingForClassificationBy
-	| aUser article |
+	| aUser article cls |
 	aUser := User new.
 	article := Article new.
 	self assert: (aResultSet countOfArticlesWaitingForClassificationBy: aUser) equals: 0.
 	aResultSet addArticle: article.
 	self assert: (aResultSet countOfArticlesWaitingForClassificationBy: aUser) equals: 1.
-	article
-		addClassification:
-			(Classification new
-				author: aUser;
-				yourself).
+	cls := Classification new
+		author: aUser;
+		yourself.
+	article addClassification: cls.
+	self assert: (aResultSet countOfArticlesWaitingForClassificationBy: aUser) equals: 1.
+	cls includeIt.
 	self assert: (aResultSet countOfArticlesWaitingForClassificationBy: aUser) equals: 0

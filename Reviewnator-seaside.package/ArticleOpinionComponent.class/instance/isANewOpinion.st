@@ -1,4 +1,3 @@
-callbacks
+testing
 isANewOpinion
-
-	^opinion isNil
+	^ opinionToEdit isNil

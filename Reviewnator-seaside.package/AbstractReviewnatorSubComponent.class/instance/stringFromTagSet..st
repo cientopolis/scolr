@@ -1,3 +1,3 @@
 accessing
 stringFromTagSet: aTagSet
-	^ aTagSet inject: ' ' into: [ :res :tag | res , ' ' , tag ]
+	^ self parent stringFromTagSet: aTagSet
