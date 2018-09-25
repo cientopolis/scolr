@@ -1,3 +1,3 @@
 opinions-classifications
 classificationTags
-	^ classifications flatCollectAsSet: [ :each | each tags ]
+	^ (classifications flatCollectAsSet: [ :each | each tags ] ) asSortedCollection 

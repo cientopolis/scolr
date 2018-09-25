@@ -26,9 +26,9 @@ renderTableRowFor: resultSet on: html
 								beExtraSmall;
 								with: [ html anchor
 										callback: [ parent unselectResultSet: resultSet ];
-										with: 'Deselect' ] ]
+										with: 'Hide' ] ]
 						ifFalse: [ html tbsButton
 								beExtraSmall;
 								with: [ html anchor
 										callback: [ parent selectResultSet: resultSet ];
-										with: 'Select' ] ] ] ]
+										with: 'Show' ] ] ] ]

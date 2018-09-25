@@ -14,7 +14,9 @@
 		"setSelectorSubcomponent",
 		"articleListSubComponent",
 		"reviewSummarySubComponent",
-		"selectedActivity"
+		"selectedActivity",
+		"classifyArticlesListSubcomponent",
+		"reviewArticlesListSubcomponent"
 	],
 	"name" : "ReviewnatorMainComponent",
 	"type" : "normal"

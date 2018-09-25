@@ -1,5 +1,9 @@
 children
 children
+	"protocol: children"
+
 	^ {setSelectorSubcomponent.
 	articleListSubComponent.
-	reviewSummarySubComponent}
+	reviewSummarySubComponent.
+	classifyArticlesListSubcomponent.
+	reviewArticlesListSubcomponent}

@@ -1,3 +1,3 @@
 testing
 isANewOpinion
-	^ opinionToEdit isNil
+	^ isNewOpinion 

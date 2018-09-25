@@ -1,3 +1,3 @@
 opinions-classifications
 reviewTags
-	^ reviews flatCollectAsSet: [ :each | each tags ]
+	^ (reviews flatCollectAsSet: [ :each | each tags ] ) asSortedCollection 

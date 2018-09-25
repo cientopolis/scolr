@@ -11,7 +11,7 @@ renderTagsEditorOn: html
 		break;
 		small: [ html
 				strong: 'Tags in use: ';
-				text: (self stringFromTagSet: self coReview tagsInUse);
+				text: (self stringFromTagSet: self tagsInUse);
 				break;
 				text: 'Use comma to separate tags.';
 				break;

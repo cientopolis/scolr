@@ -9,7 +9,8 @@
 		"resultSet",
 		"columnLabels",
 		"importReport",
-		"mapper"
+		"mapper",
+		"articles"
 	],
 	"name" : "CSVImporter",
 	"type" : "normal"

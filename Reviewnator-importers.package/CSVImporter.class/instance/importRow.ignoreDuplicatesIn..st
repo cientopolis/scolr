@@ -1,7 +1,7 @@
 reading
-importRow: row ignoreDuplicatesIn: articles
+importRow: row ignoreDuplicatesIn: existingArticles
 	| article |
-	article := mapper map: row.
-	article isNil | (articles select: [ :each | each mightBeADuplicateOf: article ]) notEmpty
+	article := mapper map: row reportingTo: importReport.
+	article isNil | (existingArticles select: [ :each | each mightBeADuplicateOf: article ]) notEmpty
 		ifTrue: [ importReport ignoreArticle: article ]
-		ifFalse: [ resultSet addArticle: article ]
+		ifFalse: [ articles add: article ]

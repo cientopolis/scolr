@@ -1,8 +1,5 @@
 rendering
 renderContentOn: html
-	html heading
-		level: 3;
-		with: 'Lists of articles'.
 	html tbsTable
 		beBordered;
 		beHover;

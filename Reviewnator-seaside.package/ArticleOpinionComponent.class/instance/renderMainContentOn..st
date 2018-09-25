@@ -1,5 +1,6 @@
 rendering
 renderMainContentOn: html
+	html render: reviewSummarySubComponent.
 	self renderArticleDataOn: html.
 	self renderYourReviewOn: html.
 	html horizontalRule.

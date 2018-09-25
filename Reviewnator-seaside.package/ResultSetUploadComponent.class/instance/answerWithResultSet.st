@@ -1,8 +1,9 @@
 callbacks
 answerWithResultSet
 	| result |
-	result := importer resultSet.
+	result := ResultSet new.
 	result
+	   articles: importer articles;
 		database: database;
 		comments: comment;
 		searchString: searchString.

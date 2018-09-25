@@ -4,18 +4,18 @@ testClassificationTags
 	articleOne
 		addClassification:
 			(Classification new
-				tags: (Set with: 'one' with: 'two');
+				tags: (Set with: 'bTag' with: 'aTag');
 				yourself).
-	self assert: articleOne classificationTags size equals: 2.
+	self assertCollection: articleOne classificationTags equals: (SortedCollection  with: 'aTag' with: 'bTag').
 	articleOne
 		addClassification:
 			(Classification new
-				tags: (Set with: 'one' with: 'three');
+				tags: (Set with: 'aTag' with: 'cTag');
 				yourself).
-	self assert: articleOne classificationTags size equals: 3.
+	self assertCollection: articleOne classificationTags equals: (SortedCollection  with: 'aTag' with: 'bTag' with: 'cTag').
 	articleOne
 		addReview:
 			(Review new
 				tags: (Set with: 'four');
 				yourself).
-	self assert: articleOne classificationTags size equals: 3
+	self assertCollection: articleOne classificationTags equals: (SortedCollection  with: 'aTag' with: 'bTag' with: 'cTag').

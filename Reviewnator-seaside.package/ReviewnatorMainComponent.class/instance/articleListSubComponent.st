@@ -1,3 +1,0 @@
-children
-articleListSubComponent
-	^ articleListSubComponent

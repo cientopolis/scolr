@@ -1,6 +1,9 @@
 rendering
 renderMainContentOn: html
-	html render: self reviewSummarySubComponent.
-	html render: self setSelectorSubcomponent.
+	html render: reviewSummarySubComponent.
 	self renderActivitySelectorTabsOn: html.
-	html render: self articleListSubComponent
+	html break.
+	selectedActivity = #classify
+		ifTrue: [ html render: setSelectorSubcomponent.
+			html render: classifyArticlesListSubcomponent ]
+		ifFalse: [ html render: reviewArticlesListSubcomponent ]

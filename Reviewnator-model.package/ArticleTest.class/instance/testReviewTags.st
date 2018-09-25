@@ -4,18 +4,18 @@ testReviewTags
 	articleOne
 		addReview:
 			(Review new
-				tags: (Set with: 'one' with: 'two');
+				tags: (Set with: 'bTag' with: 'aTag');
 				yourself).
-	self assert: articleOne reviewTags size equals: 2.
+	self assertCollection: articleOne reviewTags equals: (SortedCollection with: 'aTag' with: 'bTag').
 	articleOne
 		addReview:
 			(Review new
-				tags: (Set with: 'one' with: 'three');
+				tags: (Set with: 'bTag' with: 'cTag');
 				yourself).
-	self assert: articleOne reviewTags size equals: 3.
+	self assertCollection: articleOne reviewTags equals: (SortedCollection with: 'aTag' with: 'bTag' with: 'cTag').
 	articleOne
 		addClassification:
 			(Classification new
 				tags: (Set with: 'four');
 				yourself).
-	self assert: articleOne reviewTags size equals: 3
+	self assertCollection: articleOne reviewTags equals: (SortedCollection with: 'aTag' with: 'bTag' with: 'cTag')

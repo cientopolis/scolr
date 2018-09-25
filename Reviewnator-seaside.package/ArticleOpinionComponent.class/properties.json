@@ -8,7 +8,9 @@
 	"instvars" : [
 		"article",
 		"opinionToEdit",
-		"tags"
+		"tags",
+		"isNewOpinion",
+		"reviewSummarySubComponent"
 	],
 	"name" : "ArticleOpinionComponent",
 	"type" : "normal"

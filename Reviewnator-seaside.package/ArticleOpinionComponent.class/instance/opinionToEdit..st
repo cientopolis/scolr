@@ -1,4 +1,5 @@
 accessing
 opinionToEdit: anObject
 	opinionToEdit := anObject.
-	tags := self stringFromTagSet: (opinionToEdit tags ifNil: [ Set new ])
+	opinionToEdit notNil
+		ifTrue: [ tags := self stringFromTagSet: (opinionToEdit tags ifNil: [ Set new ]) ]
