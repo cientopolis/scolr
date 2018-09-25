@@ -4,5 +4,5 @@ renderTableHeaderOn: html
 		tableHead: [ html tableHeading: '#'.
 			html tableHeading: 'Summary'.
 			html tableHeading: 'Tags'.
-			html tableHeading: 'Inclusion opinions'.
+			html tableHeading: 'Opinions'.
 			html tableHeading: 'Reviews' ]

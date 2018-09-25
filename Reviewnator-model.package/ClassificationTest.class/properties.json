@@ -1,7 +1,7 @@
 {
 	"commentStamp" : "",
 	"super" : "TestCase",
-	"category" : "Reviewnator-model",
+	"category" : "Reviewnator-model-tests",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],

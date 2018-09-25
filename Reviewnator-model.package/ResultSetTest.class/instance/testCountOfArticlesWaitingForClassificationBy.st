@@ -12,4 +12,6 @@ testCountOfArticlesWaitingForClassificationBy
 	article addClassification: cls.
 	self assert: (aResultSet countOfArticlesWaitingForClassificationBy: aUser) equals: 1.
 	cls includeIt.
-	self assert: (aResultSet countOfArticlesWaitingForClassificationBy: aUser) equals: 0
+	self assert: (aResultSet countOfArticlesWaitingForClassificationBy: aUser) equals: 0.
+	cls forget.
+	self assert: (aResultSet countOfArticlesWaitingForClassificationBy: aUser) equals: 1
