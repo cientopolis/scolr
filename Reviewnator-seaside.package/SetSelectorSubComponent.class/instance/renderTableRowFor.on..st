@@ -4,7 +4,8 @@ renderTableRowFor: resultSet on: html
 	total := resultSet articles size.
 	agreedToInclude := resultSet countOfArticlesEveryoneAgreesToInclude.
 	agreedToExclude := resultSet countOfArticlesEveryoneAgreesToExclude.
-	waitingForTheUser := resultSet countOfArticlesWaitingForClassificationBy: self currentUser.
+	waitingForTheUser := resultSet
+		countOfArticlesWaitingForClassificationBy: self currentUser.
 	html
 		tableRow: [ html
 				tableData: [ html
@@ -20,15 +21,5 @@ renderTableRowFor: resultSet on: html
 			waitingForTheUser > 0
 				ifTrue: [ td style: 'color: rgba(255, 0, 0, 0.59);' ].
 			td with: [ html text: waitingForTheUser printString ].
-			html
-				tableData: [ (parent selectedResulSets includes: resultSet)
-						ifTrue: [ html tbsButton
-								beExtraSmall;
-								with: [ html anchor
-										callback: [ parent unselectResultSet: resultSet ];
-										with: 'Hide' ] ]
-						ifFalse: [ html tbsButton
-								beExtraSmall;
-								with: [ html anchor
-										callback: [ parent selectResultSet: resultSet ];
-										with: 'Show' ] ] ] ]
+			html tableData:
+				[ self renderActionButtonFor: resultSet on: html ] ]

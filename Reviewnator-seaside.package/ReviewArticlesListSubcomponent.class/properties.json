@@ -1,7 +1,7 @@
 {
 	"commentStamp" : "Casco 9/25/2018 12:57",
 	"super" : "ArticleListSubComponent",
-	"category" : "Reviewnator-seaside-components",
+	"category" : "Reviewnator-seaside-subcomponents",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
