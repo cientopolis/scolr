@@ -1,0 +1,3 @@
+accessing
+addAccessCredential: aReviewnatorAccessCredential
+	accessCredentials add: aReviewnatorAccessCredential

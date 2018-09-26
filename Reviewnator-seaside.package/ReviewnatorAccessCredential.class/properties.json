@@ -1,0 +1,19 @@
+{
+	"commentStamp" : "Casco 9/25/2018 18:11",
+	"super" : "Object",
+	"category" : "Reviewnator-seaside-configuration",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"accessCode",
+		"repositoryFilename",
+		"notes",
+		"articleLimit",
+		"isActive",
+		"isAdmin",
+		"modificationDate"
+	],
+	"name" : "ReviewnatorAccessCredential",
+	"type" : "normal"
+}

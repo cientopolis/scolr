@@ -1,5 +1,6 @@
 rendering
 renderMainContentOn: html
+	self renderAccessCodesOn: html.
 	html tbsForm
 		with: [ html
 				tbsFormGroup: [ html label
