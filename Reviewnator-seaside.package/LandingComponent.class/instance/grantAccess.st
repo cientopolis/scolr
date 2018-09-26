@@ -1,7 +1,7 @@
 callback
 grantAccess
 	| user mainComponent coReview |
-	self credentialsAreValid
+	(self credentialsAreValid and: [  ]) emailIsValid
 		ifTrue: [ repository := self getRepositoryFromMemoryOrDiskWithAccessCode.
 			coReview := repository coReview.
 			user := coReview newOrExistingUserNamed: fullName.
@@ -10,7 +10,7 @@ grantAccess
 			mainComponent := MainComponent
 				repository: repository
 				currentUser: user
-				accessCredential: accessCredential .
+				accessCredential: accessCredential.
 			self show: mainComponent ]
 		ifFalse:
-			[ errorMessage := 'You must provide both a name and an access code. The access code must be a valid one' ]
+			[ errorMessage := 'You must provide both, a valid access code and your email ' ]
