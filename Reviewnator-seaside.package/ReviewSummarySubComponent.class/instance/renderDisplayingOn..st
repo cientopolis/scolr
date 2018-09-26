@@ -4,7 +4,7 @@ renderDisplayingOn: html
 		with: [ html
 				tbsPanelHeading: [ html tbsPanelTitle
 						level: 3;
-						with: 'Review summary' ].
+						with: self coReview title ].
 			html
 				tbsPanelBody: [ html
 						paragraph: [ html
@@ -20,7 +20,9 @@ renderDisplayingOn: html
 								text: self coReview exclusionCriteria ].
 					html
 						paragraph: [ html strong: 'Contributors: '.
-							self coReview contributors do: [ :user | html text: user username ] separatedBy: [ html text: ', ' ] ].
+							self coReview contributors
+								do: [ :user | html text: user username ]
+								separatedBy: [ html text: ', ' ] ].
 					html anchor
 						callback: [ self edit ];
 						with: [ html tbsButton

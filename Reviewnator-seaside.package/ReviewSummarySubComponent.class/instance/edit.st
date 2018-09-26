@@ -1,6 +1,7 @@
 callbacks
 edit
-	isEditing := true.
 	notes := self coReview notes.
 	inclusionCriteria := self coReview inclusionCriteria.
-	exclusionCriteria := self coReview exclusionCriteria
+	exclusionCriteria := self coReview exclusionCriteria.
+	title := self coReview title.
+	isEditing := true

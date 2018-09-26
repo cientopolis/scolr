@@ -8,6 +8,7 @@
 	"instvars" : [
 		"isEditing",
 		"notes",
+		"title",
 		"inclusionCriteria",
 		"exclusionCriteria"
 	],

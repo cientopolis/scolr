@@ -8,6 +8,7 @@
 	"instvars" : [
 		"accessCode",
 		"email",
+		"title",
 		"notes",
 		"credential"
 	],

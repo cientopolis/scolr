@@ -9,6 +9,15 @@ renderEditingOn: html
 				tbsPanelBody: [ html
 						tbsForm: [ html
 								tbsFormGroup: [ html label
+										for: 'title';
+										with: 'Title'.
+									html textInput
+										on: #title of: self;
+										tbsFormControl;
+										id: 'title';
+										placeholder: 'Provide a descriptive title.' ].
+							html
+								tbsFormGroup: [ html label
 										for: 'notes';
 										with: 'Notes'.
 									html textArea

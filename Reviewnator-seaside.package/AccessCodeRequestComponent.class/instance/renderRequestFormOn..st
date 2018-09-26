@@ -12,9 +12,18 @@ renderRequestFormOn: html
 						placeholder: 'your.real.email@yourdomain.com' ].
 			html
 				tbsFormGroup: [ html label
+						for: 'title';
+						with: 'Title for your review'.
+					html textInput
+						on: #title of: self;
+						tbsFormControl;
+						id: 'title';
+						placeholder: 'A descriptive title for your review (short)' ].
+			html
+				tbsFormGroup: [ html label
 						for: 'notes';
 						with: 'About you and your review'.
-					html textArea 
+					html textArea
 						on: #notes of: self;
 						tbsFormControl;
 						id: 'notes';
