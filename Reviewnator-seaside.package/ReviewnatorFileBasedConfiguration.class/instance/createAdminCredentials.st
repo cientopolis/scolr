@@ -1,5 +1,5 @@
 private
 createAdminCredentials
-	^ (ReviewnatorAccessCredential accessCode: 'admin' repositoryFilename: 'admin-repo')
-		isAdmin: true;
+	^ (ReviewnatorAccessCredential accessCode: 'admin' repositoryFilename: self newSuggestedAccessCode)
+		toggleAdmin;
 		yourself

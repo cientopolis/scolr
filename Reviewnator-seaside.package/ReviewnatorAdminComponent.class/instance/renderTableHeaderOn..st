@@ -3,10 +3,10 @@ renderTableHeaderOn: html
 	html
 		tableHead: [ html tableHeading
 				class: 'col-md-1';
-				with: 'Code'.
+				with: 'Access Code'.
 			html tableHeading
 				class: 'col-md-1';
-				with: 'Repository'.
+				with: 'Repository file'.
 			html tableHeading
 				class: 'col-md-4';
 				with: 'Notes'.
@@ -24,4 +24,4 @@ renderTableHeaderOn: html
 				with: 'Admin'.
 			html tableHeading
 				class: 'col-md-1';
-				with: 'Actions' ]
+				with: '' ]

@@ -2,5 +2,7 @@ initialize
 initialize
 	adminAccessCode := 'admin'.
 	activeAccessCodes := Set new.
-	accessCredentials := OrderedCollection with: self createAdminCredentials.
+	suggestedAccessCodes := SharedQueue new.
+	accessCredentials := OrderedCollection new.
+	accessCredentials add: self createAdminCredentials.
 	storageFolder := 'reviewnator'

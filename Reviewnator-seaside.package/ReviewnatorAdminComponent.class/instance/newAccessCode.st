@@ -1,6 +1,7 @@
 callbacks
 newAccessCode
 	| newCode |
-	newCode := 'code' , 100 atRandom printString.
+	newCode := self configuration newSuggestedAccessCode.
 	self configuration
-		addAccessCredential: (ReviewnatorAccessCredential accessCode: newCode repositoryFilename: newCode). 
+		addAccessCredential: (ReviewnatorAccessCredential accessCode: newCode repositoryFilename: newCode).
+	self save

@@ -4,12 +4,14 @@ renderActionButtonFor: each on: html
 	menu := [ each isActive not | (each isActive & each isAdmin not)
 		ifTrue: [ html
 				tbsDropdownMenuItem: [ html anchor
-						callback: [ each toggleActive ];
+						callback: [ each toggleActive.
+							self save ];
 						with: 'Toggle active' ] ].
 	(self isOnlyAdmin: each)
 		ifFalse: [ html
 				tbsDropdownMenuItem: [ html anchor
-						callback: [ each toggleAdmin ];
+						callback: [ each toggleAdmin.
+							self save ];
 						with: 'Toggle admin' ] ].
 	html
 		tbsDropdownMenuItem: [ html anchor
@@ -19,7 +21,8 @@ renderActionButtonFor: each on: html
 		ifTrue: [ html tbsDivider.
 			html
 				tbsDropdownMenuItem: [ html anchor
-						callback: [ self configuration removeAccessCredential: each ];
+						callback: [ self configuration removeAccessCredential: each.
+							self save ];
 						with: 'Remove' ] ] ].
 	html
 		tbsButtonGroup: [ html tbsDropdownButton

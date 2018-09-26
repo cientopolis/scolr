@@ -9,7 +9,8 @@
 		"adminAccessCode",
 		"activeAccessCodes",
 		"storageFolder",
-		"accessCredentials"
+		"accessCredentials",
+		"suggestedAccessCodes"
 	],
 	"name" : "ReviewnatorFileBasedConfiguration",
 	"type" : "normal"

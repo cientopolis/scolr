@@ -2,7 +2,7 @@ rendering
 renderCredential: each on: html
 	html
 		tableRow: [ html tableData with: each accessCode.
-			html tableData with: each repositoryFilename.
+			html tableData with: each repositoryFilename, '.fuel'.
 			html tableData with: each notes.
 			html tableData with: each articleLimit printString.
 			html tableData with: each modificationDate printString.
