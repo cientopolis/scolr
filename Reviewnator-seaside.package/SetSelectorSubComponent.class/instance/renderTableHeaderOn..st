@@ -18,4 +18,4 @@ renderTableHeaderOn: html
 				with: 'Waiting for you'.
 			html tableHeading
 				class: 'col-md-1';
-				with: 'Actions' ]
+				with: '' ]

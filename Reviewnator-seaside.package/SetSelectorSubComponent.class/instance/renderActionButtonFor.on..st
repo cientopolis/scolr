@@ -10,10 +10,11 @@ renderActionButtonFor: resultSet on: html
 				tbsDropdownMenuItem: [ html anchor
 						callback: [ parent selectResultSet: resultSet ];
 						with: 'Show' ] ].
-	html
-		tbsDropdownMenuItem: [ html anchor
-				callback: [ self removeResultSet: resultSet ];
-				with: 'Remove' ] ].
+	resultSet countOfReviews > 0
+		ifFalse: [ html
+				tbsDropdownMenuItem: [ html anchor
+						callback: [ self removeResultSet: resultSet ];
+						with: 'Remove' ] ] ].
 	html
 		tbsButtonGroup: [ html tbsDropdownButton
 				beDefault;
