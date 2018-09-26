@@ -1,0 +1,5 @@
+"Title","Authors","Year","Abstract","Document type"
+"","author names","2018","some text for the abstract","some document type"
+"a title","","2018","some text for the abstract","some document type"
+"a title","author names","","some text for the abstract","some document type"
+"a title","author names","2018","","some document type"
