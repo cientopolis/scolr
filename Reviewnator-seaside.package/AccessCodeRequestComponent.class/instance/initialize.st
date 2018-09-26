@@ -3,4 +3,5 @@ initialize
 	super initialize.
 	accessCode := ''.
 	email := ''.
-	warningMessage := 'Reviewnator is BETA software - user at your own risk'
+	notes := ''.
+	credential := nil

@@ -10,7 +10,9 @@
 		"activeAccessCodes",
 		"storageFolder",
 		"accessCredentials",
-		"suggestedAccessCodes"
+		"suggestedAccessCodes",
+		"smtpServer",
+		"emailSender"
 	],
 	"name" : "ReviewnatorFileBasedConfiguration",
 	"type" : "normal"

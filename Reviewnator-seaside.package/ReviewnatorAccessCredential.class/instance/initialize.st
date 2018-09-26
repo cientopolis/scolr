@@ -4,4 +4,5 @@ initialize
 	modificationDate := Date today.
 	isActive := true.
 	isAdmin := false. 
-	notes := ''
+	notes := ''.
+	requestorsEmail := ''.

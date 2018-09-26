@@ -1,4 +1,4 @@
-private
+testing
 accessCodeIsValid
 	accessCode isEmpty
 		ifTrue: [ ^ false ].

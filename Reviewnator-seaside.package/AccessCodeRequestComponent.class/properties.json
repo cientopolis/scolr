@@ -1,0 +1,16 @@
+{
+	"commentStamp" : "Casco 9/26/2018 16:21",
+	"super" : "AbstractReviewnatorComponent",
+	"category" : "Reviewnator-seaside-components",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"accessCode",
+		"email",
+		"notes",
+		"credential"
+	],
+	"name" : "AccessCodeRequestComponent",
+	"type" : "normal"
+}

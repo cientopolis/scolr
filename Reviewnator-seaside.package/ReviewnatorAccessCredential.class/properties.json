@@ -12,7 +12,8 @@
 		"articleLimit",
 		"isActive",
 		"isAdmin",
-		"modificationDate"
+		"modificationDate",
+		"requestorsEmail"
 	],
 	"name" : "ReviewnatorAccessCredential",
 	"type" : "normal"
