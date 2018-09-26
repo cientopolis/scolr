@@ -1,3 +1,3 @@
 callback
 logout
- self show: ReviewnatorLandingComponent new.
+ self show: LandingComponent new.
