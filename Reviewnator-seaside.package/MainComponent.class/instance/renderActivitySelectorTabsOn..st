@@ -16,4 +16,11 @@ renderActivitySelectorTabsOn: html
 			tab
 				with: [ html anchor
 						callback: [ selectedActivity := #review ];
-						with: [ html strong: 'Review' ] ] ]
+						with: [ html strong: 'Review' ] ] .
+					tab := html tbsNavItem.
+			selectedActivity = #report
+				ifTrue: [ tab beActive ].
+			tab
+				with: [ html anchor
+						callback: [ selectedActivity := #report ];
+						with: [ html strong: 'Report' ] ]]
