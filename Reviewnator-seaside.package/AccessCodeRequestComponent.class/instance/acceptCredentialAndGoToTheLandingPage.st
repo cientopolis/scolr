@@ -1,4 +1,4 @@
-callbacks
+visiting
 acceptCredentialAndGoToTheLandingPage
 	| newRepo |
 	ReviewnatorFileBasedConfiguration load
@@ -11,4 +11,5 @@ acceptCredentialAndGoToTheLandingPage
 		title: title;
 		notes: notes.
 	newRepo save.
+	self log: 'created a review titled "' , title, '"'.
 	self show: LandingComponent new

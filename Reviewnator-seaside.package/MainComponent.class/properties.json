@@ -3,6 +3,7 @@
 	"super" : "AbstractReviewnatorComponent",
 	"category" : "Reviewnator-seaside-components",
 	"classinstvars" : [
+		"transientEventLog",
 		"includedFilter",
 		"excludedFilter",
 		"alreadyClassifiedFilter"
