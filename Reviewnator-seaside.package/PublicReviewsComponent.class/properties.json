@@ -1,0 +1,14 @@
+{
+	"commentStamp" : "",
+	"super" : "AbstractReviewnatorComponent",
+	"category" : "Reviewnator-seaside-components",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"accessCredentials",
+		"selectedReview"
+	],
+	"name" : "PublicReviewsComponent",
+	"type" : "normal"
+}

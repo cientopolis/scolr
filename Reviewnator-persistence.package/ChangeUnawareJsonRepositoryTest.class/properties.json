@@ -1,15 +1,11 @@
 {
 	"commentStamp" : "",
-	"super" : "TestCase",
+	"super" : "ChangeUnawareFileRepositoryTest",
 	"category" : "Reviewnator-persistence-tests",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
-	"instvars" : [
-		"storageFolderName",
-		"aCoReview",
-		"anAccessCode"
-	],
-	"name" : "ChangeUnawareFileRepositoryTest",
+	"instvars" : [ ],
+	"name" : "ChangeUnawareJsonRepositoryTest",
 	"type" : "normal"
 }

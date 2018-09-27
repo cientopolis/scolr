@@ -1,3 +1,3 @@
 private
 deleteFileWithDummyCoReview
-	fileReferenceWithDummyCoReview delete
+	self dummyCoReviewFileReference delete
