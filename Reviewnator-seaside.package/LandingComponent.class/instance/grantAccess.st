@@ -2,8 +2,7 @@ callbacks
 grantAccess
 	| user mainComponent coReview |
 	email isValidEmail
-		ifTrue: [ self halt.
-			repository := self repositoryClass
+		ifTrue: [ repository := self repositoryClass
 				fromMemoryORStorageFolderName: self configuration storageFolder
 				accessCode: accessCredential accessCode.
 			coReview := repository coReview.
