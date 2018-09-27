@@ -27,7 +27,7 @@ renderRequestFormOn: html
 						on: #notes of: self;
 						tbsFormControl;
 						id: 'notes';
-						placeholder: 'Tell us about you, and about the review you plan to conduct.' ].
+						placeholder: 'Tell us about you, and about the review you plan to conduct. What questions does it try to answer? What is the target audience?' ].
 			html tbsButton
 				callback: [ self requestAccessCode ];
 				with: 'Submit'.
