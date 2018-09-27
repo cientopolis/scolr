@@ -1,6 +1,6 @@
 materialize
-materializeUserFrom: aDictionary 
+materializeUserFrom: aDictionary
 	^ User new
 		username: (aDictionary at: #username);
-		lastLoginTimeStamp:  (aDictionary at: #lastLoginTimeStamp);
+		lastLoginTimeStamp: (DateAndTime readFrom: (aDictionary at: #lastLoginTimeStamp) readStream);
 		yourself

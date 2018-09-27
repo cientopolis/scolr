@@ -8,7 +8,9 @@ dummyCoReview
 		exclusionCriteria: 'This is the exclusion criteria';
 		yourself.
 	userOne := coReview newOrExistingUserNamed: 'one@here.test'.
+	userOne lastLoginTimeStamp: DateAndTime now.
 	userTwo := coReview newOrExistingUserNamed: 'two@here.test'.
+	userTwo lastLoginTimeStamp: DateAndTime now.
 	resultSetOne := ResultSet new
 		searchString: 'Search string one';
 		database: 'Database one';

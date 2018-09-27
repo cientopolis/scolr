@@ -1,3 +1,5 @@
 hooks
 serializeToStream: aStream
-	(NeoJSONWriter on: aStream) nextPut: (DictionaryReviewMapper new serializeCoReview: self coReview)
+	(NeoJSONWriter on: aStream)
+		prettyPrint: true;
+		nextPut: (DictionaryReviewMapper new serializeCoReview: self coReview)

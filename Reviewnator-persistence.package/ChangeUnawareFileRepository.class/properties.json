@@ -4,7 +4,9 @@
 	"category" : "Reviewnator-persistence-model",
 	"classinstvars" : [ ],
 	"pools" : [ ],
-	"classvars" : [ ],
+	"classvars" : [
+		"monitor"
+	],
 	"instvars" : [
 		"coReview",
 		"accessCode",
