@@ -12,11 +12,7 @@ renderAccessCodeRequestOn: html
 						beSmall;
 						bePrimary;
 						with: 'Validate!' ] ].
-	html
-		paragraph: [ html
-				text: 'Use access code ';
-				strong: 'demogorgon';
-				text: ' for demo access (data will be erased at some point) or ...' ].
+
 	html anchor
 		callback: [ self generateAccessCode ];
 		with: 'Request your access code (to start a new review)'

@@ -1,8 +1,8 @@
 rendering
 renderMainContentOn: html
 	html
-		tbsJumbotron: [ html heading: 'Reviewnator'.
+		tbsJumbotron: [ html heading: 'Copliter'.
 			html
-				paragraph: 'Collaborative systematic literature reviews.'.
+				paragraph: 'Collaborative OPen LITerature Reviews.'.
 			html image url: ReviewnatorFileLibrary / #reviewnatorPng.
 			self renderInputRequestOn: html ]
