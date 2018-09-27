@@ -4,5 +4,5 @@ resetDemo
 	self demoFileFullname asFileReference exists
 		ifTrue: [ self demoFileFullname asFileReference delete ].
 	stream := File openForWriteFileNamed: self demoFileFullname.
-	stream nextPutAll: ReviewnatorFileLibrary new demogorgonFuel.
+	stream nextPutAll: self demoFileContents.
 	stream close

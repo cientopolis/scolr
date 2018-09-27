@@ -1,8 +1,8 @@
 initialize-release
 initialize
-	users := Set new.
-	resultSets := Set new.
+	users := OrderedCollection new.
+	resultSets := OrderedCollection new.
 	notes := ''.
 	inclusionCriteria := ''.
 	exclusionCriteria := ''.
-	isPromiscuous := false. 
+	isPromiscuous := false

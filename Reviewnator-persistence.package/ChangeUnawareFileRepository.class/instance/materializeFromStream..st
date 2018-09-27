@@ -1,3 +1,3 @@
 hooks
-demoFileFullname
+materializeFromStream: aStream
 	^ self subclassResponsibility 

@@ -5,5 +5,6 @@ loadOrCreateReview
 	self storageFileFullName asFileReference exists
 		ifTrue: [ FileStream
 				oldFileNamed: self storageFileFullName
-				do: [ :aStream | review := (FLMaterializer newDefault materializeFrom: aStream binary) root ] ].
+				do:
+					[ :aStream | review := self materializeFromStream: aStream ] ].
 	coReview := review

@@ -1,3 +1,8 @@
 saving
 save
-	self saveAsFuel
+	monitor
+		critical: [ self prepareStorageFolder.
+			FileStream
+				forceNewFileNamed: self storageFileFullName
+				do:
+					[ :aStream | self serializeToStream: aStream ] ]

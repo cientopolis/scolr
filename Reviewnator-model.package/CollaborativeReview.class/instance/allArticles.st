@@ -1,8 +1,3 @@
 querying
 allArticles
-	^ self resultSets
-		inject: Set new
-		into: [ :sub :each | 
-			sub
-				addAll: each articles;
-				yourself ]
+	^ self resultSets flatCollect: [ :set | set articles ]

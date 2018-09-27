@@ -1,6 +1,6 @@
 {
 	"commentStamp" : "",
-	"super" : "ChangeUnawareFileRepositoryTest",
+	"super" : "ChangeUnawareFileRepositoryAbstractTest",
 	"category" : "Reviewnator-persistence-tests",
 	"classinstvars" : [ ],
 	"pools" : [ ],

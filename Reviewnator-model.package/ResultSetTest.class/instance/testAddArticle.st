@@ -8,6 +8,4 @@ testAddArticle
 		abstract: 'abstractString'
 		documentType: 'documentTypeString'.
 	aResultSet addArticle: someArticle.
-	self assert: aResultSet articles size equals: 1.
-	aResultSet addArticle: someArticle.
 	self assert: aResultSet articles size equals: 1

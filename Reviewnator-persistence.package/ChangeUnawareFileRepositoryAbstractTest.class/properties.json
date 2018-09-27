@@ -6,10 +6,8 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"storageFolderName",
-		"aCoReview",
-		"anAccessCode"
+		"storageFolderName"
 	],
-	"name" : "ChangeUnawareFileRepositoryTest",
+	"name" : "ChangeUnawareFileRepositoryAbstractTest",
 	"type" : "normal"
 }

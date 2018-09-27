@@ -1,3 +1,3 @@
 hooks
-demoFileFullname
+demoFileContents
 	^ self subclassResponsibility 

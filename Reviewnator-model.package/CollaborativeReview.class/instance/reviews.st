@@ -1,3 +1,3 @@
 accessing
 reviews
-	^ self allArticles inject: Set new into: [ :sub :each | sub , each reviews ]
+	^ self allArticles flatCollect: [ :each | each reviews ]
