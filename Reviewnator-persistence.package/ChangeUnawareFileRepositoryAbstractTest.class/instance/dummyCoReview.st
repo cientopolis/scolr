@@ -1,6 +1,6 @@
 private
 dummyCoReview
-	| resultSetOne resultSetTwo articleOne articleTwo articleThree coReview userOne userTwo reviewOne |
+	| resultSetOne resultSetTwo articleOne articleTwo articleThree coReview userOne userTwo reviewOne classificationOne |
 	coReview := CollaborativeReview new
 		title: 'This is the title';
 		notes: 'These are the notes';
@@ -49,6 +49,14 @@ dummyCoReview
 		comment: 'comment two' inDimension: 'dimension two';
 		yourself.
 	articleOne addReview: reviewOne.
+	classificationOne := Classification new
+		author: userOne;
+		date: Date today;
+		tags: {'one' . 'two'};
+		comments: 'comment one';
+		excludeIt;
+		yourself.
+	articleTwo addClassification: classificationOne.
 	coReview
 		addResultSet: resultSetOne;
 		addResultSet: resultSetTwo.

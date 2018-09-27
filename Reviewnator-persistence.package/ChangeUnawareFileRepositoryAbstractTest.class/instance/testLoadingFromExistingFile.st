@@ -6,4 +6,5 @@ testLoadingFromExistingFile
 	coReview := storageFromExistingFile coReview.
 	self assertCoReviewIsOk: coReview.
 	self assertArticlesAreOkInSets: coReview resultSets.
-	self assertUsersAreUniqueInReview: coReview
+	self assertUsersAreUniqueInReview: coReview.
+	self assertClassificationAndReviewAreOkIn: coReview
