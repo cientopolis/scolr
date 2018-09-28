@@ -3,7 +3,7 @@ renderExcludedArticlesOn: html
 	| articles |
 	articles := self coReview allArticles reject: [ :each | each everyoneAgreesToIncludeIt ].
 	html heading
-		level: 3;
+		level: 2;
 		with: 'Excluded articles'.
 	html
 		paragraph:

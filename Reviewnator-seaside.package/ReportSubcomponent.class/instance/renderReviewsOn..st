@@ -4,14 +4,14 @@ renderReviewsOn: html
 	dimensions := self coReview reviewDimensions asSortedCollection.
 	articles := self coReview allArticles select: [ :each | each everyoneAgreesToIncludeIt ].
 	html heading
-		level: 3;
-		with: 'Reviews'.
+		level: 2;
+		with: 'Review notes'.
 	articles
 		do: [ :article | 
 			| itsReviews |
-			itsReviews := article reviews.
+			itsReviews := self reviewsAsDictionary: article onDimentions: dimensions.
 			html heading
-				level: 4;
+				level: 3;
 				with: article title.
 			html paragraph: 'Reference: ' , article printString.
 			html
@@ -19,16 +19,14 @@ renderReviewsOn: html
 						strong: 'abstract ';
 						text: article abstract ].
 			dimensions
-				do: [ :dimension | 
-					html heading
-						level: 5;
-						with: dimension.
-					itsReviews
-						do: [ :rev | 
-							| comment |
-							comment := rev commentInDimension: dimension.
-							comment notEmpty
+				do: [ :dim | 
+					html
+						paragraph: [ html strong: dim.
+							(itsReviews at: dim) notEmpty
 								ifTrue: [ html
-										paragraph: [ html
-												strong: rev author username;
-												text: ': ' , comment ] ] ] ] ]
+										unorderedList: [ (itsReviews at: dim)
+												do: [ :each | 
+													html
+														listItem: [ html
+																strong: each key , ': ';
+																text: each value ] ] ] ] ] ] ]

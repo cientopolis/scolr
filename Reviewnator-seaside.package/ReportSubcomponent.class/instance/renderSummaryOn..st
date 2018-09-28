@@ -1,8 +1,11 @@
 rendering
 renderSummaryOn: html
 	html heading
-		level: 3;
+		level: 1;
 		with: self coReview title.
+	html heading
+		level: 2;
+		with: 'Introduction'.
 	html paragraph: self coReview notes.
 	html paragraph: [ html strong: 'Inclusion criteria' ].
 	html paragraph: self coReview inclusionCriteria.
