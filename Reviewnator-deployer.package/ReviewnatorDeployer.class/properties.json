@@ -2,7 +2,10 @@
 	"commentStamp" : "Casco 8/25/2018 16:19",
 	"super" : "BootstrapDeployer",
 	"category" : "Reviewnator-deployer",
-	"classinstvars" : [ ],
+	"classinstvars" : [
+		"adminEmail",
+		"smtp"
+	],
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [ ],
