@@ -2,7 +2,9 @@ rendering
 renderSearchResultsSummaryOn: html
 	| searchEngines countOrDuplicates articleCount |
 	html paragraph: [ html strong: 'Search results' ].
-	searchEngines := (self coReview resultSets collect: [ :each | each database ]) asSet fold: [ :sub :each | sub , ', ' , each ].
+	searchEngines := ''.
+	self coReview resultSets
+		ifNotEmpty: [ searchEngines := (self coReview resultSets collect: [ :each | each database ]) asSet fold: [ :sub :each | sub , ', ' , each ] ].
 	countOrDuplicates := self coReview resultSets inject: 0 into: [ :sub :each | sub + each duplicateCount ].
 	articleCount := self coReview allArticles size.
 	html paragraph: 'We conducted the following searches: '.

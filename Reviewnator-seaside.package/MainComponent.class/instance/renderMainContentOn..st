@@ -4,9 +4,8 @@ renderMainContentOn: html
 	self renderActivitySelectorTabsOn: html.
 	html break.
 	selectedActivity = #classify
-		ifTrue: [ html render: setSelectorSubcomponent.
-			html render: classifyArticlesListSubcomponent ].
+		ifTrue: [ self renderClassifyActivityOn: html ].
 	selectedActivity = #review
-		ifTrue: [ html render: reviewArticlesListSubcomponent ].
+		ifTrue: [ self renderReviewActivityOn: html ].
 	selectedActivity = #report
-		ifTrue: [ html render: reportSubcomponent ]
+		ifTrue: [ self renderReportActivityOn: html ]
