@@ -1,4 +1,4 @@
 class initialization
 lastFromLog: n
-	transientEventLog ifEmpty: [ ^ Set new ].
+	transientEventLog ifEmpty: [ ^ OrderedCollection new ].
 	^ transientEventLog last: (n min: transientEventLog size)
