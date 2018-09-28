@@ -17,7 +17,8 @@
 		"reviewSummarySubComponent",
 		"selectedActivity",
 		"classifyArticlesListSubcomponent",
-		"reviewArticlesListSubcomponent"
+		"reviewArticlesListSubcomponent",
+		"reportSubcomponent"
 	],
 	"name" : "MainComponent",
 	"type" : "normal"

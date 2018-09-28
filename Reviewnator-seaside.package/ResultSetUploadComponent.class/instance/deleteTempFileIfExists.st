@@ -1,4 +1,4 @@
 callbacks
 deleteTempFileIfExists
-	uploadedFile asFileReference exists
+	(uploadedFile notNil and: [ uploadedFile asFileReference exists ])
 		ifTrue: [ uploadedFile asFileReference delete ]

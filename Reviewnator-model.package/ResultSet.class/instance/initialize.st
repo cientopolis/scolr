@@ -6,4 +6,5 @@ initialize
 	articles := OrderedCollection new.
 	searchString := ''.
 	database := ''.
-	comments := ''
+	comments := ''.
+	duplicateCount := 0

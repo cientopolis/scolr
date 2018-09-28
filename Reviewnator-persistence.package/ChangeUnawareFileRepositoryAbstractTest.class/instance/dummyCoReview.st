@@ -15,6 +15,7 @@ dummyCoReview
 		searchString: 'Search string one';
 		database: 'Database one';
 		comments: 'Comments one';
+		duplicateCount: 10;
 		yourself.
 	resultSetTwo := ResultSet new
 		searchString: 'Search string two';

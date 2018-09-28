@@ -9,7 +9,8 @@
 		"searchString",
 		"database",
 		"comments",
-		"articles"
+		"articles",
+		"duplicateCount"
 	],
 	"name" : "ResultSet",
 	"type" : "normal"

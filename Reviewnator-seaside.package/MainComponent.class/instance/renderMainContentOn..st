@@ -5,5 +5,8 @@ renderMainContentOn: html
 	html break.
 	selectedActivity = #classify
 		ifTrue: [ html render: setSelectorSubcomponent.
-			html render: classifyArticlesListSubcomponent ]
-		ifFalse: [ html render: reviewArticlesListSubcomponent ]
+			html render: classifyArticlesListSubcomponent ].
+	selectedActivity = #review
+		ifTrue: [ html render: reviewArticlesListSubcomponent ].
+	selectedActivity = #report
+		ifTrue: [ html render: reportSubcomponent ]

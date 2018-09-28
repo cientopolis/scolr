@@ -1,5 +1,5 @@
 callbacks
-generateReport
+generateMarkdownReport
 	| reporter |
 	reporter := MarkdownReporter new.
 	self requestContext

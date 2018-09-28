@@ -6,4 +6,5 @@ children
 	articleListSubComponent.
 	reviewSummarySubComponent.
 	classifyArticlesListSubcomponent.
-	reviewArticlesListSubcomponent}
+	reviewArticlesListSubcomponent.
+	reportSubcomponent}
