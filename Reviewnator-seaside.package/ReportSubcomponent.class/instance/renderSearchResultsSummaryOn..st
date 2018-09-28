@@ -3,7 +3,7 @@ renderSearchResultsSummaryOn: html
 	| searchEngines countOrDuplicates articleCount |
 	html heading
 		level: 3;
-		with: 'Searches'.
+		with: 'Search results'.
 	searchEngines := (self coReview resultSets collect: [ :each | each database ]) asSet fold: [ :sub :each | sub , ', ' , each ].
 	countOrDuplicates := self coReview resultSets inject: 0 into: [ :sub :each | sub + each duplicateCount ].
 	articleCount := self coReview allArticles size.

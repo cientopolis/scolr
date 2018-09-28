@@ -5,7 +5,7 @@ renderReviewsOn: html
 	articles := self coReview allArticles select: [ :each | each everyoneAgreesToIncludeIt ].
 	html heading
 		level: 3;
-		with: 'Article reviews'.
+		with: 'Reviews'.
 	articles
 		do: [ :article | 
 			| itsReviews |
