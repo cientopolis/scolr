@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "Casco 9/28/2018 16:46",
+	"super" : "Object",
+	"category" : "Reviewnator-markdown",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "MarkdownCanvas",
+	"type" : "normal"
+}
