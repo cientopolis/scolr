@@ -1,13 +1,13 @@
 {
-	"commentStamp" : "Casco 9/28/2018 16:57",
+	"commentStamp" : "",
 	"super" : "MarkdownElement",
 	"category" : "Reviewnator-markdown",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"current"
+		"level"
 	],
-	"name" : "MarkdownCanvas",
+	"name" : "MarkdownHeading",
 	"type" : "normal"
 }

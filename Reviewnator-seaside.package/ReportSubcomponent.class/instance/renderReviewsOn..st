@@ -16,17 +16,16 @@ renderReviewsOn: html
 			html paragraph: 'Reference: ' , article printString.
 			html
 				paragraph: [ html
-						strong: 'abstract ';
-						text: article abstract ].
+						strong: 'abstract';
+						text: ' ' , article abstract ].
 			dimensions
 				do: [ :dim | 
-					html
-						paragraph: [ html strong: dim.
-							(itsReviews at: dim) notEmpty
-								ifTrue: [ html
-										unorderedList: [ (itsReviews at: dim)
-												do: [ :each | 
-													html
-														listItem: [ html
-																strong: each key , ': ';
-																text: each value ] ] ] ] ] ] ]
+					html paragraph: [ html strong: dim ].
+					(itsReviews at: dim) notEmpty
+						ifTrue: [ html
+								unorderedList: [ (itsReviews at: dim)
+										do: [ :each | 
+											html
+												listItem: [ html
+														strong: each key , ':';
+														text: ' ' , each value ] ] ] ] ] ]

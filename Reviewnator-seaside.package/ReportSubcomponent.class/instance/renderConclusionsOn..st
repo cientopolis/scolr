@@ -3,4 +3,4 @@ renderConclusionsOn: html
 	html heading
 		level: 2;
 		with: 'Conclusions'.
-	html paragraph: [ html emphasis: 'Write down some conclusions' ]
+	html paragraph: [ html blockquote: 'Write down some conclusions' ]
