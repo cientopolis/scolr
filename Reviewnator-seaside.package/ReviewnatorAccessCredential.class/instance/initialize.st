@@ -3,7 +3,8 @@ initialize
 	articleLimit := 100.
 	modificationDate := Date today.
 	isActive := true.
-	isAdmin := false. 
+	isAdmin := false.
+	isPrivate := false.
 	notes := ''.
-	requestorsEmail := ''..
-	cachedCoReviewTitle := nil.
+	requestorsEmail := ''.
+	cachedCoReviewTitle := nil

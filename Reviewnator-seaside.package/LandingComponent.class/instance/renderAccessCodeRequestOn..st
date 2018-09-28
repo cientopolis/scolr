@@ -9,6 +9,7 @@ renderAccessCodeRequestOn: html
 						placeholder: 'code to access your review'.
 					html space.
 					html tbsButton
+						callback: [ self validateAccessCode ];
 						beSmall;
 						bePrimary;
 						with: 'Validate!' ] ].

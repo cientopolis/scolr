@@ -12,6 +12,7 @@
 		"articleLimit",
 		"isActive",
 		"isAdmin",
+		"isPrivate",
 		"modificationDate",
 		"requestorsEmail",
 		"cachedCoReviewTitle"

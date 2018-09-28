@@ -7,7 +7,9 @@
 	"classvars" : [ ],
 	"instvars" : [
 		"accessCredentials",
-		"selectedReview"
+		"selectedReview",
+		"review",
+		"reportSubcomponent"
 	],
 	"name" : "PublicReviewsComponent",
 	"type" : "normal"

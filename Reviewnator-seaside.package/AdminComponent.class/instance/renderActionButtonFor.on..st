@@ -16,6 +16,10 @@ renderActionButtonFor: each on: html
 				tbsDropdownMenuItem: [ html anchor
 						callback: [ self editCredentials: each ];
 						with: 'Edit' ] ].
+	html
+		tbsDropdownMenuItem: [ html anchor
+				callback: [ self togglePrivateFor: each ];
+				with: 'Toggle private' ].
 	each isAdmin not
 		ifTrue: [ html tbsDivider.
 			html

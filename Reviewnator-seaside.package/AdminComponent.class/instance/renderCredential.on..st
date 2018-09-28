@@ -8,4 +8,5 @@ renderCredential: each on: html
 			html tableData with: each modificationDate printString.
 			html tableData with: each isActive printString.
 			html tableData with: each isAdmin printString.
+			html tableData with: each isPrivate printString.
 			html tableData with: [ self renderActionButtonFor: each on: html ] ]

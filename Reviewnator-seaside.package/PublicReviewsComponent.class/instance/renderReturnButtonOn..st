@@ -3,5 +3,5 @@ renderReturnButtonOn: html
 	html tbsNavbarButton
 		tbsPullRight;
 		with: [ html anchor
-				callback: [ self show: LandingComponent new ];
+				callback: [ review ifNil: [ self show: LandingComponent new ] ifNotNil: [ review := nil ] ];
 				with: 'Back' ]
