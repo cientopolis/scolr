@@ -13,7 +13,8 @@
 		"isActive",
 		"isAdmin",
 		"modificationDate",
-		"requestorsEmail"
+		"requestorsEmail",
+		"cachedCoReviewTitle"
 	],
 	"name" : "ReviewnatorAccessCredential",
 	"type" : "normal"

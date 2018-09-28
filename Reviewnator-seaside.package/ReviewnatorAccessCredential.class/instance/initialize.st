@@ -5,4 +5,5 @@ initialize
 	isActive := true.
 	isAdmin := false. 
 	notes := ''.
-	requestorsEmail := ''.
+	requestorsEmail := ''..
+	cachedCoReviewTitle := nil.

@@ -4,5 +4,5 @@ save
 	self coReview inclusionCriteria: inclusionCriteria.
 	self coReview exclusionCriteria: exclusionCriteria.
 	self coReview title: title.
-	self parent save.
+	self accessCredential cachedCoReviewTitle: title.
 	isEditing := false

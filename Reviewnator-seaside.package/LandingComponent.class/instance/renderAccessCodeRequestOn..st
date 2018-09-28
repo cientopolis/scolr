@@ -15,7 +15,7 @@ renderAccessCodeRequestOn: html
 	html
 		paragraph: [ html text: 'Without an access code, you can still '.
 			html anchor
-				callback: [  ];
+				callback: [ self exploreOpenReviews ];
 				with: 'access all reviews'.
 			html text: ' in read-only mode, or you can '.
 			html anchor

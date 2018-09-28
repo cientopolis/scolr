@@ -2,9 +2,7 @@ callbacks
 grantAccess
 	| user mainComponent coReview |
 	email isValidEmail
-		ifTrue: [ repository := self repositoryClass
-				fromMemoryORStorageFolderName: self configuration storageFolder
-				accessCode: accessCredential accessCode.
+		ifTrue: [ repository := self repositoryClass fromMemoryORStorageFolderName: self configuration storageFolder accessCode: accessCredential accessCode.
 			coReview := repository coReview.
 			user := coReview newOrExistingUserNamed: email.
 			user lastLoginTimeStamp: DateAndTime now.
