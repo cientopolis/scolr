@@ -38,7 +38,7 @@ baseline20: spec
 				package: 'Reviewnator-seaside'
 					with: [ spec
 						requires:
-							#('Seaside3' 'Bootstrap' 'Reviewnator-model' 'Reviewnator-importers' 'Reviewnator-persistence' 'Reviewnator-deployer' 'Reviewnator-PharoExtensions' 'Reviewnator-Markdown') ];
+							#('Seaside3' 'Bootstrap' 'Reviewnator-model' 'Reviewnator-importers' 'Reviewnator-persistence' 'Reviewnator-deployer' 'Reviewnator-PharoExtensions' 'Reviewnator-markdown') ];
 				package: 'Reviewnator-deployer' with: [ spec requires: #('SeasideDeployer') ];
 				package: 'Reviewnator-PharoExtensions';
-				package: 'Reviewnator-Markdown' ]
+				package: 'Reviewnator-markdown' ]
