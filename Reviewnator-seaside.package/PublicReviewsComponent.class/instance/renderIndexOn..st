@@ -1,6 +1,6 @@
 rendering
 renderIndexOn: html
-	| repo coReview |
+	| repo  |
 	html heading
 		level: 2;
 		with: 'Explore open reviews'.
@@ -11,5 +11,4 @@ renderIndexOn: html
 						ifFalse: [ repo := self repositoryClass
 								fromMemoryORStorageFolderName: self configuration storageFolder
 								accessCode: each accessCode.
-							coReview := repo coReview.
-							self renderReviewSummaryFor: coReview on: html ] ] ]
+							self renderReviewSummaryFor: repo on: html ] ] ]

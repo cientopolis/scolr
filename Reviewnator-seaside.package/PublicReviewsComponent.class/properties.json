@@ -6,10 +6,8 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"accessCredentials",
-		"selectedReview",
-		"review",
-		"reportSubcomponent"
+		"reportSubcomponent",
+		"selectedRepository"
 	],
 	"name" : "PublicReviewsComponent",
 	"type" : "normal"

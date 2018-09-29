@@ -1,11 +1,11 @@
 rendering
-renderReviewSummaryFor: each on: html
+renderReviewSummaryFor: repo on: html
 	html
 		listItem: [ html anchor
-				callback: [ review := each ];
-				with: [ html strong: each title, ' - ' ].
+				callback: [ selectedRepository := repo ];
+				with: [ html strong: repo coReview title , ' - ' ].
 			html
-				text: ' ' , each notes;
+				text: ' ' , repo coReview notes;
 				break;
-				text: each allArticles size printString , ' articles, and ';
-				text: each contributors size printString , ' contributors so far' ]
+				text: repo coReview allArticles size printString , ' articles, and ';
+				text: repo coReview contributors size printString , ' contributors so far' ]

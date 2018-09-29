@@ -3,7 +3,7 @@ generateMarkdownReport
 	| mdCanvas |
 	mdCanvas := MarkdownCanvas new.
 	self renderReportOn: mdCanvas.
-	"self renderCommentsOn: mdCanvas."
+	self renderCommentsOn: mdCanvas.
 	mdCanvas expand.
 	self requestContext
 		respond: [ :response | 

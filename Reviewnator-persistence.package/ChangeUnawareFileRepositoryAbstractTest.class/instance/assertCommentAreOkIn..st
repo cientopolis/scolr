@@ -6,4 +6,5 @@ assertCommentAreOkIn: coReview
 	self assert: comment authorEmail equals: 'a@b.c'.
 	self assert: comment offeredAccessCode equals: 'code'.
 	self assert: comment text equals: 'my comment'.
-	self assert: comment timestamp asSeconds closeTo: DateAndTime now asSeconds
+	self assert: comment timestamp asSeconds closeTo: DateAndTime now asSeconds.
+	self assert: coReview comments class == OrderedCollection
