@@ -1,6 +1,4 @@
 printing
 printOn: aStream
-	super printOn: aStream.
-	aStream
-		cr;
-		cr
+
+	elements do: [ :each | each printOn: aStream ] 

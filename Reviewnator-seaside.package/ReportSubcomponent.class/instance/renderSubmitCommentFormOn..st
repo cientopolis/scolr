@@ -1,0 +1,2 @@
+rendering
+renderSubmitCommentFormOn: html

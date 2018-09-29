@@ -8,4 +8,4 @@ renderReportOn: html
 		renderReviewsOn: html;
 		renderSynthesisAndAnalysisOn: html;
 		renderConclusionsOn: html;
-		renderExcludedArticlesOn: html
+		renderExcludedArticlesOn: html.
