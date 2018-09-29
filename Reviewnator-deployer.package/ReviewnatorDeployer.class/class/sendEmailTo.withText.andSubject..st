@@ -1,5 +1,5 @@
 smtp
-sendEmailTo: requestorsEmail withText: emailText
+sendEmailTo: requestorsEmail withText: emailText andSubject: subject
 	| text |
 	text := 'From: ' , adminEmail
 		,
@@ -7,7 +7,7 @@ sendEmailTo: requestorsEmail withText: emailText
 To: ' , requestorsEmail
 		,
 			'
-Subject: Access code to your Scolr review
+Subject:', subject, '
 
 
 ',emailText.

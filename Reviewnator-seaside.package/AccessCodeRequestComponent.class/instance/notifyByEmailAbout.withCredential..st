@@ -19,7 +19,8 @@ notifyByEmailAbout: someRepo withCredential: someCredential
 
     Enjoy,
 
-       The Scolar@Cientopolis team
+       The Scolar@Cientopolis team.
+       http://scolr.cientopolis.org/
 '.
 	someCredential requestorsEmail isValidEmail
-		ifTrue: [ ReviewnatorDeployer sendEmailTo: someCredential requestorsEmail withText: emailText ]
+		ifTrue: [ ReviewnatorDeployer sendEmailTo: someCredential requestorsEmail withText: emailText andSubject: 'Access code to you Scolr open literature review'  ]
