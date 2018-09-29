@@ -11,4 +11,5 @@ acceptCredentialAndGoToTheLandingPage
 	credential cachedCoReviewTitle: title.
 	newRepo save.
 	self log: 'created a review titled "' , title , '"'.
+	self notifyByEmailAbout: newRepo withCredential: credential .
 	self show: LandingComponent new

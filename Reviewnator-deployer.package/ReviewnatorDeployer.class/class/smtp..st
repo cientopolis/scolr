@@ -1,3 +1,3 @@
-accessing
+smtp
 smtp: anObject
 	smtp := anObject
