@@ -1,0 +1,3 @@
+accessing
+beBordered
+	bordered := true

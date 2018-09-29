@@ -12,4 +12,4 @@ renderCommentsOn: html
 				beHover;
 				with: [ self renderCommentsTableHeaderOn: html.
 					html tableBody: [ self coReview comments do: [ :each | self renderCommentTableRowFor: each on: html ] ] ] ].
-	self renderSubmitCommentFormOn: html
+	

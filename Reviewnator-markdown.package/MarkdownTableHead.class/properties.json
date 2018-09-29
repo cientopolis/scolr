@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "",
+	"super" : "MarkdownElement",
+	"category" : "Reviewnator-markdown",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "MarkdownTableHead",
+	"type" : "normal"
+}
