@@ -63,4 +63,11 @@ dummyCoReview
 	coReview
 		addResultSet: resultSetOne;
 		addResultSet: resultSetTwo.
+	coReview
+		addComment:
+			(Comment new
+				authorEmail: 'a@b.c';
+				offeredAccessCode: 'code';
+				text: 'my comment';
+				yourself).
 	^ coReview

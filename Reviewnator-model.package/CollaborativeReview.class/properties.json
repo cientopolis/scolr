@@ -12,7 +12,8 @@
 		"inclusionCriteria",
 		"exclusionCriteria",
 		"resultSets",
-		"isPromiscuous"
+		"isPromiscuous",
+		"comments"
 	],
 	"name" : "CollaborativeReview",
 	"type" : "normal"

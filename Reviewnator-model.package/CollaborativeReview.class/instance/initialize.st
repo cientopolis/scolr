@@ -6,4 +6,5 @@ initialize
 	inclusionCriteria := 'Inclusion sets the boundaries for the systematic review. Explain how you will select articles for inclusion.'.
 	exclusionCriteria := 'Exclusion criteria set the boundaries for the systematic review. Explain your criteria for rejecting articles.'.
 	isPromiscuous := false.
-	title := 'Provide a title for your review'
+	title := 'Provide a title for your review'.
+	comments := OrderedCollection new. 
