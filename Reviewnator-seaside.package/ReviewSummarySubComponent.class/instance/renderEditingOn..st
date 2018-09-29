@@ -45,7 +45,7 @@ renderEditingOn: html
 										placeholder: 'What are the criteria used to decide if an article is excluded?' ].
 							html tbsButton
 								beExtraSmall;
-								callback: [ self save ];
+								callback: [ self accept ];
 								with: 'Save'.
 							html space.
 							html tbsButton
