@@ -1,9 +1,9 @@
 rendering
 renderReturnButtonOn: html
 	| button |
-	button := html tbsNavbarButton.
-	button
-		tbsPullRight;
-		with: [ html anchor
-				callback: [ self logout ];
+	html anchor
+		callback: [ self logout ];
+		with: [ button := html tbsNavbarButton.
+			button
+				tbsPullRight;
 				with: 'Log out ' , currentUser username ]

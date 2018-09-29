@@ -9,10 +9,10 @@ renderArticle: article order: n on: html
 				tableData: [ html
 						paragraph: ((article reviews collect: [ :each | each author username ]) fold: [ :sub :each | each , ', ' ] ifEmpty: [ '' ]) ].
 			html
-				tableData: [ html tbsButton
-						beExtraSmall;
-						with: [ html anchor
-								callback: [ self parent reviewArticle: article ];
+				tableData: [ html anchor
+						callback: [ self parent reviewArticle: article ];
+						with: [ html tbsButton
+								beExtraSmall;
 								with: [ (article reviewBy: self currentUser) isNil
 										ifTrue: [ html text: 'review' ]
 										ifFalse: [ html text: 'update' ] ] ] ] ]
