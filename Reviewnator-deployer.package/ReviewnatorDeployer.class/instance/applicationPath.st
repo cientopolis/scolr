@@ -1,3 +1,3 @@
 hooks
 applicationPath
-	^'reviewnator' 
+	^'scolr' 

@@ -5,3 +5,7 @@ ReviewnatorDeployer  prepareForDevelopment.
 or
 
 ReviewnatorDeployer  prepareForDeployment
+
+To make it default evaluate:
+
+WAAdmin defaultDispatcher defaultName: 'scolr'
