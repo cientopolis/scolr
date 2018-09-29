@@ -5,11 +5,7 @@ renderActionsMenuOn: html
 		ifTrue: [ menu := [ html
 				tbsDropdownMenuItem: [ html anchor
 						callback: [ self editGlobalConfiguration ];
-						with: 'Config' ].
-			html
-				tbsDropdownMenuItem: [ html anchor
-						callback: [ self resetDemo ];
-						with: 'Reset demo' ] ].
+						with: 'Config' ] ].
 			html tbsButtonGroup
 				with: [ html tbsDropdownButton
 						beNavbarButton;
