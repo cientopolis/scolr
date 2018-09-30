@@ -2,7 +2,9 @@
 	"commentStamp" : "Casco 9/30/2018 09:28",
 	"super" : "WAComponent",
 	"category" : "Reviewnator-seaside-components",
-	"classinstvars" : [ ],
+	"classinstvars" : [
+		"maxMemorySize"
+	],
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [ ],

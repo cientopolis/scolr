@@ -5,5 +5,4 @@ renderNavigationbarLogoAndMessageOn: html
 				tbsPullLeft;
 				style: 'padding: 10px;';
 				url: ReviewnatorFileLibrary / #reviewnatorsmallPng.
-			html tbsNavbarBrand
-				with: 'Scolr: Support for Collaborative, Open, Literature Reviews.' ]
+			html tbsNavbarBrand with: 'Scolr: Support for Collaborative, Open, Literature Reviews.' ]
