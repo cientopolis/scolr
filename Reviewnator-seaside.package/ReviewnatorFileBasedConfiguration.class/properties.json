@@ -14,7 +14,8 @@
 		"accessCredentials",
 		"suggestedAccessCodes",
 		"smtpServer",
-		"emailSender"
+		"emailSender",
+		"usersThatAcceptedTermsAndConditions"
 	],
 	"name" : "ReviewnatorFileBasedConfiguration",
 	"type" : "normal"
