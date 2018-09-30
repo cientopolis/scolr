@@ -1,7 +1,7 @@
 rendering
 renderReleseInfoOn: html
 	| memNow maxMem |
-	memNow := (Smalltalk vm memorySize / 1048576) truncated printString.
+	memNow := (Smalltalk vm memorySize / 1048576) truncated printString. 
 	maxMem := (AbstractReviewnatorComponent maxMemorySize / 1048576) truncated printString.
 	html paragraph
 		with: [ html

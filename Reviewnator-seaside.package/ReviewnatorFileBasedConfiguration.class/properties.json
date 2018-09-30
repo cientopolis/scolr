@@ -2,7 +2,9 @@
 	"commentStamp" : "Casco 8/26/2018 22:06",
 	"super" : "Object",
 	"category" : "Reviewnator-seaside-configuration",
-	"classinstvars" : [ ],
+	"classinstvars" : [
+		"singleton"
+	],
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [

@@ -1,3 +1,3 @@
 accessing
 configuration
-	^ ReviewnatorFileBasedConfiguration load
+	^ ReviewnatorFileBasedConfiguration singleton
