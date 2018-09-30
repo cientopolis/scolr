@@ -1,6 +1,6 @@
 {
 	"commentStamp" : "Casco 9/22/2015 13:35",
-	"super" : "AbstractReviewnatorComponent",
+	"super" : "ReviewnatorStandaloneComponent",
 	"category" : "Reviewnator-seaside-components",
 	"classinstvars" : [
 		"transientEventLog",

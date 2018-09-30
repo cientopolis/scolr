@@ -1,0 +1,1 @@
+I am the superclass of all components that do not have a parent

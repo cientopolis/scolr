@@ -7,4 +7,4 @@ renderReleseInfoOn: html
 				url: 'https://bitbucket.org/casco/reviewnator/commits/';
 				target: '_new';
 				with: ReviewnatorDeployer referenceCommit.
-			html text: ')' ]
+			html text: ') - ',  (Smalltalk vm memorySize / 1048576) asInteger printString, ' MB']
