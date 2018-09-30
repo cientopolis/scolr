@@ -3,7 +3,8 @@
 	"super" : "WAComponent",
 	"category" : "Reviewnator-seaside-components",
 	"classinstvars" : [
-		"maxMemorySize"
+		"maxMemorySize",
+		"maxConcurrentSessions"
 	],
 	"pools" : [ ],
 	"classvars" : [ ],

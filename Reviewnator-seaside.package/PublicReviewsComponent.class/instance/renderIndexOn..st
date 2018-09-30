@@ -3,7 +3,7 @@ renderIndexOn: html
 	| repo  |
 	html heading
 		level: 2;
-		with: 'Explore open reviews'.
+		with: 'Open review projects'.
 	html
 		unorderedList: [ self configuration accessCredentials
 				do: [ :each | 

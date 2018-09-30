@@ -19,8 +19,8 @@ renderAccessCodeRequestOn: html
 				unorderedList: [ html
 						listItem: [ html anchor
 								callback: [ self exploreOpenReviews ];
-								with: 'access all reviews'.
+								with: 'explore all open projects'.
 							html text: ' in read-only mode, or ...' ];
 						listItem: [ html anchor
 								callback: [ self generateAccessCode ];
-								with: 'request an access code (to start a new review)' ] ] ]
+								with: 'request an access code (to start a new review project)' ] ] ]
