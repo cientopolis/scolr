@@ -1,26 +1,17 @@
 email
 notifyByEmailAbout: someRepo withCredential: someCredential
 	| emailText |
-	emailText := 'Dear ' , someCredential requestorsEmail printString
-		,
-			'
-			
-    we are glad to hear about your interest in Scolr. 
-
-    Your ideas for a review titled "' , someRepo coReview title
-		,
-			'" sound very promissing.
-
-    The access code for your literature review is: ' , someCredential accessCode
-		,
-			'
-
-    Share it with your collaborators and anyone that offers to help (that is the spirit of open reviews).
-
-    Enjoy,
-
-       The Scolar@Cientopolis team.
-       http://scolr.cientopolis.org/
-'.
+	emailText := self
+		emailTextAboutNewReviewTitled: someRepo coReview title
+		withAccessCode: someCredential accessCode
+		for: someCredential requestorsEmail.
 	someCredential requestorsEmail isValidEmail
-		ifTrue: [ ReviewnatorDeployer sendEmailTo: someCredential requestorsEmail withText: emailText andSubject: 'Access code to you Scolr open literature review'  ]
+		ifTrue: [ email := WAEmailMessage
+				from: (WAEmailAddress address: ReviewnatorDeployer adminEmail)
+				toAll:
+					(Set
+						with: (WAEmailAddress address: someCredential requestorsEmail)
+						with: (WAEmailAddress address: ReviewnatorDeployer adminEmail))
+				subject: 'Access code to you Scolr open literature review'.
+			email body: emailText.
+			email send ]

@@ -1,3 +1,3 @@
 smtp
 smtp: anObject
-	smtp := anObject
+	MailComposition setSmtpServer: anObject
