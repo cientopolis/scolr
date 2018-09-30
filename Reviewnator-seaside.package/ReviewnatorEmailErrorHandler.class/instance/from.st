@@ -2,4 +2,4 @@ private
 from
 	"ansers the WAEmailAddress instance used as a sender address"
 
-	^ ReviewnatorDeployer adminEmail
+	^ WAEmailAddress address: ReviewnatorDeployer adminEmail

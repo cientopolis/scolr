@@ -3,4 +3,5 @@ registerApplication
 	super registerApplication.
 	ReviewnatorDeployer smtp notNil
 		ifTrue: [ app configuration addParent: WAEmailConfiguration instance.
-			app preferenceAt: #smtpServer put: ReviewnatorDeployer smtp ]
+			app preferenceAt: #smtpServer put: ReviewnatorDeployer smtp.
+			(WAAdmin defaultDispatcher handlerAt: self applicationPath) exceptionHandler: ReviewnatorEmailErrorHandler ]
