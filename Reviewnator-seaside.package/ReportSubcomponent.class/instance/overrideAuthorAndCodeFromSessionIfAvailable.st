@@ -1,5 +1,5 @@
-rendering-comments
-preloadFormIfPossible
+private
+overrideAuthorAndCodeFromSessionIfAvailable
 	self accessCredential notNil
 		ifTrue: [ editedComment offeredAccessCode: self accessCredential accessCode ].
 	self currentUser notNil
