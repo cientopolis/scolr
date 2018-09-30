@@ -1,9 +1,9 @@
 callbacks
 ensureAcceptanceOfTermsAndConditions
-	^ (self configuration usersThatAcceptedTermsAndConditions includes: email)
+	^ (self configuration usersThatAcceptedTermsAndConditions includes: email asLowercase)
 		ifFalse: [ self
 				call:
 					(AcceptTermsAndConditionsComponent new
-						email: email;
+						email: email asLowercase;
 						yourself) ]
 		ifTrue: [ true ]

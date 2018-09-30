@@ -23,4 +23,9 @@ renderAccessCodeRequestOn: html
 							html text: ' in read-only mode, or ...' ];
 						listItem: [ html anchor
 								callback: [ self generateAccessCode ];
-								with: 'request an access code (to start a new review project)' ] ] ]
+								with: 'request an access code (to start a new review project)' ] ] ].
+	html
+		paragraph: [ html text: 'Before using Scolr '.
+			html anchor
+				callback: [ self call: AcceptTermsAndConditionsComponent new ];
+				with: 'read the terms of usage' ]

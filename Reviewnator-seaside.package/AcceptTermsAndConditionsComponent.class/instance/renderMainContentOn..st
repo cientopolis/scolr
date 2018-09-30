@@ -32,7 +32,7 @@ renderMainContentOn: html
 	email
 		ifNotNil: [ html tbsForm
 				with: [ html tbsButton
-						callback: [ self configuration userAcceptedTermsAndConditions: email.
+						callback: [ self configuration userAcceptedTermsAndConditions: email asLowercase.
 							self configuration save.
 							self answer: true ];
 						with: 'Accept'.
