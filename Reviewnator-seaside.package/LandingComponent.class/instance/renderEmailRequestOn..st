@@ -9,7 +9,7 @@ renderEmailRequestOn: html
 		paragraph: [ html
 				tbsForm: [ html
 						paragraph: [ html textInput
-								callback: [ :value | email := value ];
+								callback: [ :value | email := value trim ];
 								id: 'input';
 								size: 80;
 								placeholder: 'your.real.email@yourdomain.com' ].
