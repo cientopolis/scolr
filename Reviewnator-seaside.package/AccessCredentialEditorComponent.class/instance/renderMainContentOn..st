@@ -19,6 +19,16 @@ renderMainContentOn: html
 						tbsFormControl;
 						id: 'filename';
 						placeholder: 'filename' ].
+					
+								html
+				tbsFormGroup: [ html label
+						for: 'notes';
+						with: 'Notes'.
+					html textInput
+						on: #notes of: self;
+						tbsFormControl;
+						id: 'notes';
+						placeholder: 'notes' ].
 			html
 				tbsFormGroup: [ html label
 						for: 'limit';
