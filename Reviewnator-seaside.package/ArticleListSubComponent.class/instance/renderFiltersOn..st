@@ -1,28 +1,28 @@
 rendering-selectors
 renderFiltersOn: html
 	html text: 'Hide included ('.
-	(activeHidingFilters includes: self class includedFilter)
+	(activeHidingFilters includes: ArticleListSubComponent includedFilter)
 		ifTrue: [ html anchor
-				callback: [ activeHidingFilters remove: self class includedFilter ];
+				callback: [ activeHidingFilters remove: ArticleListSubComponent  includedFilter ];
 				with: 'no' ]
 		ifFalse: [ html anchor
-				callback: [ activeHidingFilters add: self class includedFilter ];
+				callback: [ activeHidingFilters add: ArticleListSubComponent includedFilter ];
 				with: 'yes' ].
 	html text: '), or hide excluded ('.
-	(activeHidingFilters includes: self class excludedFilter)
+	(activeHidingFilters includes: ArticleListSubComponent excludedFilter)
 		ifTrue: [ html anchor
-				callback: [ activeHidingFilters remove: self class excludedFilter ];
+				callback: [ activeHidingFilters remove: ArticleListSubComponent excludedFilter ];
 				with: 'no' ]
 		ifFalse: [ html anchor
-				callback: [ activeHidingFilters add: self class excludedFilter ];
+				callback: [ activeHidingFilters add: ArticleListSubComponent excludedFilter ];
 				with: 'yes' ].
 	html text: '), or hide already classified by me ('.
-	(activeHidingFilters includes: self class alreadyClassifiedFilter)
+	(activeHidingFilters includes: ArticleListSubComponent alreadyClassifiedFilter)
 		ifTrue: [ html anchor
-				callback: [ activeHidingFilters remove: self class alreadyClassifiedFilter ];
+				callback: [ activeHidingFilters remove: ArticleListSubComponent alreadyClassifiedFilter ];
 				with: 'no' ]
 		ifFalse: [ html anchor
-				callback: [ activeHidingFilters add: self class alreadyClassifiedFilter ];
+				callback: [ activeHidingFilters add: ArticleListSubComponent alreadyClassifiedFilter ];
 				with: 'yes' ].
 	html text: ')'.
 	html break
