@@ -3,7 +3,7 @@ testSave
 	| storage |
 	storage := self repositoryClass
 		storageFolderName: storageFolderName
-		accessCode: self someAccessCode
+		repositoryFilename: self someAccessCode
 		coReview: self dummyCoReview.
 	self deny: storage storageFileFullName asFileReference exists.
 	storage save.

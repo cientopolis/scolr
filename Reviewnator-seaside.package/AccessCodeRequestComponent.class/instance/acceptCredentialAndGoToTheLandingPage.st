@@ -4,7 +4,7 @@ acceptCredentialAndGoToTheLandingPage
 	ReviewnatorFileBasedConfiguration singleton
 		addAccessCredential: credential;
 		save.
-	newRepo := self repositoryClass storageFolderName: self configuration storageFolder accessCode: credential accessCode.
+	newRepo := self repositoryClass storageFolderName: self configuration storageFolder repositoryFilename: credential accessCode.
 	newRepo coReview
 		title: title;
 		notes: notes.

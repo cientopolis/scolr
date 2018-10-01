@@ -10,5 +10,5 @@ renderIndexOn: html
 					each isPrivate
 						ifFalse: [ repo := self repositoryClass
 								fromMemoryORStorageFolderName: self configuration storageFolder
-								accessCode: each accessCode.
+								repositoryFilename: each repositoryFilename.
 							self renderReviewSummaryFor: repo on: html ] ] ]

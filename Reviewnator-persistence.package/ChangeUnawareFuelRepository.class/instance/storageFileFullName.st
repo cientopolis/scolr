@@ -1,4 +1,4 @@
 hooks
 storageFileFullName
 	^ ((FileSystem disk workingDirectory resolveString: storageFolderName) asFileReference
-		/ (self accessCode , '.fuel')) fullName
+		/ (self repositoryFilename , '.fuel')) fullName

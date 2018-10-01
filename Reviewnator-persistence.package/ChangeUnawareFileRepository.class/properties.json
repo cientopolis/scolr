@@ -9,9 +9,9 @@
 	],
 	"instvars" : [
 		"coReview",
-		"accessCode",
 		"storageFolderName",
-		"monitor"
+		"monitor",
+		"repositoryFilename"
 	],
 	"name" : "ChangeUnawareFileRepository",
 	"type" : "normal"
