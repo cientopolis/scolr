@@ -1,3 +1,4 @@
 startup-shutdown
 startUp: isImageStarting
-    ReviewnatorFileBasedConfiguration resetSingleton 
+    ReviewnatorFileBasedConfiguration resetSingleton .
+    AbstractReviewnatorComponent clearStats 

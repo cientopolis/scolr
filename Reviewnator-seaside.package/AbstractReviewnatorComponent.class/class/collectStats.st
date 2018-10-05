@@ -1,4 +1,4 @@
 stats
 collectStats
-	maxMemorySize := Smalltalk vm memorySize.
-	maxConcurrentSessions := WASession allInstances size.
+	maxMemorySize := maxMemorySize max: Smalltalk vm memorySize.
+	maxConcurrentSessions := maxConcurrentSessions max: WASession allInstances size.
