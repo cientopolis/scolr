@@ -1,4 +1,0 @@
-rendering
-collectStats
-   AbstractReviewnatorComponent collectStats 
-	

@@ -2,12 +2,12 @@
 	"commentStamp" : "Casco 9/30/2018 09:28",
 	"super" : "WAComponent",
 	"category" : "Reviewnator-seaside-components",
-	"classinstvars" : [
-		"maxMemorySize",
-		"maxConcurrentSessions"
-	],
+	"classinstvars" : [ ],
 	"pools" : [ ],
-	"classvars" : [ ],
+	"classvars" : [
+		"MaxMemory",
+		"MaxSessions"
+	],
 	"instvars" : [ ],
 	"name" : "AbstractReviewnatorComponent",
 	"type" : "normal"
