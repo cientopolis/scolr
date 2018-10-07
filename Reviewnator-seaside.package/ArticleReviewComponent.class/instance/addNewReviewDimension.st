@@ -1,11 +1,6 @@
 rendering
 addNewReviewDimension
-	| dialog value |
-	dialog := WAInputDialog new.
-	dialog
-		label: 'Add';
-		value: 'Miscelaneous'.
-	self call: dialog.
-	value := dialog value.
+	|  value |
+	value := self call: NewDimensionComponent new.
 	(value notNil and: [ value notEmpty ])
 		ifTrue: [ opinionToEdit  comment: '' inDimension: value ]

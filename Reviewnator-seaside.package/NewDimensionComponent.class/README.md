@@ -1,0 +1,1 @@
+A simple dialog component to add a new dimension
