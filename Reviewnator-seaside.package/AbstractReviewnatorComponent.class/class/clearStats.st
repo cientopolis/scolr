@@ -1,4 +1,4 @@
 stats
-resetStats
+clearStats
 	MaxMemory := 0.
 	MaxSessions := 0
