@@ -3,7 +3,7 @@ renderAccessCodeRequestOn: html
 	html
 		paragraph: [ html
 				tbsForm: [ html textInput
-						callback: [ :value | accessCode := value ];
+						callback: [ :value | accessCode := value trim];
 						id: 'input';
 						size: 40;
 						placeholder: 'code to access your review'.
