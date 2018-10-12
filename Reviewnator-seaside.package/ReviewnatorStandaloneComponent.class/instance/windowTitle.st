@@ -1,3 +1,3 @@
 accessing
 windowTitle
-	^ 'Reviewnator'
+	^ 'Scolr'
