@@ -1,3 +1,3 @@
 accessing
 printOn: aStream
-	aStream nextPutAll: 'On ' , date printString , ', ' , user username , ' ' , text
+	aStream nextPutAll: 'On ' , date printString , ', ' , self usernameWithoutDomain , ' ' , text
