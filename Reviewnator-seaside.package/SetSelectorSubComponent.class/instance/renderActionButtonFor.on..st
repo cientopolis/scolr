@@ -4,6 +4,10 @@ renderActionButtonFor: resultSet on: html
 	menu := [ (parent selectedResulSets includes: resultSet)
 		ifTrue: [ html
 				tbsDropdownMenuItem: [ html anchor
+						callback: [ self editPropertiesdOf: resultSet ];
+						with: 'Edit' ].
+			html
+				tbsDropdownMenuItem: [ html anchor
 						callback: [ parent unselectResultSet: resultSet ];
 						with: 'Hide' ] ]
 		ifFalse: [ html

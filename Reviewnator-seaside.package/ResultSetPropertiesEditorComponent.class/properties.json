@@ -1,0 +1,16 @@
+{
+	"commentStamp" : "Casco 11/2/2018 20:29",
+	"super" : "ReviewnatorStandaloneComponent",
+	"category" : "Reviewnator-seaside-components",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"resultSet",
+		"database",
+		"searchString",
+		"comments"
+	],
+	"name" : "ResultSetPropertiesEditorComponent",
+	"type" : "normal"
+}
