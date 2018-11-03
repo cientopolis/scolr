@@ -1,4 +1,4 @@
-rendering
+rendering-review-phase
 renderRemarksOfTheReviewPhaseOn: html
 	| included avgReviews |
 	html paragraph: [ html strong: 'Remarks about the review phase' ].
@@ -10,4 +10,4 @@ renderRemarksOfTheReviewPhaseOn: html
 				, avgReviews printString , ' contributors in average.';
 		paragraph: 'All articles were reviewed along the following dimensions:  '.
 	html unorderedList: [ self coReview reviewDimensions do: [ :dim | html listItem: dim ] ].
-	html paragraph: ''.
+	self renderReportOfTagUseDuringReviewOn: html

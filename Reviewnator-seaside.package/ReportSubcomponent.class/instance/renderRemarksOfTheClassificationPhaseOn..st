@@ -1,4 +1,4 @@
-rendering
+rendering-classification-phase
 renderRemarksOfTheClassificationPhaseOn: html
 	| included all avgClassifications |
 	html paragraph: [ html strong: 'Remarks about the classification phase' ].
@@ -12,4 +12,5 @@ renderRemarksOfTheClassificationPhaseOn: html
 			all size printString , ' articles were classified as either "to be included" or "to be exclude" by '
 				, avgClassifications printString , ' contributors in average. Of the original ' , all size printString
 				, ' articles, only ' , included size printString
-				, ' reached agreement for inclusion. These articles passed on to the review phase.'
+				, ' reached agreement for inclusion. These articles passed on to the review phase.'.
+	self renderReportOfTagUseDuringClassificationOn: html

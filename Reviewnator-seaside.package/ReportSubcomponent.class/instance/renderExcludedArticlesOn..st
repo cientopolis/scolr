@@ -1,4 +1,4 @@
-rendering
+rendering-classification-phase
 renderExcludedArticlesOn: html
 	| articles |
 	articles := self coReview allArticles reject: [ :each | each everyoneAgreesToIncludeIt ].
