@@ -1,4 +1,6 @@
 rendering
 renderTagUseIn: aBagOfTags on: html
-	aBagOfTags asSet asOrderedCollection
-		do: [ :tag | html text: tag , ' (' , (aBagOfTags occurrencesOf: tag) printString , ') ' ]
+	| report |
+	report := (aBagOfTags asSet asSortedCollection
+		collect: [ :tag | tag , ' (' , (aBagOfTags occurrencesOf: tag) printString , ')' ]) fold: [ :a :b | a , ', ' , b ].
+	html text: report

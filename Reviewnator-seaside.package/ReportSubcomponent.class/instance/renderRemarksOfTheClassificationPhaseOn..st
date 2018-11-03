@@ -13,4 +13,5 @@ renderRemarksOfTheClassificationPhaseOn: html
 				, avgClassifications printString , ' contributors in average. Of the original ' , all size printString
 				, ' articles, only ' , included size printString
 				, ' reached agreement for inclusion. These articles passed on to the review phase.'.
-	self renderReportOfTagUseDuringClassificationOn: html
+	self renderReportOfTagUseDuringClassificationOn: html.
+	self renderReportOfPublicationYearDuringClassificationOn: html
