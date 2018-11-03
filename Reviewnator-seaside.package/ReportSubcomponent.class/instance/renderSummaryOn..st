@@ -12,5 +12,5 @@ renderSummaryOn: html
 	html paragraph: [ html strong: 'Exclusion criteria' ].
 	html paragraph: self coReview exclusionCriteria.
 	html paragraph: [ html strong: 'Contributors' ].
-	html
-		unorderedList: [ self coReview contributors do: [ :each | html listItem: (each username findTokens: '@') first ] ]
+	html unorderedList: [ self coReview contributors do: [ :each | html listItem: (each username findTokens: '@') first ] ].
+	html paragraph: ''

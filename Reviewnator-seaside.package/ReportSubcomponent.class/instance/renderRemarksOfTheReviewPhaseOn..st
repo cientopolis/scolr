@@ -9,4 +9,5 @@ renderRemarksOfTheReviewPhaseOn: html
 			included size printString , ' articles were considered for review. Each of them was reviewed, in average, by '
 				, avgReviews printString , ' contributors in average.';
 		paragraph: 'All articles were reviewed along the following dimensions:  '.
-	html unorderedList: [ self coReview reviewDimensions do: [ :dim | html listItem: dim ] ]
+	html unorderedList: [ self coReview reviewDimensions do: [ :dim | html listItem: dim ] ].
+	html paragraph: ''.

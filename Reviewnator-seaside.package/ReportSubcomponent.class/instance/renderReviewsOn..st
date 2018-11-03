@@ -1,4 +1,4 @@
-rendering
+rendering-reviews
 renderReviewsOn: html
 	| dimensions articles |
 	dimensions := self coReview reviewDimensions asSortedCollection.
@@ -8,8 +8,6 @@ renderReviewsOn: html
 		with: 'Review notes'.
 	articles
 		do: [ :article | 
-			| itsReviews |
-			itsReviews := self reviewsAsDictionary: article onDimentions: dimensions.
 			html heading
 				level: 3;
 				with: article title.
@@ -18,14 +16,4 @@ renderReviewsOn: html
 				paragraph: [ html
 						strong: 'abstract';
 						text: ' ' , article abstract ].
-			dimensions
-				do: [ :dim | 
-					html paragraph: [ html strong: dim ].
-					(itsReviews at: dim) notEmpty
-						ifTrue: [ html
-								unorderedList: [ (itsReviews at: dim)
-										do: [ :each | 
-											html
-												listItem: [ html
-														strong: each key , ':';
-														text: ' ' , each value ] ] ] ] ] ]
+			self renderReviewsFor: article considering: dimensions on: html ]
