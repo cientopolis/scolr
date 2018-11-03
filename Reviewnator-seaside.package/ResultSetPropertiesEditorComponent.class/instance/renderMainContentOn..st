@@ -16,10 +16,9 @@ renderMainContentOn: html
 						with: 'Search query: ';
 						for: 'searchString'.
 					html break.
-					html textArea
+					html textInput
 						id: 'searchString';
-						columns: 80;
-						rows: 4;
+						size: 80;
 						on: #searchString of: self;
 						placeholder: 'What was the search string/query used to obtain the articles in this list?' ].
 			html

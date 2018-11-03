@@ -4,16 +4,19 @@ renderTableRowFor: resultSet on: html
 	total := resultSet articles size.
 	agreedToInclude := resultSet countOfArticlesEveryoneAgreesToInclude.
 	agreedToExclude := resultSet countOfArticlesEveryoneAgreesToExclude.
-	waitingForTheUser := resultSet
-		countOfArticlesWaitingForClassificationBy: self currentUser.
+	waitingForTheUser := resultSet countOfArticlesWaitingForClassificationBy: self currentUser.
 	html
 		tableRow: [ html
 				tableData: [ html
-						text: 'From: ' , resultSet database;
+						strong: 'From: ';
+						text: resultSet database;
 						break;
-						text: 'Search query: ' , resultSet searchString;
+						strong: 'Search query: ';
+						text: resultSet searchString;
 						break;
-						text: 'Notes: ' , resultSet comments ].
+						strong: 'Comments: ';
+						break.
+					self renderMultilineString: resultSet comments withLineBreaksOn: html ].
 			html tableData: [ html text: total printString ].
 			html tableData: [ html text: agreedToInclude printString ].
 			html tableData: [ html text: agreedToExclude printString ].
@@ -21,5 +24,4 @@ renderTableRowFor: resultSet on: html
 			waitingForTheUser > 0
 				ifTrue: [ td style: 'color: rgba(255, 0, 0, 0.59);' ].
 			td with: [ html text: waitingForTheUser printString ].
-			html tableData:
-				[ self renderActionButtonFor: resultSet on: html ] ]
+			html tableData: [ self renderActionButtonFor: resultSet on: html ] ]
