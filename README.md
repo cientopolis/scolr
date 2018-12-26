@@ -8,7 +8,7 @@ Dependencies are now handled via the monticello configuration: ConfigurationOfRe
 
 ## Building
 
-To build and deploy, evaluate the following expresions:
+To build (or update), evaluate the following expresion:
 
 ```Smalltalk
 
@@ -16,6 +16,15 @@ Metacello new
    baseline: 'Reviewnator';
    repository: 'bitbucket://casco/reviewnator';
    load.
+
+ReviewnatorDeployer prepareForDeploymentOnPort: 8000 adminEmail: 'scolr@yourdomain.com' smtp: 'yourdomain'.
+
+WAAdmin defaultDispatcher defaultName: 'scolr'.
+```
+
+Then, evaluate this expression to prepare it for deployment.
+
+```Smalltalk
 
 ReviewnatorDeployer prepareForDeploymentOnPort: 8000 adminEmail: 'scolr@yourdomain.com' smtp: 'yourdomain'.
 
