@@ -16,10 +16,6 @@ Metacello new
    baseline: 'Reviewnator';
    repository: 'bitbucket://casco/reviewnator';
    load.
-
-ReviewnatorDeployer prepareForDeploymentOnPort: 8000 adminEmail: 'scolr@yourdomain.com' smtp: 'yourdomain'.
-
-WAAdmin defaultDispatcher defaultName: 'scolr'.
 ```
 
 Then, evaluate this expression to prepare it for deployment.
