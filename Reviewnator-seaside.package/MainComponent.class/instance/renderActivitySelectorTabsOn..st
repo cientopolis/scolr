@@ -1,26 +1,9 @@
 rendering
 renderActivitySelectorTabsOn: html
-	| tab |
 	html tbsNav
 		beTabs;
-		with: [ tab := html tbsNavItem.
-			selectedActivity = #classify
-				ifTrue: [ tab beActive ].
-			tab
-				with: [ html anchor
-						callback: [ selectedActivity := #classify ];
-						with: [ html strong: '1. Classify' ] ].
-			tab := html tbsNavItem.
-			selectedActivity = #review
-				ifTrue: [ tab beActive ].
-			tab
-				with: [ html anchor
-						callback: [ selectedActivity := #review ];
-						with: [ html strong: '2. Review' ] ] .
-					tab := html tbsNavItem.
-			selectedActivity = #report
-				ifTrue: [ tab beActive ].
-			tab
-				with: [ html anchor
-						callback: [ selectedActivity := #report ];
-						with: [ html strong: '3. Report' ] ]]
+		with: [ self
+				renderTabTitled: '1. Upload' for: #upload on: html;
+				renderTabTitled: '2. Classify' for: #classify on: html;
+				renderTabTitled: '3. Review' for: #review on: html;
+				renderTabTitled: '4. Report' for: #report on: html ]
