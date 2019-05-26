@@ -1,8 +1,10 @@
 rendering
 renderMainContentOn: html
-	html render: reviewSummarySubComponent.
+
 	self renderActivitySelectorTabsOn: html.
 	html break.
+	selectedActivity = #plan
+		ifTrue: [ self renderPlanActivityOn: html ].
 	selectedActivity = #upload
 		ifTrue: [ self renderUploadActivityOn: html ].
 	selectedActivity = #classify
