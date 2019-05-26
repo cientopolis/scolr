@@ -9,18 +9,18 @@ renderDisplayingOn: html
 				tbsPanelBody: [ html
 						paragraph: [ html
 								strong: 'Notes: ';
-								text: self coReview notes ].
+								preformatted: self coReview notes ].
 					html
 						paragraph: [ html
 								strong: 'Inclusion criteria: ';
-								text: self coReview inclusionCriteria ].
+								preformatted: self coReview inclusionCriteria ].
 					html
 						paragraph: [ html
 								strong: 'Exclusion criteria: ';
-								text: self coReview exclusionCriteria ].
+								preformatted: self coReview exclusionCriteria ].
+					html paragraph: [ html strong: 'Contributors: ' ].
 					html
-						paragraph: [ html strong: 'Contributors: '.
-							self coReview contributors
+						paragraph: [ self coReview contributors
 								do: [ :user | html text: user username ]
 								separatedBy: [ html text: ', ' ] ].
 					html anchor
