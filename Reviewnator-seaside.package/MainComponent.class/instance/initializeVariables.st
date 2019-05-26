@@ -1,4 +1,5 @@
 initialize-release
 initializeVariables
 	selectedResulSets := Set new.
-	selectedActivity := #classify
+	selectedActivity := #plan.
+	reviewAnyway := false.
