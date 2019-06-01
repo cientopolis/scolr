@@ -12,7 +12,7 @@ renderTableHeaderOn: html
 				with: 'Classification tags'.
 			html tableHeading
 				class: 'col-md-1';
-				with: 'Opinions'.
+				with: 'All opinions'.
 			html tableHeading
 				class: 'col-md-1';
-				with: 'Actions' ]
+				with: 'Your opinion' ]
