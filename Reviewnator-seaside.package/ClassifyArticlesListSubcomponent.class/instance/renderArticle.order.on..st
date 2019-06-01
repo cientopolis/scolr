@@ -11,6 +11,7 @@ renderArticle: article order: n on: html
 			html
 				tableData: [ classification := article classificationBy: self currentUser.
 					classification
+						ifNil: [ html paragraph: '?' ]
 						ifNotNil: [ html paragraph: classification decision ].
 					html anchor
 						callback: [ self parent classifyArticle: article ];
