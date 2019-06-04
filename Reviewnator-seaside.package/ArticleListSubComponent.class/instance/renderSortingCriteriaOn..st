@@ -1,6 +1,8 @@
 rendering-selectors
 renderSortingCriteriaOn: html
-	html text: 'Sort by year ('.
+	html
+		strong: 'Sort :';
+		text: ' by year ('.
 	html anchor
 		callback: [ sortBlock := self sortUpByYearBlock ];
 		with: 'up'.

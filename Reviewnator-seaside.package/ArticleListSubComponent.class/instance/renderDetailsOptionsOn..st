@@ -1,13 +1,13 @@
 rendering-selectors
 renderDetailsOptionsOn: html
-	html text: 'Show classification comments  ('.
+	html
+		strong: 'Show: ';
+		text: ' classification comments  ('.
 	showClassificationComments
-		ifTrue: [ 
-			html anchor
+		ifTrue: [ html anchor
 				callback: [ showClassificationComments := false ];
 				with: 'no' ]
-		ifFalse: [ 
-			html anchor
+		ifFalse: [ html anchor
 				callback: [ showClassificationComments := true ];
 				with: 'yes' ].
 	html text: ')'
