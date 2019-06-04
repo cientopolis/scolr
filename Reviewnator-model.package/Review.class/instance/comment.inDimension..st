@@ -1,4 +1,7 @@
 accessing
 comment: aString inDimension: dimensionName
-
-      dimensionSpecificComments at: dimensionName  put: aString .
+   self halt. 
+	aString
+		ifNotNil: [ aString notEmpty
+				ifTrue: [ dimensionSpecificComments at: dimensionName put: aString ]
+				ifFalse: [ dimensionSpecificComments removeKey: dimensionName ifAbsent: [  ] ] ]
