@@ -10,5 +10,5 @@ renderArticleSummary: article on: html
 								do: [ :each | 
 									html
 										listItem: [ html
-												strong: each author username , ': (' , each decision , ') ';
+												strong: each author shortenedUsername , ': (' , each decision , ') ';
 												text: each comments ] ] ] ] ]

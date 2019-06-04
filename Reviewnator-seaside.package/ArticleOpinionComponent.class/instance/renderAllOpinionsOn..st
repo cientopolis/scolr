@@ -5,7 +5,7 @@ renderAllOpinionsOn: html
 			html heading
 				level: 3;
 				with:
-						'by ' , op author username
+						'by ' , op author shortenedUsername
 								,
 									(op author == currentUser
 										ifTrue: [ ' (you)' ]
