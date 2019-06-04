@@ -1,7 +1,7 @@
 renderning-list
 renderSelectedArticlesOn: html
 	| articles order  |
-	articles := self filteredArticles.
+	articles := self sort: self filteredArticles.
 	order := 1.
 	html tbsTable
 		beBordered;
