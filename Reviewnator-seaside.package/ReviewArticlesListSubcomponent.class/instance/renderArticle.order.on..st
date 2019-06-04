@@ -7,7 +7,10 @@ renderArticle: article order: n on: html
 			html tableData: [ self renderArticleTags: article on: html ].
 			html
 				tableData: [ html
-						paragraph: ((article reviews collect: [ :each | each author username ]) fold: [ :sub :each | each , ', ' ] ifEmpty: [ '' ]) ].
+						paragraph:
+							((article reviews collect: [ :each | each author shortenedUsername ])
+								fold: [ :first :second | first , ', ' , second ]
+								ifEmpty: [ '' ]) ].
 			html
 				tableData: [ html anchor
 						callback: [ self parent reviewArticle: article ];
