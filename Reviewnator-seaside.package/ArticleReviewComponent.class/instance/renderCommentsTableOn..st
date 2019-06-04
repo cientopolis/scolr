@@ -3,6 +3,7 @@ renderCommentsTableOn: html
 	| dimensions |
 	dimensions := Set withAll: (self coReview reviewDimensions ifEmpty: [ Set with: 'General remarks' ]).
 	dimensions addAll: opinionToEdit dimensions.
+	dimensions := dimensions asSortedCollection.
 	html tbsTable
 		beBordered;
 		beHover;
@@ -11,7 +12,7 @@ renderCommentsTableOn: html
 						tableHeading: 'Review dimension';
 						tableHeading: 'Review text' ].
 			html
-				tableBody: [ dimensions
+				tableBody: [ dimensions 
 						do: [ :each | 
 							html
 								tableRow: [ html tableData: [ html text: each ].
