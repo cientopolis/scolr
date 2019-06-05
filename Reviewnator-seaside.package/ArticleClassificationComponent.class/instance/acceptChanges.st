@@ -1,7 +1,7 @@
 callbacks
 acceptChanges
-   super acceptChanges .
+	super acceptChanges.
 	opinionToEdit comments: self comments.
 	self isANewOpinion
-		ifTrue: [ article addClassification: opinionToEdit.
-			self save ]
+		ifTrue: [ article addClassification: opinionToEdit ].
+	self save

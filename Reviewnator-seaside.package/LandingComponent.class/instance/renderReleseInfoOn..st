@@ -8,12 +8,12 @@ renderReleseInfoOn: html
 				small: [ html
 						text:
 							'Released: ' , ReviewnatorDeployer releaseDate printString , ' in '
-								, ReviewnatorDeployer mode , ' mode ('.
+								, ReviewnatorDeployer mode , ' mode from commit '.
 					html anchor
 						url: 'https://bitbucket.org/casco/reviewnator/commits/';
 						target: '_new';
 						with: ReviewnatorDeployer referenceCommit.
 					html
 						text:
-							') - ' , memNow , 'MB now, ' , (MaxMemory / 1048576) truncated printString , 'MB top - '
+							' - ' , memNow , 'MB now, ' , (MaxMemory / 1048576) truncated printString , 'MB top - '
 								, sessionsNow printString , ' now, ' , MaxSessions printString , ' top' ] ]

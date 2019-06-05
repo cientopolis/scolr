@@ -12,7 +12,7 @@ renderCommentsTableOn: html
 						tableHeading: 'Review dimension';
 						tableHeading: 'Review text' ].
 			html
-				tableBody: [ dimensions 
+				tableBody: [ dimensions
 						do: [ :each | 
 							html
 								tableRow: [ html tableData: [ html text: each ].
@@ -28,7 +28,9 @@ renderCommentsTableOn: html
 												break ] ] ].
 					html
 						tableRow: [ html
-								tableData: [ html anchor
+								tableData: [ html submitButton
 										callback: [ self addNewReviewDimension ];
-										with: 'Add new' ].
-							html tableData: [ html text: 'only add a new dimension if you are really sure about it - it will be available for now on' ] ] ] ]
+										value: 'Add a new dimension' ].
+							html
+								tableData:
+									[ html text: 'Only add a new dimension if you are really sure about it. Dimensions that are never used (left empty) are automatically removed.' ] ] ] ]
