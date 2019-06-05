@@ -12,14 +12,13 @@ baseline: spec
 			self seasideDeployer: spec.
 			spec
 				package: 'Reviewnator-model';
-				package: 'Reviewnator-importers'
-					with: [ spec requires: #('NeoCSV') ];
+				package: 'Reviewnator-importers' with: [ spec requires: #('NeoCSV') ];
 				package: 'Reviewnator-persistence';
 				package: 'Reviewnator-seaside'
 					with: [ spec
 						requires:
 							#('Grease' 'Seaside3' 'Bootstrap-Core' 'Reviewnator-model' 'Reviewnator-importers' 'Reviewnator-persistence' 'Reviewnator-deployer' 'Reviewnator-PharoExtensions' 'Reviewnator-markdown') ];
-				package: 'Reviewnator-deployer'
-					with: [ spec requires: #('SeasideDeployer') ];
+				package: 'Reviewnator-deployer' with: [ spec requires: #('SeasideDeployer') ];
 				package: 'Reviewnator-PharoExtensions';
-				package: 'Reviewnator-markdown' ]
+				package: 'Reviewnator-markdown' ].
+	spec postLoadDoIt: #postLoadActions
