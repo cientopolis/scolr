@@ -1,6 +1,5 @@
 rendering
 renderMainContentOn: html
-
 	self renderActivitySelectorTabsOn: html.
 	html break.
 	selectedActivity = #plan
@@ -12,4 +11,6 @@ renderMainContentOn: html
 	selectedActivity = #review
 		ifTrue: [ self renderReviewActivityOn: html ].
 	selectedActivity = #report
-		ifTrue: [ self renderReportActivityOn: html ]
+		ifTrue: [ self renderReportActivityOn: html ].
+	selectedActivity = #discuss
+		ifTrue: [ self renderDiscussActivityOn: html ]

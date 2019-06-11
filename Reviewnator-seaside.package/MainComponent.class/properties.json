@@ -19,6 +19,7 @@
 		"classifyArticlesListSubcomponent",
 		"reviewArticlesListSubcomponent",
 		"reportSubcomponent",
+		"discussSubcomponent",
 		"reviewAnyway"
 	],
 	"name" : "MainComponent",
