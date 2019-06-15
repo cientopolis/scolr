@@ -2,9 +2,7 @@ callbacks
 generateHtmlReport
 	| content |
 	content := WAHtmlCanvas builder
-		render: [ :htmlCanvas | 
-			self renderReportOn: htmlCanvas.
-			self renderCommentsOn: htmlCanvas ].
+		render: [ :htmlCanvas | self renderReportOn: htmlCanvas ].
 	self requestContext
 		respond: [ :response | 
 			response
