@@ -1,0 +1,3 @@
+rendering
+renderContent
+	self shouldBeImplemented.

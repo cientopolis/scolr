@@ -1,0 +1,3 @@
+callbacks
+tryAgain
+	self resetProperties

@@ -1,0 +1,22 @@
+{
+	"commentStamp" : "Casco 9/25/2018 18:11",
+	"super" : "Object",
+	"category" : "Scolr-seaside-configuration",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"accessCode",
+		"repositoryFilename",
+		"notes",
+		"articleLimit",
+		"isActive",
+		"isAdmin",
+		"isPrivate",
+		"modificationDate",
+		"requestorsEmail",
+		"cachedCoReviewTitle"
+	],
+	"name" : "ReviewnatorAccessCredential",
+	"type" : "normal"
+}

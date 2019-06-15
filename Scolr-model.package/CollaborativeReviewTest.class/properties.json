@@ -1,0 +1,19 @@
+{
+	"commentStamp" : "",
+	"super" : "TestCase",
+	"category" : "Scolr-model-tests",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"aCoReview",
+		"announcements",
+		"aResultSet",
+		"anotherResultSet",
+		"articleOne",
+		"articleTwo",
+		"articleThree"
+	],
+	"name" : "CollaborativeReviewTest",
+	"type" : "normal"
+}

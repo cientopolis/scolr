@@ -1,0 +1,3 @@
+smtp
+smtp
+	^ MailComposition smtpServer

@@ -1,0 +1,16 @@
+{
+	"commentStamp" : "Casco 9/30/2018 09:28",
+	"super" : "WAComponent",
+	"category" : "Scolr-seaside-components",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [
+		"KoboldServer",
+		"KoboldToken",
+		"MaxMemory",
+		"MaxSessions"
+	],
+	"instvars" : [ ],
+	"name" : "AbstractReviewnatorComponent",
+	"type" : "normal"
+}

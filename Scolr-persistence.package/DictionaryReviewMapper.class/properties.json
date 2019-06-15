@@ -1,0 +1,13 @@
+{
+	"commentStamp" : "Casco 9/27/2018 09:03",
+	"super" : "Object",
+	"category" : "Scolr-persistence-model",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"users"
+	],
+	"name" : "DictionaryReviewMapper",
+	"type" : "normal"
+}

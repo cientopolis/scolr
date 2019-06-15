@@ -1,0 +1,15 @@
+{
+	"commentStamp" : "Casco 9/22/2018 17:49",
+	"super" : "Object",
+	"category" : "Scolr-importers-model",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"labelsToPositionsDictionary",
+		"missingColumns",
+		"ignoredColumns"
+	],
+	"name" : "ScopusMapper",
+	"type" : "normal"
+}

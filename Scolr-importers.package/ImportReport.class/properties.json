@@ -1,0 +1,15 @@
+{
+	"commentStamp" : "Casco 8/25/2018 17:10",
+	"super" : "Object",
+	"category" : "Scolr-importers-model",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"importErrors",
+		"importWarnings",
+		"ignoredArticles"
+	],
+	"name" : "ImportReport",
+	"type" : "normal"
+}

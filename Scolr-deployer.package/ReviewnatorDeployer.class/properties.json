@@ -1,0 +1,14 @@
+{
+	"commentStamp" : "Casco 9/29/2018 13:15",
+	"super" : "BootstrapDeployer",
+	"category" : "Scolr-deployer",
+	"classinstvars" : [
+		"adminEmail",
+		"smtp"
+	],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "ReviewnatorDeployer",
+	"type" : "normal"
+}

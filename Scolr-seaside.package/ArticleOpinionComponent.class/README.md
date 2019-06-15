@@ -1,0 +1,1 @@
+Abstract class for components that / edit a users opinion about an article

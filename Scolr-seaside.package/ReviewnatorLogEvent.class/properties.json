@@ -1,0 +1,15 @@
+{
+	"commentStamp" : "Casco 9/26/2018 21:48",
+	"super" : "WAFileLibrary",
+	"category" : "Scolr-seaside-utilities",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"text",
+		"date",
+		"user"
+	],
+	"name" : "ReviewnatorLogEvent",
+	"type" : "normal"
+}

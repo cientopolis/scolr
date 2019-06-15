@@ -1,0 +1,3 @@
+hooks
+nonExistingFileReference
+	^ self subclassResponsibility 

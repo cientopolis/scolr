@@ -1,0 +1,14 @@
+{
+	"commentStamp" : "Casco 9/28/2018 07:15",
+	"super" : "ReviewnatorStandaloneComponent",
+	"category" : "Scolr-seaside-components",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"reportSubcomponent",
+		"selectedRepository"
+	],
+	"name" : "PublicReviewsComponent",
+	"type" : "normal"
+}

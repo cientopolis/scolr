@@ -1,0 +1,15 @@
+{
+	"commentStamp" : "",
+	"super" : "TestCase",
+	"category" : "Scolr-model-tests",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"articleOne",
+		"articleTwo",
+		"aUser"
+	],
+	"name" : "ArticleTest",
+	"type" : "normal"
+}

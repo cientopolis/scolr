@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "Casco 8/26/2018 16:17",
+	"super" : "AbstractReviewnatorSubComponent",
+	"category" : "Scolr-seaside-subcomponents",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "SetSelectorSubComponent",
+	"type" : "normal"
+}

@@ -1,0 +1,13 @@
+{
+	"commentStamp" : "",
+	"super" : "MarkdownElement",
+	"category" : "Scolr-markdown",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"bordered"
+	],
+	"name" : "MarkdownTable",
+	"type" : "normal"
+}

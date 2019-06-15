@@ -1,0 +1,3 @@
+accessing
+userAcceptedTermsAndConditions: username
+	self usersThatAcceptedTermsAndConditions add: username

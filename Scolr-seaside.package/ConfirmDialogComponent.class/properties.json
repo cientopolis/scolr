@@ -1,0 +1,13 @@
+{
+	"commentStamp" : "Casco 9/26/2018 20:19",
+	"super" : "ReviewnatorStandaloneComponent",
+	"category" : "Scolr-seaside-components",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"text"
+	],
+	"name" : "ConfirmDialogComponent",
+	"type" : "normal"
+}

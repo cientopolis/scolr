@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "Casco 8/25/2018 19:01",
+	"super" : "WAFileLibrary",
+	"category" : "Scolr-seaside-utilities",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "ReviewnatorFileLibrary",
+	"type" : "normal"
+}

@@ -1,0 +1,14 @@
+{
+	"commentStamp" : "Casco 9/23/2018 19:45",
+	"super" : "Opinion",
+	"category" : "Scolr-model-model",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"decision",
+		"comments"
+	],
+	"name" : "Classification",
+	"type" : "normal"
+}

@@ -1,0 +1,17 @@
+{
+	"commentStamp" : "<historical>",
+	"super" : "Object",
+	"category" : "Scolr-importers-model",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"resultSet",
+		"columnLabels",
+		"importReport",
+		"mapper",
+		"articles"
+	],
+	"name" : "CSVImporter",
+	"type" : "normal"
+}

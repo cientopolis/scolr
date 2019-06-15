@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "Casco 9/28/2018 16:55",
+	"super" : "MarkdownElement",
+	"category" : "Scolr-markdown",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "MarkdownParagraph",
+	"type" : "normal"
+}

@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "",
+	"super" : "ChangeUnawareFileRepositoryAbstractTest",
+	"category" : "Scolr-persistence-tests",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "ChangeUnawareFuelRepositoryTest",
+	"type" : "normal"
+}

@@ -1,0 +1,16 @@
+{
+	"commentStamp" : "Casco 9/29/2018 13:49",
+	"super" : "Object",
+	"category" : "Scolr-model-model",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"authorEmail",
+		"offeredAccessCode",
+		"text",
+		"timestamp"
+	],
+	"name" : "Comment",
+	"type" : "normal"
+}

@@ -1,0 +1,3 @@
+loading
+resetSingleton
+	singleton := nil

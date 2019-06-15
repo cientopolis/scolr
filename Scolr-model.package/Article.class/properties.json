@@ -1,0 +1,19 @@
+{
+	"commentStamp" : "Casco 9/22/2018 16:11",
+	"super" : "Object",
+	"category" : "Scolr-model-model",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"authors",
+		"title",
+		"year",
+		"abstract",
+		"documentType",
+		"classifications",
+		"reviews"
+	],
+	"name" : "Article",
+	"type" : "normal"
+}

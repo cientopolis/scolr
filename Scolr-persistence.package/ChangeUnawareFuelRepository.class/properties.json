@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "Casco 9/27/2018 07:46",
+	"super" : "ChangeUnawareFileRepository",
+	"category" : "Scolr-persistence-model",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "ChangeUnawareFuelRepository",
+	"type" : "normal"
+}

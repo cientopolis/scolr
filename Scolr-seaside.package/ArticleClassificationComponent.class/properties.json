@@ -1,0 +1,13 @@
+{
+	"commentStamp" : "Casco 8/26/2018 17:55",
+	"super" : "ArticleOpinionComponent",
+	"category" : "Scolr-seaside-components",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"comments"
+	],
+	"name" : "ArticleClassificationComponent",
+	"type" : "normal"
+}

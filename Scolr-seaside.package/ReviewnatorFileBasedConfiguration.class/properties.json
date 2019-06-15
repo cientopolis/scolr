@@ -1,0 +1,22 @@
+{
+	"commentStamp" : "Casco 8/26/2018 22:06",
+	"super" : "Object",
+	"category" : "Scolr-seaside-configuration",
+	"classinstvars" : [
+		"singleton"
+	],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"adminAccessCode",
+		"activeAccessCodes",
+		"storageFolder",
+		"accessCredentials",
+		"suggestedAccessCodes",
+		"smtpServer",
+		"emailSender",
+		"usersThatAcceptedTermsAndConditions"
+	],
+	"name" : "ReviewnatorFileBasedConfiguration",
+	"type" : "normal"
+}

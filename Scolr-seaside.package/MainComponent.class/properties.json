@@ -1,0 +1,27 @@
+{
+	"commentStamp" : "Casco 9/22/2015 13:35",
+	"super" : "ReviewnatorStandaloneComponent",
+	"category" : "Scolr-seaside-components",
+	"classinstvars" : [
+		"transientEventLog",
+		"includedFilter",
+		"excludedFilter",
+		"alreadyClassifiedFilter"
+	],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"selectedResulSets",
+		"setSelectorSubcomponent",
+		"articleListSubComponent",
+		"reviewSummarySubComponent",
+		"selectedActivity",
+		"classifyArticlesListSubcomponent",
+		"reviewArticlesListSubcomponent",
+		"reportSubcomponent",
+		"discussSubcomponent",
+		"reviewAnyway"
+	],
+	"name" : "MainComponent",
+	"type" : "normal"
+}

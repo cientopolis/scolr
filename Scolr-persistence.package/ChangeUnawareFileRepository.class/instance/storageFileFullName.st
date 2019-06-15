@@ -1,0 +1,3 @@
+hooks
+storageFileFullName
+	^ self subclassResponsibility 

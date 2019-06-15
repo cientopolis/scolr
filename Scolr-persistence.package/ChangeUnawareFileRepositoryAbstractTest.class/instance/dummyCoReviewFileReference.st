@@ -1,0 +1,3 @@
+hooks
+dummyCoReviewFileReference
+	^ self subclassResponsibility 

@@ -1,0 +1,3 @@
+printint
+printOn: aStream
+	

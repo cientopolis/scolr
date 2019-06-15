@@ -1,0 +1,13 @@
+{
+	"commentStamp" : "Casco 10/7/2018 12:42",
+	"super" : "ReviewnatorStandaloneComponent",
+	"category" : "Scolr-seaside-components",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"dimension"
+	],
+	"name" : "NewDimensionComponent",
+	"type" : "normal"
+}

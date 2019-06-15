@@ -1,0 +1,17 @@
+{
+	"commentStamp" : "Casco 9/26/2018 16:21",
+	"super" : "ReviewnatorStandaloneComponent",
+	"category" : "Scolr-seaside-components",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"accessCode",
+		"email",
+		"title",
+		"notes",
+		"credential"
+	],
+	"name" : "AccessCodeRequestComponent",
+	"type" : "normal"
+}

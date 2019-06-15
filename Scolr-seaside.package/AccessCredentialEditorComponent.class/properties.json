@@ -1,0 +1,17 @@
+{
+	"commentStamp" : "Casco 9/26/2018 07:14",
+	"super" : "ReviewnatorStandaloneComponent",
+	"category" : "Scolr-seaside-components",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"credential",
+		"accessCode",
+		"repositoryFile",
+		"notes",
+		"limit"
+	],
+	"name" : "AccessCredentialEditorComponent",
+	"type" : "normal"
+}
