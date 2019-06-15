@@ -4,18 +4,18 @@ testReviewDimensions
 	articleOne
 		addReview:
 			(Review new
-				comment: '' inDimension: 'dim1';
+				comment: 'a' inDimension: 'dim1';
 				yourself).
 	self assert: aCoReview reviewDimensions size equals: 1.
 	articleThree
 		addReview:
 			(Review new
-				comment: '' inDimension: 'dim1';
+				comment: 'a' inDimension: 'dim1';
 				yourself).
 	self assert: aCoReview reviewDimensions size equals: 1.
 	articleTwo
 		addReview:
 			(Review new
-				comment: '' inDimension: 'dim2';
+				comment: 'a' inDimension: 'dim2';
 				yourself).
 	self assert: aCoReview reviewDimensions size equals: 2
