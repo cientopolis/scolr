@@ -6,7 +6,6 @@ baseline: spec
 		do: [ spec repository: 'bitbucket://casco/scolr'.
 			self neoJSON: spec.
 			self neoCSV: spec.
-			self grease: spec.
 			self seaside: spec.
 			self bootstrap: spec.
 			self seasideDeployer: spec.
