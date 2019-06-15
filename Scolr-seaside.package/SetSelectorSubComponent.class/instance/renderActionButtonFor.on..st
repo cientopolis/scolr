@@ -1,12 +1,12 @@
 rendering
 renderActionButtonFor: resultSet on: html
 	| menu |
-	menu := [ (parent selectedResulSets includes: resultSet)
+	menu := [ html
+		tbsDropdownMenuItem: [ html anchor
+				callback: [ self editPropertiesdOf: resultSet ];
+				with: 'Edit' ].
+	(parent selectedResulSets includes: resultSet)
 		ifTrue: [ html
-				tbsDropdownMenuItem: [ html anchor
-						callback: [ self editPropertiesdOf: resultSet ];
-						with: 'Edit' ].
-			html
 				tbsDropdownMenuItem: [ html anchor
 						callback: [ parent unselectResultSet: resultSet ];
 						with: 'Hide' ] ]
