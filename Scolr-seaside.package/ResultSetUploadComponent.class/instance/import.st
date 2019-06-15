@@ -1,6 +1,5 @@
 callbacks
 import
-	importer := CSVImporter new.
 	importer
 		readFrom: uploadedFile
 		ignoringDuplicatesIn:
