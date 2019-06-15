@@ -7,4 +7,4 @@ renderBibAlertOn: html
 							'Bibtex files (with .bib extension and UTF8 encoding) are the preferred input format.';
 						break;
 						text:
-							'Comments in the file (using %) are ignored. Abreviations (using #) are not supported.' ] ]
+							'Comments in the file (using %) are ignored. Abbreviations (using #) are not supported.' ] ]
