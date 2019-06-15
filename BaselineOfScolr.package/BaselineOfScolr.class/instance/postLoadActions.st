@@ -4,7 +4,7 @@ postLoadActions
 
 	GTPlayground
 		edit:
-			'ReviewnatorDeployer prepareForDeploymentOnPort: 8000 adminEmail: ''scolr@yourdomain.com'' smtp: ''yourdomain''.
+			'ReviewnatorDeployer prepareForDevelopmentOnPort: 8000 adminEmail: ''scolr@yourdomain.com'' smtp: ''yourdomain''.
 
 WAAdmin defaultDispatcher defaultName: ''scolr''.'
 		label: 'Scolr'

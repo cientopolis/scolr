@@ -6,6 +6,7 @@ baseline: spec
 		do: [ spec repository: 'bitbucket://casco/scolr'.
 			self neoJSON: spec.
 			self neoCSV: spec.
+			self grease: spec.
 			self seaside: spec.
 			self bootstrap: spec.
 			self seasideDeployer: spec.
@@ -17,7 +18,8 @@ baseline: spec
 					with: [ spec
 						requires:
 							#('Grease' 'Seaside3' 'Bootstrap-Core' 'Scolr-model' 'Scolr-importers' 'Scolr-persistence' 'Scolr-deployer' 'Scolr-PharoExtensions' 'Scolr-markdown') ];
-				package: 'Scolr-deployer' with: [ spec requires: #('SeasideDeployer') ];
+				package: 'Scolr-deployer'
+					with: [ spec requires: #('SeasideDeployer') ];
 				package: 'Scolr-PharoExtensions';
 				package: 'Scolr-markdown' ].
 	spec postLoadDoIt: #postLoadActions

@@ -10,22 +10,9 @@ renderUploadFormOn: html
 						for: 'file';
 						with: 'File'.
 					html break.
-					html
-						small: [ html
-								text:
-									'Only CSV files (comma separated values) with UTF8 encoding are accepted.';
-								break;
-								text:
-									'The first row of the file should include the following mandatory column headers: ';
-								break;
-								strong: 'authors, title, abstract, year';
-								break;
-								text: 'Other column headers will be ignored.';
-								break;
-								text: 'Articles with missing values will be ignored.' ].
-					html
-						break;
-						break.
+					self
+						renderBibAlertOn: html;
+						renderCsvAlertOn: html.
 					html fileUpload
 						callback: [ :value | self receiveFile: value ];
 						id: 'file' ].
