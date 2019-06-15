@@ -10,6 +10,7 @@ baseline: spec
 			self seaside: spec.
 			self bootstrap: spec.
 			self seasideDeployer: spec.
+			self petitBibtex: spec.
 			spec
 				package: 'Scolr-model';
 				package: 'Scolr-importers' with: [ spec requires: #('NeoCSV') ];
@@ -17,7 +18,7 @@ baseline: spec
 				package: 'Scolr-seaside'
 					with: [ spec
 						requires:
-							#('Grease' 'Seaside3' 'Bootstrap-Core' 'Scolr-model' 'Scolr-importers' 'Scolr-persistence' 'Scolr-deployer' 'Scolr-PharoExtensions' 'Scolr-markdown') ];
+							#('Grease' 'Seaside3' 'Bootstrap-Core' 'Scolr-model' 'Scolr-importers' 'Scolr-persistence' 'Scolr-deployer' 'Scolr-PharoExtensions' 'Scolr-markdown' 'PetitBibtex') ];
 				package: 'Scolr-deployer'
 					with: [ spec requires: #('SeasideDeployer') ];
 				package: 'Scolr-PharoExtensions';
