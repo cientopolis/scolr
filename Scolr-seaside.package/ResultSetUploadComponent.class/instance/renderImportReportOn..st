@@ -1,7 +1,7 @@
 rendering-report
 renderImportReportOn: html
-	importer articles 
-		ifEmpty: [ html heading
+	importer articles isEmpty & importer importReport failed
+		ifTrue: [ html heading
 				level: 2;
 				with: 'Import failed'.
 			html break.
@@ -14,7 +14,7 @@ renderImportReportOn: html
 					html tbsButton
 						callback: [ self cancel ];
 						with: 'Cancel' ] ]
-		ifNotEmpty: [ self renderListOfFoundArticlesOn: html.
+		ifFalse: [ self renderListOfFoundArticlesOn: html.
 			self renderListOfIgnoredArticlesOn: html.
 			html break.
 			self reportWarningsAndErrorsFromImportReport.
