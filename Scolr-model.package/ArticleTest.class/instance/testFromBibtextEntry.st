@@ -15,6 +15,8 @@ testFromBibtextEntry
 	self assert: articleOne year equals: 'the year'.
 	self assert: articleOne authors equals: 'the editor'.
 	self assert: articleOne abstract equals: 'the abstract'.
+	self assert: articleOne documentType equals: 'book'.
+	self assert: articleOne bibtexEntry equals: entry.
 	entry at: 'author' put: 'the author'.
 	articleOne := Article fromBibtexEntry: entry.
 	self assert: articleOne authors equals: 'the author'

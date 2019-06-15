@@ -12,7 +12,8 @@
 		"abstract",
 		"documentType",
 		"classifications",
-		"reviews"
+		"reviews",
+		"bibtexEntry"
 	],
 	"name" : "Article",
 	"type" : "normal"

@@ -1,3 +1,8 @@
 hooks
 materializeFromStream: aStream
-	^ DictionaryReviewMapper new materializeCoReviewFrom: (NeoJSONReader on: aStream) next
+	| reader |
+	reader := NeoJSONReader on: aStream.
+	reader
+		mapInstVarsFor: BibtexEntry;
+		mapInstVarsFor: BibtexTag.
+	^ DictionaryReviewMapper new materializeCoReviewFrom: reader next

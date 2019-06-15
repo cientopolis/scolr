@@ -11,4 +11,5 @@ testLoadingFromExistingFile
 	self assertArticlesAreOkInSets: coReview resultSets.
 	self assertUsersAreUniqueInReview: coReview.
 	self assertClassificationAndReviewAreOkIn: coReview.
-	self assertCommentAreOkIn: coReview 
+	self assertCommentAreOkIn: coReview.
+	self assertBibtexEntriesAreOk: coReview.

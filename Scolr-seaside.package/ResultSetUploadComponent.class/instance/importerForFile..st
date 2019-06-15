@@ -4,5 +4,5 @@ importerForFile: aFile
 		or: [ aFile fileName asLowercase endsWith: 'csv' ])
 		ifTrue: [ ^ CSVImporter new ].
 	(aFile fileName asLowercase endsWith: 'bib')
-		ifTrue: [ ^ CSVImporter new ].
+		ifTrue: [ ^ BibtexImporter new ].
 	^ nil

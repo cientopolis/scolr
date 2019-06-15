@@ -1,6 +1,6 @@
 private
 dummyCoReview
-	| resultSetOne resultSetTwo articleOne articleTwo articleThree coReview userOne userTwo reviewOne classificationOne |
+	| resultSetOne resultSetTwo articleOne articleTwo articleThree coReview userOne userTwo reviewOne classificationOne bibtexEntryForArticleThree |
 	coReview := CollaborativeReview new
 		title: 'This is the title';
 		notes: 'These are the notes';
@@ -37,12 +37,16 @@ dummyCoReview
 	resultSetOne
 		addArticle: articleOne;
 		addArticle: articleTwo.
-	articleThree := Article
-		title: 'Título tres'
-		authors: 'Autores tres'
-		year: 'Año tres'
-		abstract: 'Abstract tres'
-		documentType: 'Tipo tres'.
+	bibtexEntryForArticleThree := BibtexEntry
+		type: 'Tipo tres'
+		citationKey: 'ignored'
+		tags:
+			(Set
+				with: (BibtexTag name: 'title' value: 'Título tres')
+				with: (BibtexTag name: 'year' value: 'Año tres')
+				with: (BibtexTag name: 'author' value: 'Autores tres')
+				with: (BibtexTag name: 'abstract' value: 'Abstract tres')).
+	articleThree := Article fromBibtexEntry: bibtexEntryForArticleThree.
 	resultSetTwo addArticle: articleThree.
 	reviewOne := Review new
 		author: userOne;

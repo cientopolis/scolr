@@ -6,4 +6,4 @@ initialize
 	documentType := ''.
 	abstract := ''.
 	classifications := OrderedCollection new.
-	reviews := OrderedCollection new
+	reviews := OrderedCollection new.

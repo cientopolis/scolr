@@ -1,5 +1,9 @@
 hooks
 prepareFileWithDummyCoReview
-	FileStream
-		forceNewFileNamed: self dummyCoReviewFileReference fullName
-		do: [ :aStream | (NeoJSONWriter on: aStream) nextPut: (DictionaryReviewMapper new serializeCoReview: self dummyCoReview) ]
+	self dummyCoReviewFileReference fullName asFileReference
+		ensureDelete;
+		writeStreamDo: [ :aStream | 
+			(NeoJSONWriter on: aStream)
+				mapInstVarsFor: BibtexEntry;
+				mapInstVarsFor: BibtexTag;
+				nextPut: (DictionaryReviewMapper new serializeCoReview: self dummyCoReview) ]
