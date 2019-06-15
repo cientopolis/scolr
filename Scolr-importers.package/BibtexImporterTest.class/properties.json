@@ -1,11 +1,11 @@
 {
-	"commentStamp" : "Casco 9/23/2018 19:18",
+	"commentStamp" : "",
 	"super" : "ImporterTest",
 	"category" : "Scolr-importers-tests",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [ ],
-	"name" : "CSVImporterTest",
+	"name" : "BibtexImporterTest",
 	"type" : "normal"
 }

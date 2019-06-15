@@ -1,4 +1,4 @@
 initialize-release
 initialize
 	articles := OrderedCollection new. 
-	importReport := ImportReport new
+	importReport := ImportReport new 

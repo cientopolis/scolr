@@ -1,7 +1,7 @@
 running
-setUpFile: selector
+setUpFile: selector extension: ext
 	| stream file |
-	file := FileSystem disk workingDirectory / (selector asString , '.csv').
+	file := FileSystem disk workingDirectory / (selector asString , ext).
 	file exists
 		ifTrue: [ file delete ].
 	stream := file writeStream.

@@ -9,7 +9,7 @@ readFrom: aFileReference ignoringDuplicatesIn: existingArticles
 		on: Error
 		do: [ importReport reportError: 'There is a problem with the column headers. Maybe an empty one?' ].
 	importReport failed
-		ifFalse: [ [ reader do: [ :each | self importRow: each ignoreDuplicatesIn: existingArticles ].
+		ifFalse: [ [ reader do: [ :each | self importEntry: each ignoreDuplicatesIn: existingArticles ].
 			articles size > 50
 				ifTrue: [ importReport
 						reportWarning: 'Found over 50 articles. Are you sure you will be able to read that many? Be sure before importing the list' ] ]

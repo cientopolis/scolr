@@ -1,15 +1,11 @@
 {
-	"commentStamp" : "<historical>",
+	"commentStamp" : "",
 	"super" : "ScolrImporter",
 	"category" : "Scolr-importers-model",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
-	"instvars" : [
-		"resultSet",
-		"columnLabels",
-		"mapper"
-	],
-	"name" : "CSVImporter",
+	"instvars" : [ ],
+	"name" : "BibtexImporter",
 	"type" : "normal"
 }

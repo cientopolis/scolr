@@ -1,7 +1,13 @@
 running
 tearDown
-	self tearDownFile: #scopusHapticAgricultireTitleCaseHeaders.
-	self tearDownFile: #scopusOnlyMandatoryHeadersFrenchUTF8Text.
-	self tearDownFile: #chiAgricultureMissingHeaders.
-	self tearDownFile: #headersOkButWithEmptyMandatoryFields.
-	self tearDownFile: #emptyElementInHeadersRow
+	self
+		tearDownFile: #scopusHapticAgricultireTitleCaseHeaders
+		extension: '.csv'.
+	self
+		tearDownFile: #scopusOnlyMandatoryHeadersFrenchUTF8Text
+		extension: '.csv'.
+	self tearDownFile: #chiAgricultureMissingHeaders extension: '.csv'.
+	self
+		tearDownFile: #headersOkButWithEmptyMandatoryFields
+		extension: '.csv'.
+	self tearDownFile: #emptyElementInHeadersRow extension: '.csv'
