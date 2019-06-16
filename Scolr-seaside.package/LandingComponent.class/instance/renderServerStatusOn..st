@@ -5,19 +5,12 @@ renderServerStatusOn: html
 	sessionsNow := self application sessions size.
 	html paragraph
 		with: [ html
-				small: [ html
-						text:
-							'Released: ' , ReviewnatorDeployer releaseDate printString , ' in '
-								, ReviewnatorDeployer mode , ' mode from commit '.
+				small: [ html text: 'Released: ' , ReviewnatorDeployer releaseDate printString , ' in ' , ReviewnatorDeployer mode , ' mode from commit '.
 					html anchor
-						url:
-							'https://bitbucket.org/casco/scolr/commits/'
-								, ReviewnatorDeployer iceWorkingCopy referenceCommit id;
+						url: 'https://bitbucket.org/casco/scolr/commits/' , ReviewnatorDeployer fullReferenceCommit;
 						target: '_new';
-						with: ReviewnatorDeployer referenceCommit.
+						with: ReviewnatorDeployer shortReferenceCommit.
 					html
 						text:
-							' - ' , memNow , 'MB now, '
-								, (MaxMemory / 1048576) truncated printString , 'MB top - '
-								, sessionsNow printString , ' now, ' , MaxSessions printString
-								, ' top' ] ]
+							' - ' , memNow , 'MB now, ' , (MaxMemory / 1048576) truncated printString , 'MB top - ' , sessionsNow printString , ' now, '
+								, MaxSessions printString , ' top' ] ]
