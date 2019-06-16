@@ -1,3 +1,4 @@
 accessing
 coReview: anObject
-	coReview := anObject
+	coReview := anObject.
+	
