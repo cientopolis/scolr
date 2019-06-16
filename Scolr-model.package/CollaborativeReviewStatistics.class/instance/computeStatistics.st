@@ -14,6 +14,6 @@ computeStatistics
 	excludedYearlyDistribution := (excluded collect: #year) asBag
 		sortedElements.
 	averageClassifiers := (coReview allArticles
-		sumNumbers: [ :each | each classifications size ]) average.
+		collect: [ :each | each classifications size ]) average.
 	averageReviewers := (coReview includedArticles
-		sumNumbers: [ :each | each reviews size ]) average
+		collect: [ :each | each reviews size ]) average

@@ -13,5 +13,6 @@ report
 			'.
 	self
 		renderSearchResultsOverviewOn: stream;
-		renderSearchResultsTableOn: stream.
+		renderSearchResultsTableOn: stream;
+		renderRemarksAboutTheClassificationPhaseOn: stream.
 	^ stream contents
