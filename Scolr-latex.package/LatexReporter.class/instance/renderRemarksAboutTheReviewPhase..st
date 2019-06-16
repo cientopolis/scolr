@@ -1,7 +1,10 @@
 redering
 renderRemarksAboutTheReviewPhase: stream
-	| tagsString |
-	tagsString := '{' , ((statistics reviewTagFrequencies collect: #key) asSortedCollection fold: [ :a :b | a , ',' , b ]) , '}'.
+	| tagsString coordinatesString |
+	self halt. 
+	tagsString := '{' , ((statistics reviewTagFrequencies collect: #key) asSortedCollection fold: [ :a :b | a , ',' , b ] ifEmpty: [ '' ]) , '}'.
+	coordinatesString := '{'
+		, ((statistics reviewTagFrequencies collect: [ :each | '(' , each key , ',' , each value printString , ')' ]) fold: [ :a :b | a , ' ' , b ] ifEmpty: [ '' ]) , '}'.
 	stream
 		nextPutAll:
 			'
@@ -45,8 +48,7 @@ Tags were used to organize articles into the taxonomies of interest for this rev
 					',
   ]
 \addplot 
-	coordinates {(10,Tag 1) (7,Tag 2) (7,Tag 3) (1,Tag 4) (5,Tag 5)
-	(3,Tag 6) (10,Tag 7) (6,Tag 8) (4,Tag 9) (3,Tag very long 10)};
+	coordinates ',coordinatesString,';
 \end{axis}
 \end{tikzpicture}
 \end{center}

@@ -14,5 +14,7 @@ report
 	self
 		renderSearchResultsOverviewOn: stream;
 		renderSearchResultsTableOn: stream;
-		renderRemarksAboutTheClassificationPhaseOn: stream.
+		renderRemarksAboutTheClassificationPhaseOn: stream;
+		renderRemarksAboutTheReviewPhase: stream.
+	stream nextPutAll: '\end{document}'.
 	^ stream contents
