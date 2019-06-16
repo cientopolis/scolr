@@ -14,7 +14,9 @@
 		"excludedYearlyDistribution",
 		"averageClassifiers",
 		"averageReviewers",
-		"ignoredAsDuplicateCount"
+		"ignoredAsDuplicateCount",
+		"classificationTagFrequencies",
+		"reviewTagFrequencies"
 	],
 	"name" : "CollaborativeReviewStatistics",
 	"type" : "normal"
