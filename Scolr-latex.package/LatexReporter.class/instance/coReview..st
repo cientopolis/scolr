@@ -1,4 +1,5 @@
 accessing
 coReview: anObject
-	coReview := anObject.
-	
+	statistics := CollaborativeReviewStatistics
+		coReview: anObject.
+	coReview := anObject

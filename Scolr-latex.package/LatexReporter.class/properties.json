@@ -6,7 +6,8 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"coReview"
+		"coReview",
+		"statistics"
 	],
 	"name" : "LatexReporter",
 	"type" : "normal"

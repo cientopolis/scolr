@@ -6,7 +6,8 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"editedComment"
+		"editedComment",
+		"statisticsCache"
 	],
 	"name" : "ReportSubcomponent",
 	"type" : "normal"

@@ -1,5 +1,5 @@
 redering
-renderSearchResultsOn: stream
+renderSearchResultsOverviewOn: stream
 	stream
 		nextPutAll:
 			'\subsection{Search results}

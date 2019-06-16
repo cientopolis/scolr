@@ -11,5 +11,7 @@ report
 			'\section{Analysis}
 			
 			'.
-	self renderSearchResultsOn: stream.
+	self
+		renderSearchResultsOverviewOn: stream;
+		renderSearchResultsTableOn: stream.
 	^ stream contents

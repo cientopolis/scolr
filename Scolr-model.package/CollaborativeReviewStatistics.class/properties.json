@@ -1,0 +1,21 @@
+{
+	"commentStamp" : "",
+	"super" : "Object",
+	"category" : "Scolr-model-model",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"coReview",
+		"articleCount",
+		"includedArticleCount",
+		"excludedArticleCount",
+		"includedYearlyDistribution",
+		"excludedYearlyDistribution",
+		"averageClassifiers",
+		"averageReviewers",
+		"ignoredAsDuplicateCount"
+	],
+	"name" : "CollaborativeReviewStatistics",
+	"type" : "normal"
+}

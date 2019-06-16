@@ -1,12 +1,13 @@
 redering
 renderOpeningLinesOn: stream
-  stream nextPutAll: '\documentclass[runningheads]{llncs}
+  stream nextPutAll: '\documentclass{article}
+
 \usepackage{graphicx}
 \usepackage{tabularx}
 \usepackage{pgfplots}
 
 \begin{document}
-\title{[[review-title]]}
+\title{', coReview title, '}
 \author{First Author \and Second Author \and Third Author}
 \maketitle 
 
