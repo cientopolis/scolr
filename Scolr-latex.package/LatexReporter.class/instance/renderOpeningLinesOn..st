@@ -5,6 +5,7 @@ renderOpeningLinesOn: stream
 \usepackage{graphicx}
 \usepackage{tabularx}
 \usepackage{pgfplots}
+\pgfplotsset{compat=1.5}
 \usepackage{filecontents}
 
 \begin{document}
