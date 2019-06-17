@@ -1,6 +1,7 @@
 redering
 report
 	| stream |
+	bibtexEntries := self bibtextEntriesForIncludedArticles.
 	stream := String new writeStream.
 	self
 		renderOpeningLinesOn: stream;
@@ -16,6 +17,10 @@ report
 		renderSearchResultsTableOn: stream;
 		renderRemarksAboutTheClassificationPhaseOn: stream;
 		renderRemarksAboutTheReviewPhase: stream;
-		renderReviewNotesOn: stream.
-	stream nextPutAll: '\end{document}'.
+		renderReviewNotesOn: stream;
+		renderTheBibliographyOn: stream.
+	stream nextPutAll: '\end{document}
+	
+	'.
+	self renderEmbeddedBibliographyFileOn: stream.
 	^ stream contents

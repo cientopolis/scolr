@@ -5,6 +5,7 @@ renderOpeningLinesOn: stream
 \usepackage{graphicx}
 \usepackage{tabularx}
 \usepackage{pgfplots}
+\usepackage{filecontents}
 
 \begin{document}
 \title{', coReview title, '}
@@ -14,7 +15,6 @@ renderOpeningLinesOn: stream
 \begin{abstract}
 The abstract should briefly summarize the research questions and main findings of this review in 15--250 words.
 
-\keywords{First keyword  \and Second keyword \and Another keyword.}
 \end{abstract}
 
 '

@@ -14,12 +14,17 @@ These are the individual notes for each review dimention, and rach article. You 
 				cr.
 			(coReview includedArticles asSortedCollection: [ :a :b | a title < b title ])
 				do: [ :article | 
-					reviews := article reviews
-						select: [ :each | (each commentInDimension: dimension) notEmpty ].
+					reviews := article reviews select: [ :each | (each commentInDimension: dimension) notEmpty ].
 					reviews
 						do: [ :review | 
-							stream nextPutAll: '\subsubsection*{', article title, '}'.
 							stream
-							   nextPutAll: '(', review author shortenedUsername , ') ';
+								nextPutAll: '\subsubsection*{' , article title , '}';
+								cr.
+							stream
+								cr;
+								nextPutAll: 'These all notes available for \cite{' , (bibtexEntries at: article) citationKey , '}\\';
+								cr.
+							stream
+								nextPutAll: '(' , review author shortenedUsername , ') ';
 								nextPutAll: (review commentInDimension: dimension);
 								cr ] ] ]

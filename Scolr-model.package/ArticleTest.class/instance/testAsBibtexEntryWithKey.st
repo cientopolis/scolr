@@ -5,6 +5,7 @@ testAsBibtexEntryWithKey
 	self assert: asEntryWithKey citationKey equals: 'abcKey'.
 	self assert: asEntryWithKey year equals: articleOne year.
 	self assert: asEntryWithKey type equals: 'misc'.
+	self assert: (articleOne asBibtexEntryWithKey: 'abcKey') equals: (articleOne asBibtexEntryWithKey: 'abcKey').
 	entry := BibtexEntry
 		type: 'book'
 		citationKey: 'key'

@@ -28,7 +28,7 @@ Articles were analyzed according to the following dimensions:
 Tags were used to organize articles into the taxonomies of interest for this review. 
 
 \begin{figure}
-\label{fig:byYear}
+\label{fig:byTag}
 \caption{Taxonomy of articles}
 \begin{center}
 \begin{tikzpicture}
