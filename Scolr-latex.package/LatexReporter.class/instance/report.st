@@ -15,6 +15,7 @@ report
 		renderSearchResultsOverviewOn: stream;
 		renderSearchResultsTableOn: stream;
 		renderRemarksAboutTheClassificationPhaseOn: stream;
-		renderRemarksAboutTheReviewPhase: stream.
+		renderRemarksAboutTheReviewPhase: stream;
+		renderReviewNotesOn: stream.
 	stream nextPutAll: '\end{document}'.
 	^ stream contents

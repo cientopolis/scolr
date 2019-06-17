@@ -11,5 +11,5 @@ computeStatistics
 	excludedYearlyDistribution := (excluded collect: #year) asBag sortedElements.
 	averageClassifiers := (coReview allArticles collect: [ :each | each classifications size ]) ifEmpty: [ 0 ] ifNotEmpty: [ :col | col average ].
 	averageReviewers := (coReview includedArticles collect: [ :each | each reviews size ]) ifEmpty: [ 0 ] ifNotEmpty: [ :col | col average ].
-	classificationTagFrequencies := (coReview classifications flatCollect: [ :each | each tags ]) asBag.
-	reviewTagFrequencies := (coReview reviews flatCollect: [ :each | each tags ]) asBag 
+	classificationTagFrequencies := (coReview classifications flatCollect: [ :each | each tags ]) asBag sortedElements.
+	reviewTagFrequencies := (coReview reviews flatCollect: [ :each | each tags ]) asBag sortedElements
