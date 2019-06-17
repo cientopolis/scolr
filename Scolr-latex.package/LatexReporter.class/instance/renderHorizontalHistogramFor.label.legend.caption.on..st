@@ -1,6 +1,7 @@
 redering
-renderHorizontalHistogramFor: frecuencies label: aLabel caption: aCaption on: stream
+renderHorizontalHistogramFor: frecuencies label: aLabel legend: aLegend caption: aCaption on: stream
 	| ycoords plotCoordinatesStream height |
+	frecuencies ifEmpty: [ ^ self ].
 	ycoords := (frecuencies collect: #key) sort fold: [ :a :b | a , ',' , b ] ifEmpty: [ '' ].
 	height := (frecuencies size max: 4) printString , 'cm'.
 	plotCoordinatesStream := String new writeStream.
@@ -12,7 +13,7 @@ renderHorizontalHistogramFor: frecuencies label: aLabel caption: aCaption on: st
 	stream
 		nextPutAll:
 			'\begin{figure}
-\label{fig:byYear}
+\label{',aLabel, '}
 \caption{' , aCaption
 				,
 					'}
@@ -23,7 +24,7 @@ renderHorizontalHistogramFor: frecuencies label: aLabel caption: aCaption on: st
         width=12cm, height=' , height
 				,
 					', 
-        xlabel={' , aLabel
+        xlabel={' , aLegend
 				,
 					'},
         symbolic y coords={' , ycoords

@@ -2,6 +2,7 @@ initialization
 computeYearlyFrequenciesIn: aCollectionOfArticles
 	| allYears distribution firstYear lastYear allYearsAsNumbers missingYears |
 	allYears := (aCollectionOfArticles collect: #year) asBag.
+	allYears ifEmpty: [ ^ Set new ].
 	allYearsAsNumbers := allYears asSet
 		collect: [ :each | 
 			[ each asNumber ]

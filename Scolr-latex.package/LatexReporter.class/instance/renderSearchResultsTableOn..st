@@ -4,7 +4,7 @@ renderSearchResultsTableOn: stream
 		nextPutAll:
 			'
 			
-\begin{table}[]
+\begin{table}
     \centering
     \begin{tabularx}{\textwidth}{ |l|X|c| }
         \hline
