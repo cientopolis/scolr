@@ -1,0 +1,17 @@
+{
+	"commentStamp" : "",
+	"super" : "WASession",
+	"category" : "Scolr-seaside-configuration",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"user",
+		"coReview",
+		"expired",
+		"createdTime",
+		"expiredTime"
+	],
+	"name" : "ScolrSession",
+	"type" : "normal"
+}

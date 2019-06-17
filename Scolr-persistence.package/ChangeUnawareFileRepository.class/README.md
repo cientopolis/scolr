@@ -6,4 +6,6 @@ ChangeUnawareJsonRepository allInstances size.
 
 Smalltalk garbageCollect.
 
+WAPlatform current garbageCollect.
+
 EyePointerExplorer openOn: ChangeUnawareJsonRepository allInstances first
