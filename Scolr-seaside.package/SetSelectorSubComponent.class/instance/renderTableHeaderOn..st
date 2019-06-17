@@ -9,7 +9,7 @@ renderTableHeaderOn: html
 				with: 'Articles in list'.
 			html tableHeading
 				class: 'col-md-2';
-				with: 'Waiting for you'.
+				with: 'To classify (by you)'.
 			html tableHeading
 				class: 'col-md-1';
 				with: '' ]
