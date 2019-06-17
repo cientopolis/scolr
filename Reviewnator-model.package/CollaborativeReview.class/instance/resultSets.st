@@ -1,4 +1,0 @@
-querying
-resultSets
-
-	^resultSets

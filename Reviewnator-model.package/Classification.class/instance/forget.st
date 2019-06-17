@@ -1,4 +1,0 @@
-accessing
-forget
-
-	^decision := #undecided

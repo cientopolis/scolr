@@ -1,1 +1,0 @@
-I know how to map columns of a Scopus exported file to an Article object

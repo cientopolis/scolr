@@ -1,4 +1,0 @@
-accessing
-undecided
-
-	^decision == #undecided

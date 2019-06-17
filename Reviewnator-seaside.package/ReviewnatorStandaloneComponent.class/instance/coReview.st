@@ -1,3 +1,0 @@
-accessing
-coReview
-	^ repository coReview

@@ -1,3 +1,0 @@
-smtp
-adminEmail
-	^ adminEmail

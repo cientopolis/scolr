@@ -1,1 +1,0 @@
-An editor for an AccessCredential

@@ -1,3 +1,0 @@
-rendering
-tagsInUse
-	self subclassResponsibility

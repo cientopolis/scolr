@@ -1,3 +1,0 @@
-renderning-list
-renderTableHeaderOn: html
-	self subclassResponsibility

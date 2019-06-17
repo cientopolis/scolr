@@ -1,7 +1,0 @@
-testing
-testImport
-	self testImportFromScopusWithTitleCaseHeaders.
-	self testImportFromScopusWithMissingHeaders.
-	self testImportFromScopusWithDuplicated.
-	self testImportFromScopusOnlyMandatoryHeadersFrenchUTF8Text.
-	self testImportFromHeadersOkButWithEmptyMandatoryFields

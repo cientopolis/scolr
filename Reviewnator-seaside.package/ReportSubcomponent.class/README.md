@@ -1,1 +1,0 @@
-I present a report in html . I also offer markdown download .

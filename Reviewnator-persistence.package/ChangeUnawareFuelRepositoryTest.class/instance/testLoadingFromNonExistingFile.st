@@ -1,3 +1,0 @@
-testing
-testLoadingFromNonExistingFile
-	super testLoadingFromNonExistingFile

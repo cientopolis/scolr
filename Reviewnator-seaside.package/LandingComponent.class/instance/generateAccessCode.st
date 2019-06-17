@@ -1,3 +1,0 @@
-callbacks
-generateAccessCode
-	self show: AccessCodeRequestComponent new

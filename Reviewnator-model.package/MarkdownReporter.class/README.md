@@ -1,1 +1,0 @@
-I generate Markdown reports for collaborative reviews

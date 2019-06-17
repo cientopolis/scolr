@@ -1,3 +1,0 @@
-loading
-resetSingleton
-	singleton := nil

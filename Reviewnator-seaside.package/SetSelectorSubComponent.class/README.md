@@ -1,1 +1,0 @@
-I show a table with all available sets - I allow selecting and deselecting.

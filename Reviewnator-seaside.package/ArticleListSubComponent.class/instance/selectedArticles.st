@@ -1,3 +1,0 @@
-accessing
-selectedArticles
-	^ self subclassResponsibility 

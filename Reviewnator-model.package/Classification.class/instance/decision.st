@@ -1,4 +1,0 @@
-accessing
-decision
-
-	^decision

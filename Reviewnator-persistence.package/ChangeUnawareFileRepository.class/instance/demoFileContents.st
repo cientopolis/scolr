@@ -1,3 +1,0 @@
-hooks
-demoFileContents
-	^ self subclassResponsibility 

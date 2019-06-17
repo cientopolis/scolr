@@ -1,1 +1,0 @@
-A simple subcomponent to edit and show de details of the review

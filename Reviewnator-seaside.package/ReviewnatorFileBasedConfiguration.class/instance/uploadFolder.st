@@ -1,3 +1,0 @@
-constants
-uploadFolder
-	^ './uploads' asFileReference

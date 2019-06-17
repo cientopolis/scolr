@@ -1,1 +1,0 @@
-A simple dialog to to upload a result set file

@@ -1,3 +1,0 @@
-hooks
-demoFileFullname
-	^ self subclassResponsibility 
