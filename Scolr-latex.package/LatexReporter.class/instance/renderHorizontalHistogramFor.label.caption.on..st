@@ -1,12 +1,11 @@
 redering
-renderYearlyArticleDistributionFigureOn: stream
+renderHorizontalHistogramFor: frecuencies label: aLabel caption: aCaption on: stream
 	| ycoords plotCoordinatesStream height |
-	ycoords := (statistics includedYearlyDistribution collect: #key) sort fold: [ :a :b | a , ',' , b ] ifEmpty: [ '' ].
-	height := (statistics includedYearlyDistribution size + 1) printString , 'cm'.
+	ycoords := (frecuencies collect: #key) sort fold: [ :a :b | a , ',' , b ] ifEmpty: [ '' ].
+	height := (frecuencies size max: 4) printString , 'cm'.
 	plotCoordinatesStream := String new writeStream.
 	plotCoordinatesStream nextPutAll: '\addplot coordinates {'.
-	statistics includedYearlyDistribution
-		do: [ :each | plotCoordinatesStream nextPutAll: '(' , each value printString , ',' , each key , ') ' ].
+	frecuencies do: [ :each | plotCoordinatesStream nextPutAll: '(' , each value printString , ',' , each key , ') ' ].
 	plotCoordinatesStream
 		nextPutAll: '};';
 		cr.
@@ -14,15 +13,19 @@ renderYearlyArticleDistributionFigureOn: stream
 		nextPutAll:
 			'\begin{figure}
 \label{fig:byYear}
-\caption{Yearly distribution of included articles}
+\caption{' , aCaption
+				,
+					'}
 \begin{center}
 \begin{tikzpicture}
     \begin{axis}[
         xbar, xmin=0,
         width=12cm, height=' , height
 				,
-					', enlarge y limits=0.2,
-        xlabel={Number of included articles},
+					', 
+        xlabel={' , aLabel
+				,
+					'},
         symbolic y coords={' , ycoords
 				,
 					'},

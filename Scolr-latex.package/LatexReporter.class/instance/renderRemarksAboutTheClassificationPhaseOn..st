@@ -14,7 +14,11 @@ During the classification phase, all articles where evaluated against the inclus
 Figure \ref{fig:byYear} offers a comparison and overview of included and excluded articles by year of publication.
 
 '.
-	self renderYearlyArticleDistributionFigureOn: stream.
+	self
+		renderHorizontalHistogramFor: statistics includedYearlyDistribution
+		label: 'Articles by year'
+		caption: 'Yearly distribution of included articles'
+		on: stream.
 	stream
 		cr;
 		cr
