@@ -8,8 +8,7 @@
 	"instvars" : [
 		"editedComment",
 		"statisticsCache",
-		"showAbstracts",
-		"groupByDimension"
+		"showAbstracts"
 	],
 	"name" : "ReportSubcomponent",
 	"type" : "normal"

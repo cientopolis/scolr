@@ -1,11 +1,8 @@
 rendering-reviews
-renderReviewsOn: html
+renderReviewsByArticleOn: html
 	| dimensions articles |
 	dimensions := self coReview reviewDimensions asSortedCollection.
 	articles := self coReview allArticles select: [ :each | each everyoneAgreesToIncludeIt ].
-	html heading
-		level: 2;
-		with: 'Review notes'.
 	articles
 		do: [ :article | 
 			html heading
