@@ -12,8 +12,9 @@ renderReviewsOn: html
 				level: 3;
 				with: article title.
 			html paragraph: 'Reference: ' , article printString.
-			html
-				paragraph: [ html
-						strong: 'abstract';
-						text: ' ' , article abstract ].
+			showAbstracts
+				ifTrue: [ html
+						paragraph: [ html
+								strong: 'abstract';
+								text: ' ' , article abstract ] ].
 			self renderReviewsFor: article considering: dimensions on: html ]
