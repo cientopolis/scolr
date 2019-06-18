@@ -1,0 +1,3 @@
+accessing
+authenticated
+	^ user notNil

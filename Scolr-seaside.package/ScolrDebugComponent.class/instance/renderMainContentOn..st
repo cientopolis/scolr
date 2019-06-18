@@ -3,8 +3,10 @@ renderMainContentOn: html
 	html heading: 'Sessions'.
 	html
 		paragraph: [ html
-				strong: 'Potentially active (non-expired) sessions: ';
-				text: (self application sessions select: [ :each | each expired not ]) size printString.
+				strong: 'Potentially active (non-expired, authenticated) sessions: ';
+				text:
+					(self application sessions select: [ :each | each expired not & each authenticated ])
+						size printString.
 			html space.
 			html anchor
 				callback: [ listActive := true ];
@@ -20,6 +22,10 @@ renderMainContentOn: html
 		ifTrue: [ listActive := false.
 			html heading
 				level3;
-				with: 'Active sessions'.
+				with: 'Active (authenticated/non-expired) sessions'.
 			html
-				unorderedList: [ (self application sessions select: [ :each | each expired not ]) do: [ :each | html listItem: [ html text: each createdTime ] ] ] ]
+				unorderedList: [ (self application sessions select: [ :each | each expired not & each authenticated ])
+						do: [ :each | 
+							html
+								listItem: [ html
+										text: each createdTime printString , ' (' , each accessCode , '/' , each user username , ')' ] ] ] ]

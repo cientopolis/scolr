@@ -11,8 +11,12 @@ grantAccess
 			self save.
 			self session
 				coReview: coReview;
-				user: user.
-			mainComponent := MainComponent repository: repository currentUser: user accessCredential: accessCredential.
+				user: user;
+				accessCode: accessCode.
+			mainComponent := MainComponent
+				repository: repository
+				currentUser: user
+				accessCredential: accessCredential.
 			self ensureAcceptanceOfTermsAndConditions
 				ifTrue: [ self show: mainComponent ]
 				ifFalse: [ self reset ] ]

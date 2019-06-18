@@ -8,6 +8,7 @@
 	"instvars" : [
 		"user",
 		"coReview",
+		"accessCode",
 		"expired",
 		"createdTime",
 		"expiredTime"
