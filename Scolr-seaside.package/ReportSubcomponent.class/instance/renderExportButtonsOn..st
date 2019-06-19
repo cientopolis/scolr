@@ -1,7 +1,7 @@
 rendering
 renderExportButtonsOn: html
 	html
-		paragraph: [ html strong: 'Export as: '.
+		paragraph: [ html strong: 'Export this report as: '.
 			html anchor
 				callback: [ self generateMarkdownReport ];
 				with: 'Markdown'.
