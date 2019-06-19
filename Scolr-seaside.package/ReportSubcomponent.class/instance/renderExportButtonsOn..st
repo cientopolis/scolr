@@ -1,28 +1,20 @@
 rendering
 renderExportButtonsOn: html
 	html
-		paragraph: [ html text: 'Export this report as: '.
+		paragraph: [ html strong: 'Export as: '.
 			html anchor
 				callback: [ self generateMarkdownReport ];
-				with: [ html tbsButton
-						beExtraSmall;
-						with: 'Markdown' ].
-			html space.
+				with: 'Markdown'.
+			html text: ' - '.
 			html anchor
 				callback: [ self generateHtmlReport ];
-				with: [ html tbsButton
-						beExtraSmall;
-						with: 'Html' ].
-			html space.
+				with: 'Html'.
+			html text: ' - '.
 			html anchor
 				callback: [ self generateLatexReport ];
-				with: [ html tbsButton
-						beExtraSmall;
-						with: 'LaTeX' ].
+				with: 'LaTeX'.
 			self accessCredential notNil
-				ifTrue: [ html space.
+				ifTrue: [ html text: ' - '.
 					html anchor
 						callback: [ self exportAsJSON ];
-						with: [ html tbsButton
-								beExtraSmall;
-								with: 'JSON' ] ] ]
+						with: 'JSON' ] ]

@@ -1,4 +1,5 @@
 initialization
 initialize
-  super initialize.
-  showAbstracts := true.
+	super initialize.
+	showAbstracts := false.
+	groupByArticle := false

@@ -5,10 +5,7 @@ renderReportOn: html
 		renderSearchResultsSummaryOn: html;
 		renderRemarksOfTheClassificationPhaseOn: html;
 		renderRemarksOfTheReviewPhaseOn: html.
-	html heading
-		level: 2;
-		with: 'Review notes'.
-	self renderReviewsByArticleOn: html.
+	self renderReviewNotesOn: html.
 	self
 		renderSynthesisAndAnalysisOn: html;
 		renderConclusionsOn: html;
