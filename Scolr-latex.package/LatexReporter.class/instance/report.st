@@ -6,7 +6,8 @@ report
 	self
 		renderOpeningLinesOn: stream;
 		renderIntroductionOn: stream;
-		renderBackgroundOn: stream.
+		renderBackgroundOn: stream;
+		renderMethodologyOn: stream.
 	stream
 		nextPutAll:
 			'\section{Analysis}
