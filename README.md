@@ -13,7 +13,7 @@ To build (or update), evaluate the following expresion:
 ```Smalltalk
 
 Metacello new
-   baseline: 'Reviewnator';
+   baseline: 'Scolr';
    repository: 'github://cientopolis/reviewnator';
    onConflictUseLoaded;
    load.
