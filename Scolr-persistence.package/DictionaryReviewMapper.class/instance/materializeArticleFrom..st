@@ -14,5 +14,10 @@ materializeArticleFrom: aDictionary
 			((aDictionary at: #reviews)
 				collect: [ :each | self materializeReviewFrom: each ])
 				asOrderedCollection;
-		bibtexEntry: (aDictionary at: #bibtexEntry ifAbsent: nil);
+		bibtexEntry:
+			(aDictionary
+				at: #bibtexEntry
+				ifPresent:
+					[ :it | it ifNil: [ nil ] ifNotNil: [ self materializeBitextEntryFrom: it ] ]
+				ifAbsent: nil);
 		yourself
