@@ -14,7 +14,7 @@ To build (or update), evaluate the following expresion:
 
 Metacello new
    baseline: 'Scolr';
-   repository: 'github://cientopolis/reviewnator';
+   repository: 'github://cientopolis/scolr';
    onConflictUseLoaded;
    load.
 ```
