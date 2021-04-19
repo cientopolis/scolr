@@ -8,7 +8,7 @@ renderServerStatusOn: html
 				small: [ html
 						text: 'Released: ' , ReviewnatorDeployer releaseDate printString , ' in ' , ReviewnatorDeployer mode , ' mode from commit '.
 					html anchor
-						url: 'https://bitbucket.org/casco/scolr/commits/' , ReviewnatorDeployer fullReferenceCommit;
+						url: 'https://github.com/cientopolis/scolr/commit/' , ReviewnatorDeployer fullReferenceCommit;
 						target: '_new';
 						with: ReviewnatorDeployer shortReferenceCommit.
 					html

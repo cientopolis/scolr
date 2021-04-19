@@ -2,5 +2,5 @@ accessing
 fullReferenceCommit
 	"ReviewnatorDeployer referenceCommit"
 
-	^ (IceRepository allInstances detect: [ :each | each name = 'scolr' ]) loadedCode
-		referenceCommit commitId
+	^ (IceLibgitRepository  allInstances detect: [ :each | each name = 'scolr' ]) workingCopy 
+		referenceCommit id 
