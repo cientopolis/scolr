@@ -14,7 +14,8 @@ To build (or update), evaluate the following expresion:
 
 Metacello new
    baseline: 'Reviewnator';
-   repository: 'bitbucket://casco/reviewnator';
+   repository: 'github://cientopolis/reviewnator';
+   onConflictUseLoaded;
    load.
 ```
 
