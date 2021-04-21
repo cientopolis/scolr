@@ -1,3 +1,3 @@
 callbacks
 receiveFile: aFile
-	self receiveFilePharo60: aFile
+	self receiveFilePharo70: aFile
