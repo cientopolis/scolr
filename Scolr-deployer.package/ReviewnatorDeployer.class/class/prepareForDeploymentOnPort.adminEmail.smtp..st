@@ -3,7 +3,8 @@ prepareForDeploymentOnPort: port adminEmail: email smtp: smtpServer
 	| configurationFile storageFolder |
 	configurationFile := ReviewnatorFileBasedConfiguration
 		configurationFilename asFileReference.
-		storageFolder := ReviewnatorFileBasedConfiguration singleton storageFolder asFileReference.
+	storageFolder := ReviewnatorFileBasedConfiguration singleton
+		storageFolder asFileReference.
 	self
 		adminEmail: email;
 		smtp: smtpServer;
@@ -11,4 +12,6 @@ prepareForDeploymentOnPort: port adminEmail: email smtp: smtpServer
 	Transcript
 		show: 'Configuration file ' , configurationFile fullName;
 		cr.
-		Transcript show: 'Storage folder ', storageFolder fullName. 
+	Transcript
+		show: 'Storage folder ' , storageFolder fullName;
+		cr
