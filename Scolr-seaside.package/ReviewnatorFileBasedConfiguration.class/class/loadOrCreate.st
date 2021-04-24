@@ -1,9 +1,9 @@
 loading
 loadOrCreate
 	| conf |
-	^ self configurationFilename asFileReference exists
+	^ self fuelConfigurationFilename asFileReference exists
 		ifTrue: [ FileStream
-				oldFileNamed: self configurationFilename 
+				oldFileNamed: self fuelConfigurationFilename 
 				do: [ :aStream | 
 					conf := (FLMaterializer newDefault materializeFrom: aStream binary)
 						root ].
