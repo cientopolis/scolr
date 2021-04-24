@@ -1,3 +1,3 @@
-loading
+constants
 configurationFilename
 	^ './reviewnator-config.fuel'

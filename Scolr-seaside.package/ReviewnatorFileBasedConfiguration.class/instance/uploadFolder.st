@@ -1,3 +1,3 @@
 constants
 uploadFolder
-	^ './uploads' asFileReference
+	^ self uploadsFoldername asFileReference

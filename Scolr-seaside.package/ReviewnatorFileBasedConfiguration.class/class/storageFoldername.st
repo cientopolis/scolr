@@ -1,3 +1,3 @@
-loading
+constants
 storageFoldername
 	^ './reviewnator'
