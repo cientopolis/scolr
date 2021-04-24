@@ -5,4 +5,3 @@ initialize
 	accessCredentials := OrderedCollection new.
 	accessCredentials add: self createAdminCredentials.
 	usersThatAcceptedTermsAndConditions := Set new.
-	storageFolder := 'reviewnator'

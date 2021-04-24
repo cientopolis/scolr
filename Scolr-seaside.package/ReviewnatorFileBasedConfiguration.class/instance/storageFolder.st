@@ -1,3 +1,3 @@
 accessing
 storageFolder
-	^ storageFolder
+	^ self class storageFoldername
