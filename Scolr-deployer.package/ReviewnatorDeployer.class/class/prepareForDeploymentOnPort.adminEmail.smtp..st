@@ -8,7 +8,7 @@ prepareForDeploymentOnPort: port adminEmail: email smtp: smtpServer
 		show:
 			'Configuration file '
 				,
-					ReviewnatorFileBasedConfiguration fuelConfigurationFilename
+					ReviewnatorFileBasedConfiguration jsonConfigurationFilename
 						asFileReference fullName;
 		cr.
 	Transcript
