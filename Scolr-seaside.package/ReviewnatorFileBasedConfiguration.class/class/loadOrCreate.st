@@ -1,13 +1,12 @@
 loading
 loadOrCreate
 	| conf |
-	^ self fuelConfigurationFilename asFileReference exists
-		ifTrue: [ FileStream
-				oldFileNamed: self fuelConfigurationFilename 
-				do: [ :aStream | 
-					conf := (FLMaterializer newDefault materializeFrom: aStream binary)
-						root ].
-			conf ]
-		ifFalse: [ self new
-				save;
-				yourself ]
+	conf := self obtainFromJson.
+	conf ifNotNil: [ ^ conf ].
+	conf := self obtainFromFuel.
+	conf
+		ifNotNil: [ conf save.
+			^ conf ].
+	^ self new
+		save;
+		yourself
