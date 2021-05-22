@@ -1,0 +1,3 @@
+rendering
+renderOpinionEditorOn: html
+	self subclassResponsibility

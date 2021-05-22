@@ -13,7 +13,8 @@
 		"documentType",
 		"classifications",
 		"reviews",
-		"bibtexEntry"
+		"bibtexEntry",
+		"tagAssignments"
 	],
 	"name" : "Article",
 	"type" : "normal"

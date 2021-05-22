@@ -1,0 +1,13 @@
+{
+	"commentStamp" : "",
+	"super" : "Opinion",
+	"category" : "Scolr-model-model",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"tags"
+	],
+	"name" : "TagAssignment",
+	"type" : "normal"
+}

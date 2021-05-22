@@ -8,8 +8,7 @@
 	"instvars" : [
 		"date",
 		"author",
-		"article",
-		"tags"
+		"article"
 	],
 	"name" : "Opinion",
 	"type" : "normal"

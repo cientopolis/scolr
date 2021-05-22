@@ -6,7 +6,9 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"storageFolderName"
+		"storageFolderName",
+		"tagAssignmentOne",
+		"tagAssignmentTwo"
 	],
 	"name" : "ChangeUnawareFileRepositoryAbstractTest",
 	"type" : "normal"

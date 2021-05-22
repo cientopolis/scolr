@@ -13,7 +13,11 @@ materializeArticleFrom: aDictionary
 		reviews:
 			((aDictionary at: #reviews)
 				collect: [ :each | self materializeReviewFrom: each ])
-				asOrderedCollection;
+				asOrderedCollection;			
+		tagAssignments: 
+			((aDictionary at: #tagAssignments )
+				collect: [ :each | self materializeTagAssignmentFrom: each ])
+				asSet;
 		bibtexEntry:
 			(aDictionary
 				at: #bibtexEntry

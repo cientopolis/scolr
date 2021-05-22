@@ -51,19 +51,27 @@ dummyCoReview
 	reviewOne := Review new
 		author: userOne;
 		date: Date today;
-		tags: {'one' . 'two'};
 		comment: 'comment one' inDimension: 'dimension one';
 		comment: 'comment two' inDimension: 'dimension two';
 		yourself.
 	articleOne addReview: reviewOne.
+	tagAssignmentOne := (TagAssignment tags: {'one' . 'two'})
+		author: userOne;
+		date: Date today;
+		yourself.
+	articleOne addTagAssignment: tagAssignmentOne.
 	classificationOne := Classification new
 		author: userOne;
 		date: Date today;
-		tags: {'one' . 'two'};
 		comments: 'comment one';
 		excludeIt;
 		yourself.
 	articleTwo addClassification: classificationOne.
+	tagAssignmentTwo := (TagAssignment tags: {'one' . 'three'})
+		author: userOne;
+		date: Date today;
+		yourself.
+	articleTwo addTagAssignment: tagAssignmentTwo.
 	coReview
 		addResultSet: resultSetOne;
 		addResultSet: resultSetTwo.

@@ -1,0 +1,3 @@
+rendering
+tagsString
+	^ tags asCommaString

@@ -11,6 +11,7 @@ serializeArticle: anArticle
 			(anArticle classifications
 				collect: [ :each | self serializeClassification: each ]);
 		at: #reviews
-			put: (anArticle reviews collect: [ :each | self serializeReview: each ]);
+			put: (anArticle reviews collect: [ :each | self serializeReview: each ]); 
+		at: #tagAssignments put: (anArticle tagAssignments collect: [ :each | self serializeTagAssingment: each ] );
 		at: #bibtexEntry put: anArticle bibtexEntry ;
 		yourself

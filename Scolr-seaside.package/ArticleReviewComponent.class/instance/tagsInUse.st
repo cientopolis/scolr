@@ -1,3 +1,3 @@
 private
 tagsInUse
-	^ self coReview reviewTagsInUse
+	^ self coReview tagsInUse

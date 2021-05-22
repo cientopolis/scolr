@@ -7,3 +7,4 @@ initialize
 	abstract := ''.
 	classifications := OrderedCollection new.
 	reviews := OrderedCollection new.
+	tagAssignments  := OrderedCollection new.

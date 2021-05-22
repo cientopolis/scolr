@@ -1,3 +1,3 @@
 accessing
 tagsInUse
-	^ self coReview classificationTagsInUse
+	^ self coReview tagsInUse

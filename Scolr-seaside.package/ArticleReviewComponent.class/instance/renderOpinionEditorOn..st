@@ -1,14 +1,10 @@
 rendering
 renderOpinionEditorOn: html
-	html label: 'Your notes'.
-	self renderCommentsTableOn: html.
-	html break.
-	html submitButton
-		callback: [ self
-				acceptChanges;
-				answer ];
-		value: 'Save new (replace old)'.
-	html space.
-	html cancelButton
-		callback: [ self answer ];
-		value: 'Cancel (return)'
+	html tbsPanel beDefault
+		with: [ html
+				tbsPanelHeading: [ html tbsPanelTitle
+						level: 3;
+						with: 'Your review' ].
+			html
+				tbsPanelBody: [ html label: 'Your notes'.
+					self renderCommentsTableOn: html ] ]

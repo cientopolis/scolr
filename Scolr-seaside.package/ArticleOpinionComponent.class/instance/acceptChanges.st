@@ -1,3 +1,8 @@
 callbacks
 acceptChanges
-  opinionToEdit tags: (self tagsFromString: tags)
+	tagAssignmentToEdit tags: tagAssignmentEditorSubcomponent tags.
+	isNewTagAssignment
+		ifTrue: [ tagAssignmentEditorSubcomponent tags
+				ifNotEmpty: [ article addTagAssignment: tagAssignmentToEdit ] ]
+		ifFalse: [ tagAssignmentToEdit tags
+				ifEmpty: [ article removeTagAssignment: tagAssignmentToEdit ] ] 
