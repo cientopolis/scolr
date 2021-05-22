@@ -20,7 +20,8 @@
 		"reviewArticlesListSubcomponent",
 		"reportSubcomponent",
 		"discussSubcomponent",
-		"reviewAnyway"
+		"reviewAnyway",
+		"clusterArticlesListSubcomponent"
 	],
 	"name" : "MainComponent",
 	"type" : "normal"

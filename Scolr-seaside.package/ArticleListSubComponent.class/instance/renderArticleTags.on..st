@@ -1,3 +1,3 @@
 renderning-list
 renderArticleTags: article on: html
-	self subclassResponsibility 
+	html text: (self stringFromTagSet: (self tagsFor: article))

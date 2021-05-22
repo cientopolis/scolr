@@ -5,5 +5,6 @@ initializeSubcomponents
 	reportSubcomponent := ReportSubcomponent parent: self.
 	classifyArticlesListSubcomponent := ClassifyArticlesListSubcomponent parent: self.
 	reviewArticlesListSubcomponent := ReviewArticlesListSubcomponent parent: self.
+	clusterArticlesListSubcomponent := ClusterArticlesListSubcomponent parent: self.
 	reviewSummarySubComponent := ReviewSummarySubComponent parent: self.
-	discussSubcomponent := DiscussSubcomponent parent: self.
+	discussSubcomponent := DiscussSubcomponent parent: self. 

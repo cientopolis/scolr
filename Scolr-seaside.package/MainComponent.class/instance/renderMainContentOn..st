@@ -10,6 +10,8 @@ renderMainContentOn: html
 		ifTrue: [ self renderClassifyActivityOn: html ].
 	selectedActivity = #review
 		ifTrue: [ self renderReviewActivityOn: html ].
+	selectedActivity = #cluster
+		ifTrue: [ self renderClusterActivityOn: html ].
 	selectedActivity = #report
 		ifTrue: [ self renderReportActivityOn: html ].
 	selectedActivity = #discuss

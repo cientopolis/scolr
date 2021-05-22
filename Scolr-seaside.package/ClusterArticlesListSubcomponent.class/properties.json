@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "",
+	"super" : "ArticleListSubComponent",
+	"category" : "Scolr-seaside-subcomponents",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "ClusterArticlesListSubcomponent",
+	"type" : "normal"
+}
