@@ -9,8 +9,7 @@
 		"sortSelector",
 		"sortAscending",
 		"activeHidingFilters",
-		"showClassificationComments",
-		"tagCloudSubcomponent"
+		"showClassificationComments"
 	],
 	"name" : "ArticleListSubComponent",
 	"type" : "normal"

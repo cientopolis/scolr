@@ -1,3 +1,7 @@
 initialization
 fromArticles: articles
-	articles do: [ :each | tags addAll: each tags ].
+	tags := Bag new.
+	articles
+		do: [ :each | 
+			tags addAll: each tags.
+			each tags ifEmpty: [ tags add: '' ] ]

@@ -4,4 +4,4 @@ initialize
 
 	super initialize.
 	self initializeVariables.
-	^ self
+	tagCloudSubcomponent  := TagCloudSubcomponent new.

@@ -1,5 +1,12 @@
 materialize
 materializeArticleFrom: aDictionary
+	| tagAssignments |
+	tagAssignments := aDictionary
+		at: #tagAssignments
+		ifPresent: [ :array | 
+			(array collect: [ :each | self materializeTagAssignmentFrom: each ])
+				asSet ]
+		ifAbsent: [ self materializeLegacyTagAssingmnetsFrom: aDictionary ].
 	^ Article new
 		authors: (aDictionary at: #authors);
 		title: (aDictionary at: #title);
@@ -13,11 +20,8 @@ materializeArticleFrom: aDictionary
 		reviews:
 			((aDictionary at: #reviews)
 				collect: [ :each | self materializeReviewFrom: each ])
-				asOrderedCollection;			
-		tagAssignments: 
-			((aDictionary at: #tagAssignments )
-				collect: [ :each | self materializeTagAssignmentFrom: each ])
-				asSet;
+				asOrderedCollection;
+		tagAssignments: tagAssignments;
 		bibtexEntry:
 			(aDictionary
 				at: #bibtexEntry

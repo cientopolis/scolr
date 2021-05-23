@@ -13,7 +13,8 @@
 	"instvars" : [
 		"selectedResulSets",
 		"selectedActivitySubcomponent",
-		"reviewAnyway"
+		"reviewAnyway",
+		"tagCloudSubcomponent"
 	],
 	"name" : "MainComponent",
 	"type" : "normal"
