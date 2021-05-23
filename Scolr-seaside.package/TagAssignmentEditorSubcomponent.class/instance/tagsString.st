@@ -1,3 +1,3 @@
 rendering
 tagsString
-	^ tags asCommaString
+	^ tags asSortedCollection asCommaString
