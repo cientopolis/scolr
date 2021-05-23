@@ -4,5 +4,5 @@ renderSpecificHeadingsOn: html
 		class: 'col-md-2';
 		with: 'Reviewed by'.
 	html tableHeading
-		class: 'col-md-1';
+		class: 'col-md-2';
 		with: 'Actions'

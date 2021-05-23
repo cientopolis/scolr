@@ -4,8 +4,8 @@ renderCommonHeadingsOn: html
 		class: 'col-md-1';
 		with: '#'.
 	html tableHeading
-		class: 'col-md-7';
-		with: [ html text: 'Artile'.
+		class: 'col-md-5';
+		with: [ html text: 'Article'.
 			self renderArticleSortMenuOn: html ].
 	html tableHeading
 		class: 'col-md-2';

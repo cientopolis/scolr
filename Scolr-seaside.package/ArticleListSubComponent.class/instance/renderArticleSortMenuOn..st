@@ -1,6 +1,6 @@
 rendering
 renderArticleSortMenuOn: html
-	html div tbsPullRight
+	html div tbsPullRight  
 		tbsDropdown: [ html tbsDropdownAnchor
 				with: [ html tbsGlyphIcon iconSort.
 					html tbsCaret ].

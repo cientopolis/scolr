@@ -2,11 +2,7 @@
 	"commentStamp" : "Casco 8/26/2018 16:36",
 	"super" : "AbstractReviewnatorSubComponent",
 	"category" : "Scolr-seaside-subcomponents",
-	"classinstvars" : [
-		"includedFilter",
-		"excludedFilter",
-		"alreadyClassifiedFilter"
-	],
+	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [

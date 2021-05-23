@@ -5,7 +5,11 @@
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
-	"instvars" : [ ],
+	"instvars" : [
+		"hideIncluded",
+		"hideExcluded",
+		"hideDone"
+	],
 	"name" : "ClassifyArticlesListSubcomponent",
 	"type" : "normal"
 }
