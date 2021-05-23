@@ -1,4 +1,4 @@
 initialize
 initialize
-	super initialize.
-	monitor := Monitor new 
+	ClassApiMonitor := Monitor new.
+	CachedRepositories := Set new
