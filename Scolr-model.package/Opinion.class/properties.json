@@ -7,8 +7,7 @@
 	"classvars" : [ ],
 	"instvars" : [
 		"date",
-		"author",
-		"article"
+		"author"
 	],
 	"name" : "Opinion",
 	"type" : "normal"

@@ -5,4 +5,4 @@ acceptChanges
 		ifTrue: [ tagAssignmentEditorSubcomponent tags
 				ifNotEmpty: [ article addTagAssignment: tagAssignmentToEdit ] ]
 		ifFalse: [ tagAssignmentToEdit tags
-				ifEmpty: [ article removeTagAssignment: tagAssignmentToEdit ] ] 
+				ifEmpty: [ article removeTagAssignment: tagAssignmentToEdit ] ] .

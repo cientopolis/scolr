@@ -7,4 +7,3 @@ classifyArticle: article
 		accessCredential: accessCredential .
 	classificationComponent article: article.
 	self call: classificationComponent.
-	repository save

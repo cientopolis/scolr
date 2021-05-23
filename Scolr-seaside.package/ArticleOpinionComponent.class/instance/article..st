@@ -10,7 +10,6 @@ article: anArticle
 			opinion := self newOpinion
 				author: currentUser;
 				date: Date today;
-				article: article;
 				yourself ].
 	tagAssignment := article tagAssignmentBy: currentUser.
 	tagAssignment
@@ -18,6 +17,5 @@ article: anArticle
 			tagAssignment := TagAssignment new
 				author: currentUser;
 				date: Date today;
-				article: article;
 				yourself ].
 	self opinionToEdit: opinion withTagAssignment: tagAssignment

@@ -4,5 +4,4 @@ save
 		critical: [ self prepareStorageFolder.
 			FileStream
 				forceNewFileNamed: self storageFileFullName
-				do:
-					[ :aStream | self serializeToStream: aStream ] ]
+				do: [ :aStream | self serializeToStream: aStream ] ]
