@@ -7,6 +7,5 @@ renderActivitySelectorTabsOn: html
 				renderTabTitled: '2. Upload' for: SetSelectorSubComponent  on: html;
 				renderTabTitled: '3. Classify' for: ClassifyArticlesListSubcomponent  on: html;
 				renderTabTitled: '4. Review' for: ReviewArticlesListSubcomponent  on: html;
-				renderTabTitled: '5. Cluster' for: ClusterArticlesListSubcomponent  on: html;
-				renderTabTitled: '6. Report' for: ReportSubcomponent  on: html;
-				renderTabTitled: '7. Discuss' for: DiscussSubcomponent  on: html ]
+				renderTabTitled: '5. Report' for: ReportSubcomponent  on: html;
+				renderTabTitled: '6. Discuss' for: DiscussSubcomponent  on: html ]

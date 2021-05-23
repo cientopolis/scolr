@@ -1,3 +1,5 @@
-renderning-list
+rendering
 renderTableHeaderOn: html
-	self subclassResponsibility
+	html
+		tableHead: [ self renderCommonHeadingsOn: html.
+			self renderSpecificHeadingsOn: html ]

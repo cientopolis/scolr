@@ -1,7 +1,4 @@
-accessing
+fitering
 filteredArticles
-	^ self selectedArticles
-		reject: [ :each | 
-			activeHidingFilters
-				inject: false
-				into: [ :show :blockingFilter | show or: [ blockingFilter value: self coReview value: each value: self currentUser ] ] ]
+	^ self
+		filterByTag: (self filterByClassification: self selectedArticles)

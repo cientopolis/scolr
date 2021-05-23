@@ -1,6 +1,7 @@
-initialize
+initialization
 initialize
 	super initialize.
 	activeHidingFilters := Set new.
-	sortBlock := self sortDownByYearBlock.
+	sortSelector := #title.
+	sortAscending := true.
 	showClassificationComments := false

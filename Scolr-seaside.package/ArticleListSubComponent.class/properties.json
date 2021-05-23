@@ -10,9 +10,11 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"sortBlock",
+		"sortSelector",
+		"sortAscending",
 		"activeHidingFilters",
-		"showClassificationComments"
+		"showClassificationComments",
+		"tagCloudSubcomponent"
 	],
 	"name" : "ArticleListSubComponent",
 	"type" : "normal"

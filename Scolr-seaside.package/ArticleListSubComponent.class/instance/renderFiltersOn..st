@@ -2,7 +2,7 @@ rendering-selectors
 renderFiltersOn: html
 	html
 		div: [ html
-				strong: 'Hide: ';
+				strong: 'Filter: ';
 				text: ' included ('.
 			(activeHidingFilters
 				includes: ArticleListSubComponent includedFilter)
