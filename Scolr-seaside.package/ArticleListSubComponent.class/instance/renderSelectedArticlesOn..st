@@ -5,7 +5,8 @@ renderSelectedArticlesOn: html
 	articles
 		ifEmpty: [ ^ html tbsAlert
 				beWarning;
-				with: 'You first need to upload some article lists.' ].
+				with:
+					'Nothing to show. Try uploading more articles or deactivating some filters.' ].
 	order := 1.
 	html tbsTable
 		beBordered;
