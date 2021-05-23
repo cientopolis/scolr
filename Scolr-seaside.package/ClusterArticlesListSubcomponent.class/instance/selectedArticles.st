@@ -1,3 +1,6 @@
 accessing
 selectedArticles
-	^ self coReview allArticles select: [ :each | each everyoneAgreesToIncludeIt ]
+	^ self allArticles
+		reject: [ :article | 
+			article tags
+				anySatisfy: [ :tag | tagCloudSubcomponent hiddenTags includes: tag ] ]

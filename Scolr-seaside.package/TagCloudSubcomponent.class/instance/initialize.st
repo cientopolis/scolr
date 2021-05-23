@@ -1,4 +1,5 @@
 initialization
 initialize
 	super initialize.
-	tags := Bag new
+	tags := Bag new.
+	hiddenTags := Set new

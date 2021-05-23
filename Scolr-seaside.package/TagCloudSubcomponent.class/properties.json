@@ -6,7 +6,8 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"tags"
+		"tags",
+		"hiddenTags"
 	],
 	"name" : "TagCloudSubcomponent",
 	"type" : "normal"

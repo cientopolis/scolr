@@ -1,3 +1,3 @@
 initialization
 fromArticles: articles
-	articles do: [ :each | tags addAll: each tags ]
+	articles do: [ :each | tags addAll: each tags ].
