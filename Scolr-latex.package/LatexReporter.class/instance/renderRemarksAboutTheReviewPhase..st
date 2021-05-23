@@ -29,7 +29,7 @@ Tags were used to organize articles into the taxonomies of interest for this rev
 
 '.
 	self
-		renderHorizontalHistogramFor: statistics reviewTagFrequencies
+		renderHorizontalHistogramFor: statistics tagFrequencies
 		label: 'fig:tagsUsage'
 		legend: 'Number of articles with a given tag'
 		caption: 'Organization of reviewed articles with tags'

@@ -1,10 +1,10 @@
 rendering
-renderTabTitled: label for: selector on: html
+renderTabTitled: label for: aClass on: html
 	| tab |
 	tab := html tbsNavItem.
-	selectedActivity = selector
+	selectedActivitySubcomponent class = aClass
 		ifTrue: [ tab beActive ].
 	tab
 		with: [ html anchor
-				callback: [ selectedActivity := selector ];
+				callback: [ selectedActivitySubcomponent := aClass parent: self ];
 				with: [ html strong: label ] ]

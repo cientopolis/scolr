@@ -1,7 +1,11 @@
 renderning-list
 renderSelectedArticlesOn: html
-	| articles order  |
+	| articles order |
 	articles := self sort: self filteredArticles.
+	articles
+		ifEmpty: [ ^ html tbsAlert
+				beWarning;
+				with: 'You first need to upload some article lists.' ].
 	order := 1.
 	html tbsTable
 		beBordered;
@@ -9,8 +13,5 @@ renderSelectedArticlesOn: html
 			html
 				tableBody: [ articles
 						do: [ :each | 
-							self
-								renderArticle: each
-								order: order
-								on: html.
+							self renderArticle: each order: order on: html.
 							order := order + 1 ] ] ]

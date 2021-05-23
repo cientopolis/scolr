@@ -16,5 +16,4 @@ computeStatistics
 	averageReviewers := (coReview includedArticles collect: [ :each | each reviews size ])
 		ifEmpty: [ 0 ]
 		ifNotEmpty: [ :col | col average asFloat round: 1 ].
-	classificationTagFrequencies := (coReview classifications flatCollect: [ :each | each tags ]) asBag sortedElements.
-	reviewTagFrequencies := (coReview reviews flatCollect: [ :each | each tags ]) asBag sortedElements
+	tagFrequencies := (coReview tagAssignments flatCollect: [ :each | each tags ]) asBag sortedElements.

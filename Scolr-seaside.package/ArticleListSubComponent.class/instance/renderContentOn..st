@@ -1,6 +1,6 @@
 renderning-list
 renderContentOn: html
-	self renderOptionsOn: html.
-	html break.
-	html break.
+	html div
+		style: 'padding-bottom: 10px;';
+		with: [ self renderOptionsOn: html ].
 	self renderSelectedArticlesOn: html

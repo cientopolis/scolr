@@ -1,13 +1,13 @@
 {
 	"commentStamp" : "",
-	"super" : "ArticleListSubComponent",
+	"super" : "AbstractReviewnatorSubComponent",
 	"category" : "Scolr-seaside-subcomponents",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"tagCloudSubcomponent"
+		"tags"
 	],
-	"name" : "ClusterArticlesListSubcomponent",
+	"name" : "TagCloudSubcomponent",
 	"type" : "normal"
 }

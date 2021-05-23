@@ -12,16 +12,8 @@
 	"classvars" : [ ],
 	"instvars" : [
 		"selectedResulSets",
-		"setSelectorSubcomponent",
-		"articleListSubComponent",
-		"reviewSummarySubComponent",
-		"selectedActivity",
-		"classifyArticlesListSubcomponent",
-		"reviewArticlesListSubcomponent",
-		"reportSubcomponent",
-		"discussSubcomponent",
-		"reviewAnyway",
-		"clusterArticlesListSubcomponent"
+		"selectedActivitySubcomponent",
+		"reviewAnyway"
 	],
 	"name" : "MainComponent",
 	"type" : "normal"

@@ -1,5 +1,6 @@
 initialize-release
 initializeVariables
 	selectedResulSets := Set new.
-	selectedActivity := #plan.
-	reviewAnyway := false.
+	selectedActivitySubcomponent := ReviewSummarySubComponent
+		parent: self.
+	reviewAnyway := false

@@ -1,3 +1,3 @@
 renderning-list
 renderArticleTags: article on: html
-	html text: (self stringFromTagSet: article tags)
+	html text: (self stringFromTagSet: article tags asSortedCollection)

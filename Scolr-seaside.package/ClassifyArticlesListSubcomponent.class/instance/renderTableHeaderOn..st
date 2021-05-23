@@ -9,7 +9,7 @@ renderTableHeaderOn: html
 				with: 'Summary'.
 			html tableHeading
 				class: 'col-md-2';
-				with: 'Classification tags'.
+				with: 'Tags'.
 			html tableHeading
 				class: 'col-md-1';
 				with: 'All opinions'.

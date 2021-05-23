@@ -3,10 +3,10 @@ renderActivitySelectorTabsOn: html
 	html tbsNav
 		beTabs;
 		with: [ self
-				renderTabTitled: '1. Plan' for: #plan on: html;
-				renderTabTitled: '2. Upload' for: #upload on: html;
-				renderTabTitled: '3. Classify' for: #classify on: html;
-				renderTabTitled: '4. Review' for: #review on: html;
-				renderTabTitled: '5. Cluster' for: #cluster on: html;
-				renderTabTitled: '6. Report' for: #report on: html;
-				renderTabTitled: '7. Discuss' for: #discuss on: html ]
+				renderTabTitled: '1. Plan' for: ReviewSummarySubComponent on: html;
+				renderTabTitled: '2. Upload' for: SetSelectorSubComponent  on: html;
+				renderTabTitled: '3. Classify' for: ClassifyArticlesListSubcomponent  on: html;
+				renderTabTitled: '4. Review' for: ReviewArticlesListSubcomponent  on: html;
+				renderTabTitled: '5. Cluster' for: ClusterArticlesListSubcomponent  on: html;
+				renderTabTitled: '6. Report' for: ReportSubcomponent  on: html;
+				renderTabTitled: '7. Discuss' for: DiscussSubcomponent  on: html ]
