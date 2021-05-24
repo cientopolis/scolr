@@ -8,9 +8,7 @@ fromMemoryORStorageFolderName: storageFolderName repositoryFilename: repositoryF
 						& (each storageFolderName = storageFolderName) ]
 				ifNone: [ CachedRepositories
 						add:
-							((self
+							(self
 								storageFolderName: storageFolderName
-								repositoryFilename: repositoryFilename)
-								save;
-								yourself) ] ].
+								repositoryFilename: repositoryFilename) ] ].
 	^ newRepo

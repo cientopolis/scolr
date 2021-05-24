@@ -1,10 +1,8 @@
 private
 loadOrCreateReview
-	| review |
-	review := CollaborativeReview new.
 	self storageFileFullName asFileReference exists
 		ifTrue: [ FileStream
 				oldFileNamed: self storageFileFullName
-				do:
-					[ :aStream | review := self materializeFromStream: aStream ] ].
-	coReview := review
+				do: [ :aStream | coReview := self materializeFromStream: aStream ] ]
+		ifFalse: [ coReview := CollaborativeReview new.
+			self save ]
