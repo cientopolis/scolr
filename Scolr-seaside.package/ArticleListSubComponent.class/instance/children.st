@@ -1,3 +1,4 @@
 accessing
 children
-	^ {self parent tagCloudSubcomponent}
+	^ {self tagCloudSubcomponent.
+	self yearCloudSubcomponent}

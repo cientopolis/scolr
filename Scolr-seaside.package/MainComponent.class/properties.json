@@ -14,7 +14,8 @@
 		"selectedResulSets",
 		"selectedActivitySubcomponent",
 		"reviewAnyway",
-		"tagCloudSubcomponent"
+		"tagCloudSubcomponent",
+		"yearCloudSubcomponent"
 	],
 	"name" : "MainComponent",
 	"type" : "normal"

@@ -1,3 +1,3 @@
 fitering
 filterByTag: aCollectionOfArticles
-	^ self parent tagCloudSubcomponent filter: aCollectionOfArticles
+	^ self tagCloudSubcomponent filter: aCollectionOfArticles

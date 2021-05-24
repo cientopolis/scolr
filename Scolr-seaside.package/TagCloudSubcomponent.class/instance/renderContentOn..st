@@ -1,7 +1,7 @@
 initialization
 renderContentOn: html
 	html tbsPanel beDefault
-		with: [ html tbsPanelHeading: 'Tags'.
+		with: [ html tbsPanelHeading: (title ifNil: [ 'Tags' ]).
 			html
 				tbsPanelBody: [ tags sortedCounts
 						do: [ :ass | 

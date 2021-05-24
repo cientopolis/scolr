@@ -1,4 +1,6 @@
 rendering-selectors
 renderTagCloudOn: html
-	self parent tagCloudSubcomponent fromArticles: self selectedArticles.
-	html render: self parent tagCloudSubcomponent
+	self tagCloudSubcomponent
+		with: self selectedArticles
+		block: [ :anArticle | anArticle tags ].
+	html render: self tagCloudSubcomponent

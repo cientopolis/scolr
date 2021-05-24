@@ -4,4 +4,6 @@ initialize
 
 	super initialize.
 	self initializeVariables.
-	tagCloudSubcomponent  := TagCloudSubcomponent new.
+	tagCloudSubcomponent := TagCloudSubcomponent new.
+	yearCloudSubcomponent := TagCloudSubcomponent new.
+	yearCloudSubcomponent title: 'Years'

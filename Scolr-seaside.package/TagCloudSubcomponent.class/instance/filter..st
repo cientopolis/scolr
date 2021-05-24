@@ -1,6 +1,8 @@
 api
 filter: aCollectionOfArticles
 	^ aCollectionOfArticles
-		reject: [ :article | 
-			(article tags anySatisfy: [ :tag | hiddenTags includes: tag ])
-				or: [ (hiddenTags includes: '') & article tags isEmpty ] ]
+		reject: [ :object | 
+			| objectTags |
+			objectTags := block value: object.
+			(objectTags anySatisfy: [ :tag | hiddenTags includes: tag ])
+				or: [ (hiddenTags includes: '') & objectTags isEmpty ] ]

@@ -1,3 +1,3 @@
 fitering
 filteredArticles
-	^ self filterByTag: self selectedArticles
+	^ self filterByYear: (self filterByTag: self selectedArticles)
