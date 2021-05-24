@@ -13,7 +13,8 @@
 		"isNewOpinion",
 		"reviewSummarySubComponent",
 		"isNewTagAssignment",
-		"tagAssignmentEditorSubcomponent"
+		"tagAssignmentEditorSubcomponent",
+		"articleSummarySubcomponent"
 	],
 	"name" : "ArticleOpinionComponent",
 	"type" : "normal"

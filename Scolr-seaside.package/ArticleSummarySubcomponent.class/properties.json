@@ -1,0 +1,14 @@
+{
+	"commentStamp" : "",
+	"super" : "AbstractReviewnatorSubComponent",
+	"category" : "Scolr-seaside-subcomponents",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"isEditing",
+		"abstract"
+	],
+	"name" : "ArticleSummarySubcomponent",
+	"type" : "normal"
+}

@@ -1,4 +1,5 @@
 children
 children
 	^ {reviewSummarySubComponent.
-	tagAssignmentEditorSubcomponent}
+	tagAssignmentEditorSubcomponent.
+	articleSummarySubcomponent}

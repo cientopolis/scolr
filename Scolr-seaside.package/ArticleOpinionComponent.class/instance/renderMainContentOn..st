@@ -1,7 +1,7 @@
 rendering
 renderMainContentOn: html
 	html render: reviewSummarySubComponent.
-	self renderArticleDataOn: html.
+	html render: articleSummarySubcomponent.
 	html
 		tbsForm: [ html render: tagAssignmentEditorSubcomponent.
 			self renderOpinionEditorOn: html.
