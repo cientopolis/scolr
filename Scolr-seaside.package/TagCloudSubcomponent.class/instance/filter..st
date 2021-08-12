@@ -1,8 +1,8 @@
 api
 filter: aCollectionOfArticles
 	^ aCollectionOfArticles
-		reject: [ :object | 
+		select: [ :object | 
 			| objectTags |
 			objectTags := block value: object.
-			(objectTags anySatisfy: [ :tag | hiddenTags includes: tag ])
-				or: [ (hiddenTags includes: '') & objectTags isEmpty ] ]
+			(objectTags anySatisfy: [ :tag | self visibleTags includes: tag ])
+				or: [ (self visibleTags includes: '') & objectTags isEmpty ] ]
