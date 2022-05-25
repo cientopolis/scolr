@@ -11,9 +11,9 @@ renderLeftColumnOn: html
 				with: 'video tutorial'.
 			html text: ' and visit '.
 			html anchor
-				url: 'http://wiki.cientopolis.org/index.php/Scolr ';
+				url: 'https://github.com/cientopolis/scolr/wiki';
 				target: ':new';
-				with: 'its pages in the cientopolis.org wiki' ].
+				with: 'its wiki pages' ].
 	html
 		paragraph:
 			'An access code gives you write-access to a specific project. If you already have a code, you can use it.'.
