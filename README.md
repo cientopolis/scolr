@@ -6,7 +6,13 @@ A tool to suport collaborative systematic reviews
 
 Dependencies are now handled via the monticello configuration: ConfigurationOfReviewnator. 
 
-## Building
+
+## Building with Docker and Docker compose
+
+Read here: https://github.com/cientopolis/scolr-docker
+
+## Building from source
+
 
 To build (or update), evaluate the following expresion:
 
