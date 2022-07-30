@@ -1,8 +1,10 @@
 importing
 readFrom: aFileReference ignoringDuplicatesIn: existingArticles
-	| parser entries |
+	| parser entries stream |
 	parser := PPBibtexParser new.
-	entries := parser parse: aFileReference readStream contents.
+	stream := aFileReference readStream.
+	entries := parser parse: stream contents.
+	stream close.
 	entries isPetitFailure
 		ifTrue: [ ^ importReport
 				reportError:
