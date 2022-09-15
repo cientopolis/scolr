@@ -11,5 +11,5 @@ services:
       ADMIN_EMAIL: admin@mail.com
     volumes:
         - type: bind
-          source: ../data
+          source: ./data
           target: /opt/pharo/data

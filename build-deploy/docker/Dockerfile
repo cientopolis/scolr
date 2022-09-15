@@ -13,4 +13,4 @@ RUN mkdir /opt/pharo/data
 WORKDIR /opt/pharo/data
 
 EXPOSE 8080
-ENTRYPOINT ["/opt/pharo/pharo", "/opt/pharo/Pharo.image", "--no-quit", "st", "/opt/pharo/run.st" ] 
+ENTRYPOINT ["/opt/pharo/pharo-vm", "/opt/pharo/Pharo.image", "--no-quit", "st", "/opt/pharo/run.st" ] 
