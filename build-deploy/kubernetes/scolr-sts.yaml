@@ -1,0 +1,35 @@
+apiVersion: apps/v1
+kind: StatefulSet
+metadata:
+  name: scolr 
+spec:
+  replicas: 1
+  revisionHistoryLimit: 10
+  selector:
+    matchLabels:
+      app: scolr
+  serviceName: scolr
+  template:
+    metadata:      
+      labels:
+        app: scolr
+    spec:
+      containers:
+        - image: 'cientopolis/scolr:latest'
+          imagePullPolicy: Always          
+          name: scolr
+          ports:
+            - containerPort: 8080
+              protocol: TCP
+          volumeMounts:
+            - mountPath: /opt/pharo/data
+              name: scolr
+  volumeClaimTemplates:
+    - metadata:        
+        name: scolr
+      spec:
+        accessModes:
+          - ReadWriteOnce
+        resources:
+          requests:
+            storage: 1Gi

@@ -1,0 +1,13 @@
+apiVersion: route.openshift.io/v1
+kind: Route
+metadata:
+  name: scolr
+  annotations:
+    kubernetes.io/tls-acme: "true"  
+spec:
+  host: scolr.lifia.ar
+  port:
+    targetPort: scolr
+  to:
+    kind: Service
+    name: scolr
