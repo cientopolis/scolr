@@ -1,4 +1,4 @@
-To build and deploy to the public Docker repository
+# To build and deploy to the public Docker repository
 
 ````
 docker build --no-cache -t cientopolis/scolr:latest
@@ -10,10 +10,10 @@ docker push cientopolis/memorias:latest
 docker push cientopolis/memorias:[commit-hash]
 ````
 
-To deploy / run
+# To deploy / run
 
 ````
-sudo docker pull cientopolis/memorias:latest
+sudo docker pull cientopolis/scolr:latest
 
 sudo docker compose down
 
