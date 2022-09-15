@@ -23,4 +23,3 @@ baseline: spec
 				package: 'Scolr-deployer' with: [ spec requires: #('SeasideDeployer') ];
 				package: 'Scolr-PharoExtensions';
 				package: 'Scolr-markdown' ].
-	spec postLoadDoIt: #postLoadActions
