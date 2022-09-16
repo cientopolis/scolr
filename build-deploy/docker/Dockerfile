@@ -8,6 +8,12 @@ COPY --from=loader /opt/pharo/Pharo.changes /opt/pharo
 COPY --from=loader /opt/pharo/Pharo*.sources /opt/pharo
 ADD run.st /opt/pharo
 
+USER root
+RUN apt-get update
+RUN apt-get -y install rsync
+RUN apt-get -y install openssh-client
+USER pharo
+
 # use -v /folder/in/host:/opt/pharo/data to mount your data here
 RUN mkdir /opt/pharo/data
 WORKDIR /opt/pharo/data
