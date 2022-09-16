@@ -10,8 +10,7 @@ ADD run.st /opt/pharo
 
 USER root
 RUN apt-get update
-RUN apt-get -y install rsync
-RUN apt-get -y install openssh-client
+RUN apt-get -y install wget
 USER pharo
 
 # use -v /folder/in/host:/opt/pharo/data to mount your data here
