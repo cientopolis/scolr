@@ -18,6 +18,11 @@ spec:
         - image: 'cientopolis/scolr:latest'
           imagePullPolicy: Always          
           name: scolr
+          env:
+            - name: ADMIN_EMAIL
+              value: emailofyouradminuser@mail.com
+            - name: SMTP_SERVER
+              value: your-smtp-server-ip
           ports:
             - containerPort: 8080
               protocol: TCP
