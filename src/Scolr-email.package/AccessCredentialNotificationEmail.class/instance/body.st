@@ -1,0 +1,24 @@
+accessing
+body
+
+  ^ 'Dear ' ,  requestorsEmail 
+		,
+			'
+			
+    we are glad to hear about your interest in Scolr. 
+
+    Your ideas for a review titled "' ,  title 
+		,
+			'" sound very promissing.
+
+    The access code for your literature review is: ' ,  accessCode
+		,
+			'
+
+    Share it with your collaborators and anyone that offers to help (that is the spirit of open reviews).
+
+    Enjoy,
+
+       The Scolar@Cientopolis team.
+       https://scolr.cientopolis.org/
+'

@@ -1,4 +1,4 @@
-visiting
+callbacks
 acceptCredentialAndGoToTheLandingPage
 	| newRepo |
 	ReviewnatorFileBasedConfiguration singleton

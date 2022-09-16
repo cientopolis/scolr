@@ -1,0 +1,16 @@
+{
+	"commentStamp" : "",
+	"super" : "Object",
+	"category" : "Scolr-email",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"host",
+		"port",
+		"sender",
+		"senderPassword"
+	],
+	"name" : "StartTLSSmtpEmailSender",
+	"type" : "normal"
+}

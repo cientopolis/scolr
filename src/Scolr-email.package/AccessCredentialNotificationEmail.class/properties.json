@@ -1,0 +1,15 @@
+{
+	"commentStamp" : "",
+	"super" : "Object",
+	"category" : "Scolr-email",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"title",
+		"accessCode",
+		"requestorsEmail"
+	],
+	"name" : "AccessCredentialNotificationEmail",
+	"type" : "normal"
+}
