@@ -28,10 +28,19 @@ Metacello new
 Then, evaluate this expression to prepare it for deployment.
 
 ```Smalltalk
+| deployer |
 
-ReviewnatorDeployer prepareForDeploymentOnPort: 8000 adminEmail: 'scolr@yourdomain.com' smtp: 'yourdomain'.
+deployer := ReviewnatorDeployer new
+	adminEmail: 'scolr@yourdomain.com';
+	smtpServer: 'smtp.yourdomain.com';
+	smtpPort: 587;
+	smtpUsername: 'scolr@yourdomain.com';
+	smtpPassword: 'somesecret';
+	yourself.
+deployer prepareForDeploymentOnPort: 8080.
 
 WAAdmin defaultDispatcher defaultName: 'scolr'.
+
 ```
 
 Then save your image.
