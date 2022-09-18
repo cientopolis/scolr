@@ -28,14 +28,19 @@ Metacello new
 Then, evaluate this expression to prepare it for deployment.
 
 ```Smalltalk
-| deployer |
+
+adminEmail := (OSEnvironment current at: 'ADMIN_EMAIL').
+smtpUsername := (OSEnvironment current at: 'SMTP_USERNAME' ifAbsent: nil).
+smtpPassword := (OSEnvironment current at: 'SMTP_PASSWORD' ifAbsent: nil).
+smtpServer := (OSEnvironment current at: 'SMTP_SERVER' ifAbsent: nil).
+smtpPort := (OSEnvironment current at: 'SMTP_PORT' ifAbsent: '587') printString.
 
 ReviewnatorDeployer
-  adminEmail: 'scolr@yourdomain.com';
-  smtpServer: 'smtp.yourdomain.com';
-  smtpPort: 587;
-  smtpUsername: 'scolr@yourdomain.com';
-  smtpPassword: 'somesecret';
+  adminEmail: adminEmail;
+  smtpServer: smtpServer;
+  smtpPort: smtpPort;
+  smtpUsername: smtpUsername;
+  smtpPassword: smtpPassword;
   prepareForDeploymentOnPort: 8080.
 
 WAAdmin defaultDispatcher defaultName: 'scolr'.
