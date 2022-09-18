@@ -16,6 +16,7 @@ baseline: spec
 				package: 'Scolr-importers' with: [ spec requires: #('NeoCSV' 'PetitBibtex') ];
 				package: 'Scolr-persistence';
 				package: 'Scolr-latex';
+				package: 'Scolr-email';				
 				package: 'Scolr-seaside'
 					with: [ spec
 						requires:
