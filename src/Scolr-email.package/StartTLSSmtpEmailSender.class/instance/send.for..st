@@ -7,7 +7,7 @@ send: aMailMessage for: anApplication
 		user: (self usernameFor: anApplication);
 		password: (self passwordFor: anApplication).
 
-	[ 
+
 	theSmtpClient
 		openOnHost:
 		(NetNameResolver addressForName: (self serverFor: anApplication))
@@ -15,10 +15,8 @@ send: aMailMessage for: anApplication
 
 	theSmtpClient
 		mailFrom: aMailMessage from
-		to: aMailMessage to 
+		to: (aMailMessage to splitOn: ',')
 		text: aMailMessage text;
 		quit;
 		close.
-	self transcriptLog: 'Notification sent to ' , aMailMessage to ]
-		on: Error
-		do: [ :err | self transcriptLog: err printString ]
+	self transcriptLog: 'Notification sent to ' , aMailMessage to

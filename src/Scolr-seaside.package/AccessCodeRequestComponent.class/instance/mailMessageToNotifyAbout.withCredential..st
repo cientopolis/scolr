@@ -9,7 +9,7 @@ mailMessageToNotifyAbout: someRepo withCredential: someCredential
 		             for: someCredential requestorsEmail.
 	^ MailMessage
 		  from: ReviewnatorDeployer adminEmail
-		  to: (Set
+		  to: (OrderedCollection 
 				   with: someCredential requestorsEmail
 				   with: ReviewnatorDeployer adminEmail)
 		  about: 'Access code to you Scolr open literature review'
