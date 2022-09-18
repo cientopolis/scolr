@@ -2,12 +2,15 @@
 	"commentStamp" : "Casco 9/29/2018 13:15",
 	"super" : "BootstrapDeployer",
 	"category" : "Scolr-deployer",
-	"classinstvars" : [
-		"adminEmail",
-		"smtp"
-	],
+	"classinstvars" : [ ],
 	"pools" : [ ],
-	"classvars" : [ ],
+	"classvars" : [
+		"AdminEmail",
+		"SmtpPassword",
+		"SmtpPort",
+		"SmtpServer",
+		"SmtpUsername"
+	],
 	"instvars" : [ ],
 	"name" : "ReviewnatorDeployer",
 	"type" : "normal"

@@ -1,10 +1,17 @@
 hooks
 registerApplication
+
 	SessionManager default registerUserClassNamed: 'ReviewnatorDeployer'.
 	ReviewnatorFileBasedConfiguration resetSingleton.
 	super registerApplication.
-	ReviewnatorDeployer smtp notNil
-		ifTrue: [ app configuration addParent: WAEmailConfiguration instance.
-			app preferenceAt: #smtpServer put: ReviewnatorDeployer smtp.
-			(WAAdmin defaultDispatcher handlerAt: self applicationPath) exceptionHandler: ReviewnatorEmailErrorHandler ].
-	app sessionClass: ScolrSession
+	SmtpServer notNil ifTrue: [ 
+		app configuration addParent: WAEmailConfiguration instance.
+		app preferenceAt: #smtpUsername put: SmtpUsername.
+		app preferenceAt: #smtpPassword put: SmtpPassword.
+		app preferenceAt: #smtpServer put: SmtpServer.
+		app preferenceAt: #smtpPort put: SmtpPort.
+
+		"(WAAdmin defaultDispatcher handlerAt: self applicationPath) 
+			exceptionHandler: ReviewnatorEmailErrorHandler ."
+
+		app sessionClass: ScolrSession ]

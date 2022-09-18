@@ -1,3 +1,3 @@
 smtp
 adminEmail
-	^ adminEmail
+	^ AdminEmail

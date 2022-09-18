@@ -1,3 +1,3 @@
 smtp
 adminEmail: anObject
-	adminEmail := anObject
+	AdminEmail := anObject

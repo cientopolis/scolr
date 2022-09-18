@@ -5,12 +5,7 @@
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
-	"instvars" : [
-		"host",
-		"port",
-		"sender",
-		"senderPassword"
-	],
+	"instvars" : [ ],
 	"name" : "StartTLSSmtpEmailSender",
 	"type" : "normal"
 }

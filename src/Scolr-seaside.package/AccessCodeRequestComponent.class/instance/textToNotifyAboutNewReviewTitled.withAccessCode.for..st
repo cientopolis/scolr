@@ -1,5 +1,5 @@
-email
-emailTextAboutNewReviewTitled: confirmedEmailTitle withAccessCode: confirmedAccessCode for: requestorsEmail
+email notification
+textToNotifyAboutNewReviewTitled: confirmedEmailTitle withAccessCode: confirmedAccessCode for: requestorsEmail
 	^ 'Dear ' , requestorsEmail
 		,
 			'
