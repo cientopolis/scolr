@@ -7,8 +7,11 @@ services:
     ports:
         - "8080:8080"
     environment: 
-      SMTP_SERVER: your-smtp-server-ip
       ADMIN_EMAIL: admin@mail.com
+      SMTP_SERVER: your-smtp-server-ip
+      SMTP_PORT: 587
+      SMTP_USERNAME: admin@mail.com
+      SMTP_PASSWORD: secretpass
     volumes:
         - type: bind
           source: ./data
