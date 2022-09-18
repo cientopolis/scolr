@@ -4,7 +4,7 @@ adminEmail := (OSEnvironment current at: 'ADMIN_EMAIL').
 smtpUsername := (OSEnvironment current at: 'SMTP_USERNAME' ifAbsent: nil).
 smtpPassword := (OSEnvironment current at: 'SMTP_PASSWORD' ifAbsent: nil).
 smtpServer := (OSEnvironment current at: 'SMTP_SERVER' ifAbsent: nil).
-smtpPort := (OSEnvironment current at: 'SMTP_PORT' ifAbsent: '587') printString.
+smtpPort := (OSEnvironment current at: 'SMTP_PORT' ifAbsent: '587') asNumber.
 
 ReviewnatorDeployer
   adminEmail: adminEmail;
