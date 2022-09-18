@@ -29,6 +29,8 @@ Then, evaluate this expression to prepare it for deployment.
 
 ```Smalltalk
 
+|  adminEmail smtpServer smtpPort smtpUsername smtpPassword |
+
 adminEmail := (OSEnvironment current at: 'ADMIN_EMAIL').
 smtpUsername := (OSEnvironment current at: 'SMTP_USERNAME' ifAbsent: nil).
 smtpPassword := (OSEnvironment current at: 'SMTP_PASSWORD' ifAbsent: nil).
