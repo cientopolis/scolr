@@ -1,4 +1,4 @@
 accessing
 portFor: application
 
-	^application preferenceAt: #smtpPort
+	^ (application preferenceAt: #smtpPort) asNumber

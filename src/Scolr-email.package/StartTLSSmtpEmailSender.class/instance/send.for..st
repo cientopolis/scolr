@@ -14,11 +14,11 @@ send: aMailMessage for: anApplication
 		port: (self portFor: anApplication).
 
 	theSmtpClient
-		mailFrom: aMailMessage to: { aMailMessage } text: aMailMessage text;
+		mailFrom: aMailMessage from
+		to: aMailMessage to 
+		text: aMailMessage text;
 		quit;
-		close ]
+		close.
+	self transcriptLog: 'Notification sent to ' , aMailMessage to ]
 		on: Error
-		do: [ :err | 
-			Transcript
-				show: err printString;
-				cr ]
+		do: [ :err | self transcriptLog: err printString ]
