@@ -30,14 +30,13 @@ Then, evaluate this expression to prepare it for deployment.
 ```Smalltalk
 | deployer |
 
-deployer := ReviewnatorDeployer new
-	adminEmail: 'scolr@yourdomain.com';
-	smtpServer: 'smtp.yourdomain.com';
-	smtpPort: 587;
-	smtpUsername: 'scolr@yourdomain.com';
-	smtpPassword: 'somesecret';
-	yourself.
-deployer prepareForDeploymentOnPort: 8080.
+ReviewnatorDeployer
+  adminEmail: 'scolr@yourdomain.com';
+  smtpServer: 'smtp.yourdomain.com';
+  smtpPort: 587;
+  smtpUsername: 'scolr@yourdomain.com';
+  smtpPassword: 'somesecret';
+  prepareForDeploymentOnPort: 8080.
 
 WAAdmin defaultDispatcher defaultName: 'scolr'.
 
