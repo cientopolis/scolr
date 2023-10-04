@@ -14,7 +14,9 @@ renderImportReportOn: html
 					html tbsButton
 						callback: [ self cancel ];
 						with: 'Cancel' ] ]
-		ifFalse: [ self renderListOfFoundArticlesOn: html.
+		ifFalse: [ 
+			self renderInfoAboutPossiblyMissingResultsOn: html.
+			self renderListOfFoundArticlesOn: html.
 			self renderListOfIgnoredArticlesOn: html.
 			html break.
 			self reportWarningsAndErrorsFromImportReport.
