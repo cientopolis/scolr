@@ -1,13 +1,16 @@
 # To build and deploy to the public Docker repository
 
 ````
-docker build --no-cache -t cientopolis/scolr:latest
+docker build --no-cache -t scolr:current .
 
-docker tag scolr:latest cientopolis/memorias:[commit-hash]
+docker tag scolr:current cientopolis/scolr:[commit-hash]
 
-docker push cientopolis/memorias:latest
+docker tag scolr:current cientopolis/scolr:latest
 
-docker push cientopolis/memorias:[commit-hash]
+docker push cientopolis/scolr:[commit-hash]
+
+docker push cientopolis/scolr:latest
+
 ````
 
 # To deploy / run
