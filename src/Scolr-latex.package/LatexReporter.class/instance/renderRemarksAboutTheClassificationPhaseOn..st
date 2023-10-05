@@ -4,9 +4,9 @@ renderRemarksAboutTheClassificationPhaseOn: stream
 		nextPutAll:
 			'
 
-\subsection{Remarks about the classification phase}
+\subsection{Remarks about the filtering phase}
 
-During the classification phase, all articles where evaluated against the inclusion and exclusion criteria. In summary, each article was as either "to be included" or "to be exclude" by '
+During the filtering phase, all articles where evaluated against the inclusion and exclusion criteria. In summary, each article was classified as either "to be included" or "to be exclude" by '
 				, statistics averageClassifiers printString
 				, ' contributors in average. Of the original '
 				, statistics articleCount printString , ' articles, '
