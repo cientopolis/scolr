@@ -1,4 +1,4 @@
-callback
+rendering
 renderClassificationNotes: html
 	| classifications |
 	html heading

@@ -1,11 +1,13 @@
 rendering
 renderAcceptCancelButtonsOn: html
+
 	html submitButton
-		callback: [ self
+		callback: [ 
+			self
 				acceptChanges;
 				answer ];
 		value: 'Save new (replace old)'.
 	html space.
-	^ html cancelButton
+	html cancelButton
 		callback: [ self answer ];
-		value: 'Cancel (return)'
+		value: 'Cancel (return)'.
