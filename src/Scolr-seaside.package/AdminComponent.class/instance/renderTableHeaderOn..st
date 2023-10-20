@@ -27,4 +27,7 @@ renderTableHeaderOn: html
 				with: 'Private'.
 			html tableHeading
 				class: 'col-md-1';
+				with: 'GPT enabled'.
+			html tableHeading
+				class: 'col-md-1';
 				with: '' ]

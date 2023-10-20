@@ -20,6 +20,10 @@ renderActionButtonFor: each on: html
 		tbsDropdownMenuItem: [ html anchor
 				callback: [ self togglePrivateFor: each ];
 				with: 'Toggle private' ].
+	html
+		tbsDropdownMenuItem: [ html anchor
+				callback: [ self toggleGptEnabledFor: each ];
+				with: 'Toggle GPT enabled' ].
 	each isAdmin not
 		ifTrue: [ html tbsDivider.
 			html

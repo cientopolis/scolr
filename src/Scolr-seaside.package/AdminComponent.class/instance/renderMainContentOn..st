@@ -1,4 +1,7 @@
 rendering
 renderMainContentOn: html
-	self renderAccessCodesOn: html.
-	self renderButtonsOn: html
+
+	self renderSaveAlertOn: html.
+	self renderButtonsOn: html.
+	html paragraph: ''.
+	self renderAccessCodesOn: html

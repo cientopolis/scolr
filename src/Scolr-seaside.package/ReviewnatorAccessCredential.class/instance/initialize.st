@@ -7,4 +7,5 @@ initialize
 	isPrivate := false.
 	notes := ''.
 	requestorsEmail := ''.
-	cachedCoReviewTitle := nil
+	cachedCoReviewTitle := nil.
+	gptEnabled := false.

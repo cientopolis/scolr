@@ -15,7 +15,8 @@
 		"isPrivate",
 		"modificationDate",
 		"requestorsEmail",
-		"cachedCoReviewTitle"
+		"cachedCoReviewTitle",
+		"gptEnabled"
 	],
 	"name" : "ReviewnatorAccessCredential",
 	"type" : "normal"
