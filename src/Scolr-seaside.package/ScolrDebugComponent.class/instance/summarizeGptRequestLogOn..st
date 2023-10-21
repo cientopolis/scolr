@@ -12,4 +12,8 @@ summarizeGptRequestLogOn: html
 		html space.
 		html anchor
 			callback: [ SlrAssistant clearRequestLog ];
-			with: '[Cleanup]' ]
+			with: '[Cleanup]'.
+		html space.
+		html anchor
+			callback: [ SlrAssistant new greetGpt ];
+			with: '[Greet gpt]' ]
