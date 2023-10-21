@@ -23,7 +23,7 @@ gptClassificationOpinionFor: anArticle
 	^ response
 		  at: 'error'
 		  ifPresent: [ :error | 
-			  self logGptError: error withResponse: response.
+			  self logGptError: error  .
 			  self class gptReportedAnErrorMessage ]
 		  ifAbsent: [ 
 		  ((response at: 'choices') first at: 'message') at: 'content' ]
