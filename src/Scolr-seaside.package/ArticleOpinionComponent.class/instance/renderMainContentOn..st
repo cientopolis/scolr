@@ -1,6 +1,5 @@
 rendering
 renderMainContentOn: html
-	html render: reviewSummarySubComponent.
 	html render: articleSummarySubcomponent.
 	html
 		tbsForm: [ html render: tagAssignmentEditorSubcomponent.
