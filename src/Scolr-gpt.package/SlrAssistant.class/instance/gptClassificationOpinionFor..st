@@ -22,6 +22,9 @@ gptClassificationOpinionFor: anArticle
 			             post).
 	^ response
 		  at: 'error'
-		  ifPresent: [ :error | self logGptError: error. self class gptReportedAnErrorMessage.  ]
+		  ifPresent: [ :error | 
+			  self logGptError:
+				  error , '\n' , (STON toJsonString: requestConfig).
+			  self class gptReportedAnErrorMessage ]
 		  ifAbsent: [ 
 		  ((response at: 'choices') first at: 'message') at: 'content' ]

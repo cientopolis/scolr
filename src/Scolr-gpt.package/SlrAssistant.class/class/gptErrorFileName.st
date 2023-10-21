@@ -1,4 +1,4 @@
 private
 gptErrorFileName
 
-	^ 'gpr-errors.log'
+	^ 'gpt-errors.log'
