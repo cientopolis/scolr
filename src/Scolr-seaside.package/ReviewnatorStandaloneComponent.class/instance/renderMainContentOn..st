@@ -1,3 +1,4 @@
 rendering hooks
 renderMainContentOn: html
-  self subclassResponsibility 
+  
+	html paragraph: 'these are the logs'

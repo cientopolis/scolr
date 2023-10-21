@@ -6,9 +6,8 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"listActive",
-		"listGptRequests"
+		"gptRequest"
 	],
-	"name" : "ScolrDebugComponent",
+	"name" : "GptRequestViewerComponent",
 	"type" : "normal"
 }

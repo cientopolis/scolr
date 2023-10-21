@@ -1,4 +1,4 @@
-configuration
+accessing
 apiKey: anObject
 
 	apiKey := anObject

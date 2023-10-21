@@ -2,15 +2,15 @@
 	"commentStamp" : "",
 	"super" : "Object",
 	"category" : "Scolr-gpt",
-	"classinstvars" : [
-		"requestLog"
-	],
+	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"slr",
-		"apiKey"
+		"apiKey",
+		"response",
+		"request",
+		"dateAndTime"
 	],
-	"name" : "SlrAssistant",
+	"name" : "GptRequest",
 	"type" : "normal"
 }

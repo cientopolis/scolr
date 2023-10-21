@@ -9,5 +9,3 @@ baseConfig
 		  at: 'frequency_penalty' put: 0.0;
 		  at: 'presence_penalty' put: 0.6;
 		  yourself
-		
-	

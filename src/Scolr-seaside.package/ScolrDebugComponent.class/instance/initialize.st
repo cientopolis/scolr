@@ -1,4 +1,5 @@
 initialization
 initialize
 	super initialize.
-	listActive := false
+	listActive := false.
+	listGptRequests := false.

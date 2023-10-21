@@ -1,8 +1,6 @@
 setup-teardown
 setUp
 
-	SlrAssistant gptErrorFileName asFileReference ifExists: [ :it | 
-		it delete ].
 	apikey := self hideApikeyFile.
 	self setupCorreviewAndArticle.
 	assistant := SlrAssistant new.

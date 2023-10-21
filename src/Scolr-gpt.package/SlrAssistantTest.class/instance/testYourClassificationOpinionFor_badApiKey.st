@@ -9,8 +9,5 @@ testYourClassificationOpinionFor_badApiKey
 		           article.
 	self
 		assert: opinion comments
-		equals: SlrAssistant gptReportedAnErrorMessage.
+		equals: SlrAssistant gptNotProperlyConfiguredMessage .
 	self assert: opinion undecided.
-	self
-		assert: (SlrAssistant gptErrorFileName asFileReference contents
-		includesSubstring: 'Incorrect API key provided')
