@@ -1,3 +1,0 @@
-hooks
-prepareFileWithDummyCoReview
-	self subclassResponsibility 

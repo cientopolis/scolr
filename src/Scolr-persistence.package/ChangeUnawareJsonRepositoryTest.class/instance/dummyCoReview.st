@@ -3,6 +3,11 @@ dummyCoReview
 	| resultSetOne resultSetTwo articleOne articleTwo articleThree coReview userOne userTwo reviewOne classificationOne bibtexEntryForArticleThree |
 	coReview := CollaborativeReview new
 		title: 'This is the title';
+		objective: 'This is the objective';
+		researchQuestions: 'These are the research questions';
+		terms: 'These are the search terms';
+		basicSearchQuery: 'This is the search query';
+		databases: 'These are the databases';
 		notes: 'These are the notes';
 		inclusionCriteria: 'This is the inclusion criteria';
 		exclusionCriteria: 'This is the exclusion criteria';

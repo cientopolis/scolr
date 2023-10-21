@@ -1,11 +1,15 @@
 {
 	"commentStamp" : "",
-	"super" : "ChangeUnawareFileRepositoryAbstractTest",
+	"super" : "TestCase",
 	"category" : "Scolr-persistence-tests",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
-	"instvars" : [ ],
+	"instvars" : [
+		"storageFolderName",
+		"tagAssignmentOne",
+		"tagAssignmentTwo"
+	],
 	"name" : "ChangeUnawareJsonRepositoryTest",
 	"type" : "normal"
 }

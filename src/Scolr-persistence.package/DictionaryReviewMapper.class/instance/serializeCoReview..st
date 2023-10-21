@@ -2,6 +2,13 @@ serialize
 serializeCoReview: aCoReView
 	^ Dictionary new
 		at: #title put: aCoReView title;
+
+		at: #objective put: aCoReView objective;
+		at: #researchQuestions put: aCoReView researchQuestions;
+		at: #terms put: aCoReView terms;
+		at: #basicSearchQuery put: aCoReView basicSearchQuery;
+		at: #databases put: aCoReView databases;
+		
 		at: #notes put: aCoReView notes;
 		at: #users put: (aCoReView users collect: [ :each | self serializeUser: each ]);
 		at: #inclusionCriteria put: aCoReView inclusionCriteria;
