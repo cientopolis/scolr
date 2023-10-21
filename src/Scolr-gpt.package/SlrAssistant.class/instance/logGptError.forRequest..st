@@ -1,5 +1,5 @@
 private
-logGptError: errorAsDictionary
+logGptError: errorAsDictionary forRequest: aRequestDictionary
 
 	Transcript
 		show: DateAndTime now printString;
@@ -16,7 +16,7 @@ logGptError: errorAsDictionary
 		cr.
 
 	Transcript
-		show: (STON toJsonString: errorAsDictionary);
+		show: (STON toJsonStringPretty: aRequestDictionary);
 		cr;
 		cr.
 
@@ -28,4 +28,4 @@ logGptError: errorAsDictionary
 			cr;
 			nextPutAll: (errorAsDictionary at: 'message');
 			cr;
-			nextPutAll: errorAsDictionary asJson ]
+			nextPutAll: (STON toJsonStringPretty: aRequestDictionary ) ]
