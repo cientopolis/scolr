@@ -1,6 +1,8 @@
 rendering
 renderDisplayingOn: html
 
+	self renderOpenInNewTabIconOn: html.
+
 	self
 		renderDisplaying: self coReview title
 		labeled: 'Title: '
@@ -59,7 +61,7 @@ renderDisplayingOn: html
 		self coReview contributors
 			do: [ :user | html text: user username ]
 			separatedBy: [ html text: ', ' ] ].
-
+	spawned ifTrue: [ ^ self ].
 	html anchor
 		callback: [ self edit ];
 		with: [ 

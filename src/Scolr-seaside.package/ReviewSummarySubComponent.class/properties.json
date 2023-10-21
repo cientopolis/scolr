@@ -16,7 +16,8 @@
 		"notes",
 		"users",
 		"inclusionCriteria",
-		"exclusionCriteria"
+		"exclusionCriteria",
+		"spawned"
 	],
 	"name" : "ReviewSummarySubComponent",
 	"type" : "normal"
