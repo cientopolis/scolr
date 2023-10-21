@@ -20,4 +20,8 @@ gptClassificationOpinionFor: anArticle
 				             (ZnEntity text: (STON toJsonString: requestConfig));
 			             contentType: ZnMimeType applicationJson;
 			             post).
-	^ ((response at: 'choices') first at: 'message') at: 'content'
+	^ response
+		  at: 'error'
+		  ifPresent: [ :error | self class gptReportedAnErrorMessage ]
+		  ifAbsent: [ 
+		  ((response at: 'choices') first at: 'message') at: 'content' ]

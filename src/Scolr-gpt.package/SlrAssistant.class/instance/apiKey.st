@@ -1,8 +1,13 @@
 configuration
 apiKey
-
-	(OSEnvironment current at: 'OPENAI_APIKEY' ifAbsent: nil) ifNotNil: [ 
+"There are some issues with OSEnvironment and windows "
+	"	(OSEnvironment current at: 'OPENAI_APIKEY' ifAbsent: nil) ifNotNil: [ 
 		:it | ^ it ].
-	'apikey.secret' asFileReference exists ifTrue: [ 
-		^ 'apikey.secret' asFileReference contents ].
+	"
+	
+	apiKey ifNotNil: [ :it | ^it ].
+
+	self class apikeyFilename asFileReference exists ifTrue: [ 
+		^ self class apikeyFilename asFileReference contents ].
+	
 	^ nil

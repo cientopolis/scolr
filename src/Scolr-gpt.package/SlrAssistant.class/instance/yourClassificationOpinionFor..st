@@ -6,7 +6,7 @@ yourClassificationOpinionFor: anArticle
 
 	opinionText isEmptyOrNil ifTrue: [ 
 		^ Classification new
-			  comments: 'GPT is not available or not working properly. Sorry.';
+			  comments: self class gptNotProperlyConfiguredMessage;
 			  forget;
 			  yourself ].
 
