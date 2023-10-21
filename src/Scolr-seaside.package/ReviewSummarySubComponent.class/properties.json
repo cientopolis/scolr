@@ -7,8 +7,14 @@
 	"classvars" : [ ],
 	"instvars" : [
 		"isEditing",
-		"notes",
 		"title",
+		"objective",
+		"researchQuestions",
+		"terms",
+		"basicSearchQuery",
+		"databases",
+		"notes",
+		"users",
 		"inclusionCriteria",
 		"exclusionCriteria"
 	],
