@@ -9,7 +9,8 @@
 		"apiKey",
 		"response",
 		"request",
-		"dateAndTime"
+		"dateAndTime",
+		"znZincEntityString"
 	],
 	"name" : "GptRequest",
 	"type" : "normal"

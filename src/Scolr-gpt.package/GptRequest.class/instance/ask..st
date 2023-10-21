@@ -1,7 +1,7 @@
-as yet unclassified
+api
 ask: messateForGpt
 
-	| conversation |
+	| conversation znClient |
 	dateAndTime := DateAndTime now.
 
 	self apiKey isEmptyOrNil ifTrue: [ 
@@ -22,10 +22,14 @@ ask: messateForGpt
 			 yourself).
 
 	request at: 'messages' put: conversation asArray.
-	response := STON fromString: (ZnClient new
-			             url: self entdpointUrl;
-			             headerAt: 'Authorization'
-			             put: 'Bearer ' , self apiKey;
-			             entity: (ZnEntity text: (STON toJsonString: request));
-			             contentType: ZnMimeType applicationJson;
-			             post)
+
+	znClient := ZnClient new.
+	znClient
+		url: self entdpointUrl;
+		headerAt: 'Authorization' put: 'Bearer ' , self apiKey;
+		entity: (ZnEntity text: (STON toJsonStringPretty: request));
+		contentType: ZnMimeType applicationJson.
+	
+	znZincEntityString := znClient request entity string.	
+
+	response := STON fromString: znClient post
