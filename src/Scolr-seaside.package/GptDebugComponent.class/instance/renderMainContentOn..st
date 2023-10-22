@@ -22,7 +22,11 @@ renderMainContentOn: html
 				placeholder: 'payload in json format as when using curl' ].
 		html tbsButton
 			callback: [ self submit ];
-			with: 'Submit' ].
+			with: 'Submit'.
+		html space.
+		html tbsButton
+			callback: [ self submitHardcodedRequest ];
+			with: 'Submit hardcoded request' ].
 	html heading
 		level: 3;
 		with: 'Json response from GPT'.
