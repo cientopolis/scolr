@@ -1,0 +1,14 @@
+{
+	"commentStamp" : "",
+	"super" : "ReviewnatorStandaloneComponent",
+	"category" : "Scolr-seaside-components",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"jsonPayload",
+		"jsonResponse"
+	],
+	"name" : "GptDebugComponent",
+	"type" : "normal"
+}

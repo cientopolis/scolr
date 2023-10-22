@@ -16,4 +16,8 @@ summarizeGptRequestLogOn: html
 		html space.
 		html anchor
 			callback: [ SlrAssistant new greetGpt ];
-			with: '[Greet gpt]' ]
+			with: '[Greet gpt]'.
+		html space.
+		html anchor
+			callback: [ self show: GptDebugComponent new ];
+			with: '[Debug GPT]' ]
