@@ -4,6 +4,14 @@ renderMainContentOn: html
 	html tbsForm with: [ 
 		html tbsFormGroup: [ 
 			html label
+				for: 'endpointUrl';
+				with: 'Endpoint url'.
+			html textInput
+				on: #endpointUrl of: self;
+				tbsFormControl;
+				id: 'endpointUrl' ].
+		html tbsFormGroup: [ 
+			html label
 				for: 'jsonPayload';
 				with: 'Json payload'.
 			html textArea

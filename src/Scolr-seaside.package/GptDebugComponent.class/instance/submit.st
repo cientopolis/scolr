@@ -1,12 +1,17 @@
 callbacks
 submit
 
-	| znClient |
+	| znClient result |
 	znClient := ZnClient new.
+	
 	znClient
-		url: self entdpointUrl;
+		url: self endpointUrl;
 		headerAt: 'Authorization' put: 'Bearer ' , SlrAssistant new apiKey;
 		entity: (ZnEntity text: jsonPayload);
 		contentType: ZnMimeType applicationJson.
 
-	jsonResponse := STON fromString: znClient post
+	result := znClient post.
+
+	jsonResponse := [ STON fromString: result ]
+		                on: Error
+		                do: [ result ]

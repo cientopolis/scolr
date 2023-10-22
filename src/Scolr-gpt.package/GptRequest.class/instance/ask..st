@@ -27,7 +27,7 @@ ask: messateForGpt
 	znClient
 		url: self entdpointUrl;
 		headerAt: 'Authorization' put: 'Bearer ' , self apiKey;
-		entity: (ZnEntity text: (STON toJsonStringPretty: request));
+		entity: (ZnEntity text: (self toJsonString: request));
 		contentType: ZnMimeType applicationJson.
 	
 	znZincEntityString := znClient request entity string.	
