@@ -2,6 +2,9 @@ callbacks
 submit
 
 	| znClient result |
+	
+	jsonResponse := ''.
+	
 	znClient := ZnClient new.
 	
 	znClient
