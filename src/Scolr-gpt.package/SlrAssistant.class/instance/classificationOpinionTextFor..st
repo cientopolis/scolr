@@ -1,11 +1,11 @@
-private
+private-classification
 classificationOpinionTextFor: anArticle
 
 	| contents |
 	contents := String streamContents: [ :strm | 
 		            strm
 			            nextPutAll:
-				            'Imagine you are aiding a team of researchers in selecting articles for a systematic literature review defined as follows:';
+				            'Imagine you are assisting a team of researchers in the process of selecting articles for a systematic literature review. The review goals and inclusion/exclusion criteria have been specified as follows:';
 			            lf;
 			            lf.
 
@@ -42,7 +42,7 @@ classificationOpinionTextFor: anArticle
 
 		            strm
 			            nextPutAll:
-				            'You are presented with an article featuring the title and abstract below:';
+				            'You have an article with the following title and abstract:';
 			            lf;
 			            lf.
 
@@ -58,6 +58,5 @@ classificationOpinionTextFor: anArticle
 			            lf;
 			            lf.
 
-		            strm nextPutAll:
-			            'Please respond with one of the following options: "Include it," "Exclude it," or "I am not sure." Additionally, provide a single sentence explaining your choice.' ].
+		            strm nextPutAll: self classificationOpinionTaskStatement ].
 	^ contents
