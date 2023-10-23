@@ -8,6 +8,6 @@ apiKey
 	apiKey ifNotNil: [ :it | ^it ].
 
 	self class apikeyFilename asFileReference exists ifTrue: [ 
-		^ self class apikeyFilename asFileReference contents ].
+		^ self class apikeyFilename asFileReference contents trimBoth].
 	
 	^ nil
