@@ -17,6 +17,5 @@ submitHardcodedRequest
 
 	result := znClient post.
 
-	jsonResponse := [ STON fromString: result ]
-		                on: Error
-		                do: [ result ]
+	jsonResponse := result. 
+	
