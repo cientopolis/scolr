@@ -6,8 +6,8 @@ renderAcceptCancelButtonsOn: html
 			self
 				acceptChanges;
 				answer ];
-		value: 'Save new (replace old)'.
+		value: 'Save'.
 	html space.
 	html cancelButton
 		callback: [ self answer ];
-		value: 'Cancel (return)'.
+		value: 'Cancel'.
