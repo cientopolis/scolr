@@ -19,4 +19,6 @@ testAsBibtexEntryWithKey
 	asEntryWithKey := articleTwo asBibtexEntryWithKey: 'abcKey'.
 	self assert: (asEntryWithKey == entry) not.
 	self assert: asEntryWithKey citationKey equals: 'abcKey'.
-	self assert: asEntryWithKey year equals: entry year
+	self assert: asEntryWithKey year equals: entry year.
+
+	
