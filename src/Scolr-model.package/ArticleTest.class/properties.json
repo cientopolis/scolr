@@ -8,7 +8,8 @@
 	"instvars" : [
 		"articleOne",
 		"articleTwo",
-		"aUser"
+		"userA",
+		"userB"
 	],
 	"name" : "ArticleTest",
 	"type" : "normal"

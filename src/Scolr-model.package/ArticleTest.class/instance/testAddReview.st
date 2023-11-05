@@ -1,7 +1,27 @@
 testing
 testAddReview
-	| review |
-	review := Review new.
-	articleOne addReview: review.
-	self assert: articleOne reviews size equals: 1.
-	self assert: articleOne reviews first equals: review
+
+	| aReviewByA anotherReviewByA aReviewByB |
+	aReviewByA := Review new
+		             author: userA;
+		             yourself.
+	articleOne addReview: aReviewByA.
+	self
+		assert: articleOne reviews
+		equals: (OrderedCollection with: aReviewByA).
+		
+	anotherReviewByA := Review new
+		             author: userA;
+		             yourself.
+	articleOne addReview: anotherReviewByA.
+	self
+		assert: articleOne reviews
+		equals: (OrderedCollection with: anotherReviewByA).
+		
+	aReviewByB := Review new
+		             author: userB;
+		             yourself.
+	articleOne addReview: aReviewByB.
+	self
+		assert: articleOne reviews
+		equals: (OrderedCollection with: anotherReviewByA with: aReviewByB ).

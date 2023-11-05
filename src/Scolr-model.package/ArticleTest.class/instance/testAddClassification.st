@@ -1,7 +1,18 @@
 testing
 testAddClassification
-	| classification |
-	classification := Classification new.
-	articleOne addClassification: classification.
-	self assert: articleOne classifications size equals: 1.
-	self assert: articleOne classifications first equals: classification
+	| aClassificationByA anotherClassificationByA aClassificationByB |
+
+	aClassificationByA := Classification new.
+	aClassificationByA author: userA.
+	articleOne addClassification: aClassificationByA.
+	self assert: articleOne classifications equals: (OrderedCollection with: aClassificationByA).
+
+	anotherClassificationByA := Classification new.
+	anotherClassificationByA author: userA.
+	articleOne addClassification: anotherClassificationByA.
+	self assert: articleOne classifications equals: (OrderedCollection with: anotherClassificationByA).
+
+	aClassificationByB := Classification new.
+	aClassificationByB author: userB.
+	articleOne addClassification: aClassificationByB.
+	self assert: articleOne classifications equals: (OrderedCollection with: anotherClassificationByA with: aClassificationByB ).
