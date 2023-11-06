@@ -1,0 +1,3 @@
+accessing
+citationKey 	
+	^self derivedCitationKey 

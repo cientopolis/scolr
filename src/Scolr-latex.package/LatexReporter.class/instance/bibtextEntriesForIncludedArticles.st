@@ -1,13 +1,8 @@
 accessing
 bibtextEntriesForIncludedArticles
 
-	| count entries |
+	| entries |
 	entries := Dictionary new.
-	count := 1.
-	count := coReview includedArticles do: [ :article | 
-		         entries
-			         at: article
-			         put:
-			         (article asBibtexEntryWithKey: 'scolr' , count printString).
-		         count := count + 1 ].
+	coReview includedArticles do: [ :article | 
+		entries at: article put: article asBibtexEntry ].
 	^ entries
