@@ -5,7 +5,7 @@ renderRemarksAboutTheReviewPhase: stream
 			'
 \subsection{Remarks about the review phase}
 
-Each article that passed on to the review phase (i.e., was included in the review) was reviews by '
+Each article that passed on to the review phase (i.e., was included in the review) was reviewed by '
 				, statistics averageReviewers printString
 				,
 					' in average. 
