@@ -9,9 +9,9 @@ registerApplication
 		app preferenceAt: #smtpUsername put: SmtpUsername.
 		app preferenceAt: #smtpPassword put: SmtpPassword.
 		app preferenceAt: #smtpServer put: SmtpServer.
-		app preferenceAt: #smtpPort put: SmtpPort.
+		app preferenceAt: #smtpPort put: SmtpPort
 
 		"(WAAdmin defaultDispatcher handlerAt: self applicationPath) 
-			exceptionHandler: ReviewnatorEmailErrorHandler ."
+			exceptionHandler: ReviewnatorEmailErrorHandler ." ].
 
-		app sessionClass: ScolrSession ]
+	app sessionClass: ScolrSession
