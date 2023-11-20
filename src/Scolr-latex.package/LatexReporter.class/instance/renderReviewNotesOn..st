@@ -11,7 +11,7 @@ These are the individual notes for each review dimention, and each article. You 
 			nextPutAll: '\subsection{' , dimension , '}';
 			cr.
 		(coReview includedArticles asSortedCollection: [ :a :b | 
-			 a title < b title ]) do: [ :article | 
+			 a year asNumber < b year asNumber ]) do: [ :article | 
 			reviews := article reviews select: [ :each | 
 				           (each commentInDimension: dimension) notEmpty ].
 			reviews do: [ :review | 
@@ -20,8 +20,14 @@ These are the individual notes for each review dimention, and each article. You 
 					cr.
 				stream
 					cr;
+					nextPutAll:
+						'This work was published in ' , (bibtexEntries at: article) year;
+					cr.
+				stream
+					cr;
 					nextPutAll: 'These are all the notes available for \cite{'
 						, (bibtexEntries at: article) citationKey , '}\\';
+					cr;
 					cr.
 				stream
 					nextPutAll: '(' , review author shortenedUsername , ') ';
