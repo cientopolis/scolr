@@ -1,11 +1,10 @@
 callbacks
 exportAsJSON
-	| dictionary |
-	dictionary := DictionaryReviewMapper new
-		serializeCoReview: self coReview.
+	| document |
+	document := String streamContents: [:strm | self repository serializeToStream: strm].
 	self requestContext
 		respond: [ :response | 
 			response
 				contentType: WAMimeType applicationJson;
-				document: (NeoJSONWriter toStringPretty: dictionary);
+				document: document;
 				attachmentWithFileName: 'report.json' ]
