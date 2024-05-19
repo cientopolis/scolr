@@ -1,3 +1,4 @@
 accessing
 year
-	^ year
+
+	^ year ifEmpty: [ self yearFromBibtextDateOrNil ifNil: [ '' ] ]
