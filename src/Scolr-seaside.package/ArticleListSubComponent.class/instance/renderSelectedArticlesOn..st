@@ -3,7 +3,7 @@ renderSelectedArticlesOn: html
 	| articles order |
 	articles := self sort: self filteredArticles.
 	articles
-		ifEmpty: [ ^ html tbsAlert
+		ifEmpty: [ html tbsAlert
 				beWarning;
 				with:
 					'Nothing to show. Try uploading more articles or deactivating some filters.' ].
