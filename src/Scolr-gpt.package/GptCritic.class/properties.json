@@ -1,0 +1,18 @@
+{
+	"commentStamp" : "",
+	"super" : "Object",
+	"category" : "Scolr-gpt",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"dateAndTime",
+		"aboutTheObjectives",
+		"aboutTheQuestions",
+		"aboutTheInclusionCriteria",
+		"aboutTheExclusionCriteria",
+		"aboutTheMajorTerms"
+	],
+	"name" : "GptCritic",
+	"type" : "normal"
+}
