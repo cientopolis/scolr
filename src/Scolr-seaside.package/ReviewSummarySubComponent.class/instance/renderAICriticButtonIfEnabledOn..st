@@ -9,4 +9,5 @@ renderAICriticButtonIfEnabledOn: html
 		with: [ 
 			html tbsButton
 				beExtraSmall;
+				style: 'color: red;';
 				with: 'AI Critic' ]

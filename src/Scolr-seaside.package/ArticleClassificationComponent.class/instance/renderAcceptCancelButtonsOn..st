@@ -9,4 +9,5 @@ renderAcceptCancelButtonsOn: html
 	html space.
 	html submitButton
 		callback: [ self askGpt ];
-		value: 'Ask GPT'
+		style: 'color: red;';
+		value: 'Ask an AI'
