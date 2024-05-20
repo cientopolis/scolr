@@ -3,7 +3,7 @@ exportVisibleListAsBibtex
 
 	| content |
 	content := String streamContents: [ :strm | 
-		           self selectedArticles do: [ :each | 
+		           (self sort: self filteredArticles) do: [ :each | 
 			           each asBibtexEntry printOn: strm.
 			           strm cr ] ].
 	self requestContext respond: [ :response | 
