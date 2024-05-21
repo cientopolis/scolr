@@ -15,7 +15,7 @@ generateTxtGptCritic
 			           cr; cr.
 		           strm nextPutAll: assistant yourCriticsForThePlan; cr;cr.
 		           strm
-			           nextPutAll: 'BASIC GUIDELINES to plan your review';
+			           nextPutAll: '### BASIC GUIDELINES to plan your review';
 			           cr;
 			           cr.
 		           strm nextPutAll: GptCritic guidelinesForReviews ].
