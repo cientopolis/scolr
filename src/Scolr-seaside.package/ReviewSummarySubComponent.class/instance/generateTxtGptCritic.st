@@ -23,4 +23,4 @@ generateTxtGptCritic
 		response
 			contentType: WAMimeType textPlain;
 			document: content;
-			attachmentWithFileName: 'ai-critic.txt' ]
+			attachmentWithFileName: 'ai-critic.md' ]

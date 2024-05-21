@@ -11,7 +11,7 @@ They have been told to focus in four sections of the plan: objective, research q
   self guidelinesForReviews
 ,'
 ------------------
-Next, I will give you their plan. In response to that, I ask you to provide an overall evaluation, section by section  (excelent; good; needs improvement). Only in case you consider that it needs improvement, provide concrete suggestions. 
+Next, I will give you their plan. In response to that, I ask you to provide an overall evaluation, section by section  (excelent; good; needs improvement). Only in case you consider that it needs improvement, provide concrete suggestions. Use markdown syntax in your response.
 
 This is the plan they presented: 
 '.
