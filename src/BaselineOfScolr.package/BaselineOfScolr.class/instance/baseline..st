@@ -23,7 +23,7 @@ baseline: spec
 				spec requires:
 						#( 'Grease' 'Seaside3' 'Bootstrap-Core' 'Scolr-model'
 						   'Scolr-importers' 'Scolr-persistence' 'Scolr-deployer'
-						   'Scolr-PharoExtensions' 'Scolr-latex' 'Scolr-markdown' ) ];
+						   'Scolr-PharoExtensions' 'Scolr-latex' 'Scolr-markdown' 'Scolr-queries') ];
 			package: 'Scolr-deployer'
 			with: [ spec requires: #( 'SeasideDeployer' ) ];
 			package: 'Scolr-PharoExtensions';
