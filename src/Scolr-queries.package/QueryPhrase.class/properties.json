@@ -1,13 +1,11 @@
 {
 	"commentStamp" : "",
-	"super" : "Object",
+	"super" : "QueryTextElement",
 	"category" : "Scolr-queries",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
-	"instvars" : [
-		"text"
-	],
+	"instvars" : [ ],
 	"name" : "QueryPhrase",
 	"type" : "normal"
 }
