@@ -1,9 +1,15 @@
 api
 parse: aString
 
-	| word term prod prim result |
-	word := (#word asParser / $- asParser)  plus flatten
-	        ==> [ :str | QueryTerm text: str ].
+	| keyword term prod prim result phrase |
+	keyword := (#word asParser / $- asParser) plus flatten
+	           ==> [ :str | QueryKeyword text: str ].
+
+	phrase := $" asParser
+	          ,
+	          (#word asParser / $- asParser / #space asParser) plus
+		          flatten , $" asParser
+	          ==> [ :nodes | QueryKeyword text: nodes second ].
 
 	term := PPDelegateParser new.
 	prod := PPDelegateParser new.
@@ -16,7 +22,7 @@ parse: aString
 		QueryConjunction leftTerm: nodes first rightTerm: nodes last ]
 		/ prim.
 	prim setParser: $( asParser trim , term , $) asParser trim
-		==> [ :nodes | nodes second ] / word.
+		==> [ :nodes | nodes second ] / keyword / phrase.
 
 	result := term end parse: aString.
 

@@ -1,0 +1,13 @@
+{
+	"commentStamp" : "",
+	"super" : "TestCase",
+	"category" : "Scolr-queries",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"converter"
+	],
+	"name" : "ACMDLQueryConverterTest",
+	"type" : "normal"
+}
