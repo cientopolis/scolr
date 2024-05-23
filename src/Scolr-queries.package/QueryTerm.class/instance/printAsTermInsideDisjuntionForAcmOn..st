@@ -1,0 +1,4 @@
+printing
+printAsTermInsideDisjuntionForAcmOn: aStream
+
+	self printAsTermForAcmOn: aStream

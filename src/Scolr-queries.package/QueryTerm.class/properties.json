@@ -1,14 +1,11 @@
 {
 	"commentStamp" : "",
-	"super" : "QueryTerm",
+	"super" : "Object",
 	"category" : "Scolr-queries",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
-	"instvars" : [
-		"leftTerm",
-		"rightTerm"
-	],
-	"name" : "QueryConjunction",
+	"instvars" : [ ],
+	"name" : "QueryTerm",
 	"type" : "normal"
 }

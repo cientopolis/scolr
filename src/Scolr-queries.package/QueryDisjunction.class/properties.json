@@ -1,6 +1,6 @@
 {
 	"commentStamp" : "",
-	"super" : "Object",
+	"super" : "QueryTerm",
 	"category" : "Scolr-queries",
 	"classinstvars" : [ ],
 	"pools" : [ ],
