@@ -6,7 +6,10 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"source"
+		"source",
+		"warn",
+		"info",
+		"error"
 	],
 	"name" : "MarkdownReaderComponent",
 	"type" : "normal"
