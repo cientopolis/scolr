@@ -1,0 +1,13 @@
+{
+	"commentStamp" : "",
+	"super" : "AbstractReviewnatorComponent",
+	"category" : "Scolr-seaside-components",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"source"
+	],
+	"name" : "MarkdownReaderComponent",
+	"type" : "normal"
+}
