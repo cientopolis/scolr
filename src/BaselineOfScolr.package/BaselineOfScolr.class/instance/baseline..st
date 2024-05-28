@@ -19,11 +19,12 @@ baseline: spec
 			package: 'Scolr-latex';
 			package: 'Scolr-email';
 			package: 'Scolr-gpt';
+			package: 'Scolr-queries';
 			package: 'Scolr-seaside' with: [ 
 				spec requires:
 						#( 'Grease' 'Seaside3' 'Bootstrap-Core' 'Scolr-model'
 						   'Scolr-importers' 'Scolr-persistence' 'Scolr-deployer'
-						   'Scolr-PharoExtensions' 'Scolr-latex' 'Scolr-markdown' 'Scolr-queries') ];
+						   'Scolr-PharoExtensions' 'Scolr-latex' 'Scolr-markdown' ) ];
 			package: 'Scolr-deployer'
 			with: [ spec requires: #( 'SeasideDeployer' ) ];
 			package: 'Scolr-PharoExtensions';
