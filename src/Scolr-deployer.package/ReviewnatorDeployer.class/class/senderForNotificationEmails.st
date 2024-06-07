@@ -1,0 +1,4 @@
+smtp
+senderForNotificationEmails
+
+	^ SenderForNotificationEmails

@@ -1,0 +1,15 @@
+{
+	"commentStamp" : "",
+	"super" : "Object",
+	"category" : "Scolr-email",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"from",
+		"to",
+		"subject"
+	],
+	"name" : "ScolrEmail",
+	"type" : "normal"
+}

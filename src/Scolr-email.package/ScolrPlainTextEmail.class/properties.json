@@ -1,11 +1,13 @@
 {
 	"commentStamp" : "",
-	"super" : "Object",
+	"super" : "ScolrEmail",
 	"category" : "Scolr-email",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
-	"instvars" : [ ],
-	"name" : "StartTLSSmtpEmailSender",
+	"instvars" : [
+		"text"
+	],
+	"name" : "ScolrPlainTextEmail",
 	"type" : "normal"
 }

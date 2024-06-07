@@ -1,4 +1,4 @@
 accessing
 apikeyFilename
 
-  ^'apikey.secret'
+  ^'openai_apikey.secret'
