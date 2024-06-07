@@ -5,4 +5,5 @@ renderMainContentOn: html
 	self summarizePotentiallyActiveSessionsOn: html.
 	self summarizeExpiredSessionsOn: html.
 	self summarizeGptRequestLogOn: html.
+	self renderSendTestEmailOn: html.
 	self listActiveSessionsOn: html
