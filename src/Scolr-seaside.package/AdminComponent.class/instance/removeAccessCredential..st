@@ -1,4 +1,4 @@
 callbacks
 removeAccessCredential: each
-	cachedConfiguration removeAccessCredential: each.
-	dirty := true
+	self configuration removeAccessCredential: each.
+	self save.

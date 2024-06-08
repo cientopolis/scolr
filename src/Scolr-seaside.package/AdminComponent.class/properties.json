@@ -5,10 +5,7 @@
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
-	"instvars" : [
-		"cachedConfiguration",
-		"dirty"
-	],
+	"instvars" : [ ],
 	"name" : "AdminComponent",
 	"type" : "normal"
 }

@@ -1,7 +1,9 @@
 callbacks
 newAccessCode
+
 	| newCode |
-	newCode := cachedConfiguration newSuggestedAccessCode.
-	cachedConfiguration
-		addAccessCredential: (ReviewnatorAccessCredential accessCode: newCode repositoryFilename: newCode).
-	dirty := true
+	newCode := self configuration newSuggestedAccessCode.
+	self configuration addAccessCredential: (ReviewnatorAccessCredential
+			 accessCode: newCode
+			 repositoryFilename: newCode).
+	self save

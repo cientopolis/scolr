@@ -1,5 +1,5 @@
 access-codes
-getAvailableSuggestedAccessCodes
+generateAvailableSuggestedAccessCodes
 
 	"Once I run out of mascot names and color combination, I star suggesting weird numbers"
 

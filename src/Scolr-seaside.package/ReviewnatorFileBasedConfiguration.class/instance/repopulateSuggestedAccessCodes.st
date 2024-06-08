@@ -2,4 +2,4 @@ access-codes
 repopulateSuggestedAccessCodes
 
 	suggestedAccessCodes nextPutAll:
-		self getAvailableSuggestedAccessCodes
+		self generateAvailableSuggestedAccessCodes

@@ -1,4 +1,3 @@
 callbacks
 save
-	cachedConfiguration save.
-	dirty := false
+	self configuration save.

@@ -1,4 +1,4 @@
 callbacks
 toggleGptEnabledFor: each
 	each toggleGptEnabled .
-	dirty := true
+	self save.
