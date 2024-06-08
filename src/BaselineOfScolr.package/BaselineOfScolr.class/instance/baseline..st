@@ -3,13 +3,12 @@ baseline: spec
 
 	<baseline>
 	spec for: #common do: [ 
-		spec repository: 'bitbucket://casco/scolr'.
+		spec repository: 'bitbucket://cientopolis/scolr'.
 		self neoJSON: spec.
 		self neoCSV: spec.
 		self grease: spec.
 		self seaside: spec.
 		self bootstrap: spec.
-		self seasideDeployer: spec.
 		self petitBibtex: spec.
 		spec
 			package: 'Scolr-model';
@@ -23,9 +22,7 @@ baseline: spec
 			package: 'Scolr-seaside' with: [ 
 				spec requires:
 						#( 'Grease' 'Seaside3' 'Bootstrap-Core' 'Scolr-model'
-						   'Scolr-importers' 'Scolr-persistence' 'Scolr-deployer'
+						   'Scolr-importers' 'Scolr-persistence'
 						   'Scolr-PharoExtensions' 'Scolr-latex' 'Scolr-markdown' ) ];
-			package: 'Scolr-deployer'
-			with: [ spec requires: #( 'SeasideDeployer' ) ];
 			package: 'Scolr-PharoExtensions';
 			package: 'Scolr-markdown' ]

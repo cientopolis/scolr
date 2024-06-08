@@ -8,7 +8,7 @@ mailMessageToNotifyAbout: someRepo withCredential: someCredential
 		             withAccessCode: someCredential accessCode
 		             for: someCredential requestorsEmail.
 	^ ScolrPlainTextEmail new
-		  from: ReviewnatorDeployer senderForNotificationEmails ;
+		  from: ReviewnatorFileBasedConfiguration singleton senderForNotificationEmails ;
 		  to: (Set with: someCredential requestorsEmail);
 		  subject: 'Access code to you Scolr open literature review';
 		  text: emailText;
