@@ -33,7 +33,7 @@ renderDisplayingOn: html
 		tooltip: self class termsTooltip
 		on: html.
 	self
-		renderDisplaying: self coReview terms
+		renderDisplaying: self coReview basicSearchQuery 
 		labeled: 'Basic search query: '
 		tooltip: self class basicSearchQueryTooltip
 		on: html.
