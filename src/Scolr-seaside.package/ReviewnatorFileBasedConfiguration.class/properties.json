@@ -9,12 +9,9 @@
 	"classvars" : [ ],
 	"instvars" : [
 		"adminAccessCode",
-		"activeAccessCodes",
 		"storageFolder",
 		"accessCredentials",
 		"suggestedAccessCodes",
-		"smtpServer",
-		"emailSender",
 		"usersThatAcceptedTermsAndConditions"
 	],
 	"name" : "ReviewnatorFileBasedConfiguration",

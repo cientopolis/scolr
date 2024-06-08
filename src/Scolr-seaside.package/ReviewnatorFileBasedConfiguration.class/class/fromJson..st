@@ -26,7 +26,6 @@ fromJson: aJsonString
 			do: [ :mapping | 
 			(mapping mapInstVar: #usersThatAcceptedTermsAndConditions)
 				valueSchema: #SetOfString.
-			(mapping mapInstVar: #activeAccessCodes) valueSchema: #SetOfString.
 			(mapping mapInstVar: #accessCredentials)
 				valueSchema: #OrderedCollectionOfReviewnatorAccessCredential.
 			(mapping mapInstVar: #suggestedAccessCodes)
