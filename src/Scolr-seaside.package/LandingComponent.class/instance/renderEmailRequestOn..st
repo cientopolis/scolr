@@ -10,7 +10,7 @@ renderEmailRequestOn: html
 				tbsForm: [ html
 						paragraph: [ html textInput
 								callback: [ :value | email := value asLowercase trim ];
-								id: 'input';
+								autocomplete: 'scolr-email';
 								size: 80;
 								placeholder: 'your.real.email@yourdomain.com' ].
 					html
