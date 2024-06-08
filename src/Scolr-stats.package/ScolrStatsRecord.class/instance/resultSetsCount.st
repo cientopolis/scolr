@@ -1,3 +1,0 @@
-accessing
-resultSetsCount
-	^ resultSetsCount

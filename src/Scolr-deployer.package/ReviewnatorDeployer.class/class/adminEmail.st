@@ -1,4 +1,0 @@
-smtp
-adminEmail
-
-	^ OSEnvironment current at: 'ADMIN_EMAIL' ifAbsent: nil
