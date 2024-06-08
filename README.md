@@ -26,22 +26,42 @@ Metacello new
    load.
 ```
 
-Then, evaluate this expression to prepare it for deployment.
+Then, evaluate this expression to install it in developent mode.
 
 ```Smalltalk
 
-|  adminEmail senderForNotificationEmails |
+| debug scolrApplication |
 
-adminEmail := (OSEnvironment current at: 'ADMIN_EMAIL' ifAbsent: nil).
-senderForNotificationEmails := (OSEnvironment current at: 'NOTIFICATION_EMAIL' ifAbsent: nil).
+debug := true.
 
-ReviewnatorDeployer
-  adminEmail: adminEmail;
-  senderForNotificationEmails: senderForNotificationEmails ;
-  prepareForDeploymentOnPort: 8080.
+"These two env-vars are used by MailerSendAPI - it sure needs to be cleaned up"
+OSEnvironment current at: 'NOTIFICATION_EMAIL' put: 'scolr@yourdomain.net' .
+OSEnvironment current at: 'ADMIN_EMAIL' put: 'admin-scolr@yourdomain.net' .
 
-WAAdmin defaultDispatcher defaultName: 'scolr'.
-Transcript show: 'Scolr has started'; cr.
+debug ifFalse: [
+	WAAdmin defaultServerManager adaptors
+        do: [ :each | WAAdmin defaultServerManager unregister: each ].
+	WAAdmin applicationDefaults
+		removeParent: WADevelopmentConfiguration instance.
+].
+
+scolrApplication := WAAdmin register: LandingComponent asApplicationAt: LandingComponent relativeUrl.
+
+scolrApplication sessionClass: ScolrSession.
+
+scolrApplication
+	addLibrary: JQDeploymentLibrary;
+	addLibrary: TBSDeploymentLibrary.
+
+WAAdmin defaultDispatcher defaultName: LandingComponent relativeUrl.
+
+(WAAdmin defaultDispatcher handlerAt: LandingComponent relativeUrl) 
+		exceptionHandler: ReviewnatorEmailErrorHandler.
+
+ZnZincServerAdaptor startOn: 8080.
+
+Transcript cr; show: 'Scolr started'; cr; cr.
+
 
 ```
 
