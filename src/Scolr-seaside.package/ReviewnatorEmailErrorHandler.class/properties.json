@@ -1,6 +1,6 @@
 {
 	"commentStamp" : "Casco 9/30/2018 09:49",
-	"super" : "WAEmailErrorHandler",
+	"super" : "WAErrorHandler",
 	"category" : "Scolr-seaside-errors",
 	"classinstvars" : [ ],
 	"pools" : [ ],

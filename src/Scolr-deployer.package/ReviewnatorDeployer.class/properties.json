@@ -6,11 +6,7 @@
 	"pools" : [ ],
 	"classvars" : [
 		"AdminEmail",
-		"SenderForNotificationEmails",
-		"SmtpPassword",
-		"SmtpPort",
-		"SmtpServer",
-		"SmtpUsername"
+		"SenderForNotificationEmails"
 	],
 	"instvars" : [ ],
 	"name" : "ReviewnatorDeployer",
