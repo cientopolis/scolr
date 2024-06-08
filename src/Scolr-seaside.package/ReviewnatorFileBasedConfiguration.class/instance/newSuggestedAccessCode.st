@@ -1,4 +1,6 @@
-accessing
+access-codes
 newSuggestedAccessCode
-	suggestedAccessCodes  atEnd ifTrue: [ self generateSuggestedAccessCodes ].
+
+	suggestedAccessCodes atEnd ifTrue: [ 
+		self repopulateSuggestedAccessCodes ].
 	^ suggestedAccessCodes next
