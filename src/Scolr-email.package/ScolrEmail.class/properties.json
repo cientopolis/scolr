@@ -8,7 +8,8 @@
 	"instvars" : [
 		"from",
 		"to",
-		"subject"
+		"subject",
+		"timestamp"
 	],
 	"name" : "ScolrEmail",
 	"type" : "normal"

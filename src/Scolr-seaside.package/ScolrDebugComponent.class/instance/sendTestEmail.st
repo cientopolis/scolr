@@ -11,4 +11,4 @@ sendTestEmail
 			         'As I said in the subject. This is a test email to show that Scolr can send emails';
 		         yourself.
 
-	MailerSendAPI new send: email
+	MailerSendAPI singleton send: email

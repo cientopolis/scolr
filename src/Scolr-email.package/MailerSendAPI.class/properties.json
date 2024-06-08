@@ -7,7 +7,9 @@
 	],
 	"pools" : [ ],
 	"classvars" : [ ],
-	"instvars" : [ ],
+	"instvars" : [
+		"abuseWindow"
+	],
 	"name" : "MailerSendAPI",
 	"type" : "normal"
 }

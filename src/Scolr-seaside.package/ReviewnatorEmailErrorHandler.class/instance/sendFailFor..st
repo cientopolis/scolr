@@ -3,7 +3,9 @@ sendFailFor: anException
 
 	| email |
 	MailerSendAPI singleton isProperlyConfigured ifFalse: [ ^ self ].
-	ReviewnatorFileBasedConfiguration singleton adminEmail ifNil: [ 
+	MailerSendAPI singleton mightBeUnderAbuse ifTrue: [ ^ self ].
+
+	ReviewnatorFileBasedConfiguration singleton adminEmail ifNil: [
 		^ nil ].
 	email := ScolrPlainTextEmail new
 		         from: ReviewnatorFileBasedConfiguration singleton

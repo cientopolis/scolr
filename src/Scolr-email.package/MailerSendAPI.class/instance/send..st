@@ -3,7 +3,8 @@ send: aScolrEmail
 
 	| client |
 	self apiKey ifNil: [ self error: 'API not properly configured' ].
-
+	self mightBeUnderAbuse ifTrue: [ ^ self ].
+	self updateAbuseWindowWith: aScolrEmail.
 	client := ZnClient new
 		          beOneShot;
 		          url: 'https://api.mailersend.com/v1/email';
