@@ -4,10 +4,11 @@ renderAccessCodeRequestOn: html
 		paragraph: [ html
 				tbsForm: [ html textInput
 						callback: [ :value | accessCode := value trim];
+						tbsFormControl;
 						autocomplete: 'scolr-access-code';						
 						size: 40;
 						placeholder: 'code to access your review'.
-					html space.
+					html break.					
 					html tbsButton
 						callback: [ self validateAccessCode ];
 						beSmall;
