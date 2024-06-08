@@ -13,16 +13,16 @@ renderRequestFormOn: html
 			html
 				tbsFormGroup: [ html label
 						for: 'title';
-						with: 'Title for your review (less than 50 characters)'.
+						with: 'Title for your review (less than 120 characters)'.
 					html textInput
 						on: #title of: self;
 						tbsFormControl;
 						id: 'title';
-						placeholder: 'A descriptive title for your review (short - less than 50 characters)' ].
+						placeholder: 'A descriptive title for your review (short - less than 120 characters)' ].
 			html
 				tbsFormGroup: [ html label
 						for: 'notes';
-						with: 'About you and your review (write at least 100 characters)'.
+						with: 'About you and your review (write at least 120 characters)'.
 					html textArea
 						on: #notes of: self;
 						tbsFormControl;
