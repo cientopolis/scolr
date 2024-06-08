@@ -30,20 +30,14 @@ Then, evaluate this expression to prepare it for deployment.
 
 ```Smalltalk
 
-|  adminEmail smtpServer smtpPort smtpUsername smtpPassword |
+|  adminEmail senderForNotificationEmails |
 
 adminEmail := (OSEnvironment current at: 'ADMIN_EMAIL').
-smtpUsername := (OSEnvironment current at: 'SMTP_USERNAME' ifAbsent: nil).
-smtpPassword := (OSEnvironment current at: 'SMTP_PASSWORD' ifAbsent: nil).
-smtpServer := (OSEnvironment current at: 'SMTP_SERVER' ifAbsent: nil).
-smtpPort := (OSEnvironment current at: 'SMTP_PORT' ifAbsent: '587') printString.
+senderForNotificationEmails := (OSEnvironment current at: 'NOTIFICATION_EMAIL' ifAbsent: nil).
 
 ReviewnatorDeployer
   adminEmail: adminEmail;
-  smtpServer: smtpServer;
-  smtpPort: smtpPort;
-  smtpUsername: smtpUsername;
-  smtpPassword: smtpPassword;
+  senderForNotificationEmails: senderForNotificationEmails ;
   prepareForDeploymentOnPort: 8080.
 
 WAAdmin defaultDispatcher defaultName: 'scolr'.
@@ -54,6 +48,14 @@ Then save your image.
 
 When you open your image again, Reviewnator will be running on:
  <http://localhost:8000/scolr>
+
+## Email notifications
+
+Scolr currently uses mailersend.com as the notification service. To enable it, you should include an API key inside a mailersend_apikey.secret file, in your working folder. 
+
+## AI support
+
+Scolr currently uses OpenAI's API for a couple of functionalities. To enable id, you should include an API key inside a openai_apikey.secret file, in your working folder. 
 
 ## Contributing
 
