@@ -32,7 +32,7 @@ Then, evaluate this expression to prepare it for deployment.
 
 |  adminEmail senderForNotificationEmails |
 
-adminEmail := (OSEnvironment current at: 'ADMIN_EMAIL').
+adminEmail := (OSEnvironment current at: 'ADMIN_EMAIL' ifAbsent: nil).
 senderForNotificationEmails := (OSEnvironment current at: 'NOTIFICATION_EMAIL' ifAbsent: nil).
 
 ReviewnatorDeployer
@@ -41,6 +41,7 @@ ReviewnatorDeployer
   prepareForDeploymentOnPort: 8080.
 
 WAAdmin defaultDispatcher defaultName: 'scolr'.
+Transcript show: 'Scolr has started'; cr.
 
 ```
 
