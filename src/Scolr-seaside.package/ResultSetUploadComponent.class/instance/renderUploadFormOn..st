@@ -28,7 +28,7 @@ renderUploadFormOn: html
 			html
 				tbsFormGroup: [ html label
 						for: 'database';
-						with: 'Database: '.
+						with: 'Database (required):  '.
 					html break.
 					html textInput
 						id: 'database';
@@ -37,7 +37,7 @@ renderUploadFormOn: html
 						placeholder: 'Which bibliographic database does this list come from?' ].
 			html
 				tbsFormGroup: [ html label
-						with: 'Search query: ';
+						with: 'Search query (required): ';
 						for: 'searchString'.
 					html break.
 					html textArea
