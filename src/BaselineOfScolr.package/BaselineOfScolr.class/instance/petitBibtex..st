@@ -1,5 +1,5 @@
 baseline
 petitBibtex: spec
 	spec
-		baseline: 'Seaside-Markdown'
-		with: [ spec repository: 'github://lifia-unlp/seaside-markdown' ]
+		baseline: 'PetitBibtex'
+		with: [ spec repository: 'github://cientopolis/petitbibtex' ]
