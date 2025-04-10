@@ -10,6 +10,7 @@ baseline: spec
 		self seaside: spec.
 		self bootstrap: spec.
 		self petitBibtex: spec.
+		self seasideMarkdown: spec.
 		spec
 			package: 'Scolr-model';
 			package: 'Scolr-importers'
