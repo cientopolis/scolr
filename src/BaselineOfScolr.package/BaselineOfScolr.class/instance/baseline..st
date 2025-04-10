@@ -3,7 +3,7 @@ baseline: spec
 
 	<baseline>
 	spec for: #common do: [ 
-		spec repository: 'bitbucket://cientopolis/scolr'.
+		spec repository: 'github://cientopolis/scolr'.
 		self neoJSON: spec.
 		self neoCSV: spec.
 		self grease: spec.
