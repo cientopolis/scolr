@@ -24,6 +24,5 @@ baseline: spec
 				spec requires:
 						#( 'Grease' 'Seaside3' 'Bootstrap-Core' 'Scolr-model'
 						   'Scolr-importers' 'Scolr-persistence'
-						   'Scolr-PharoExtensions' 'Scolr-latex' 'Scolr-markdown' ) ];
-			package: 'Scolr-PharoExtensions';
-			package: 'Scolr-markdown' ]
+						   'Scolr-PharoExtensions' 'Scolr-latex' 'Seaside-Markdown' ) ];
+			package: 'Scolr-PharoExtensions' ]

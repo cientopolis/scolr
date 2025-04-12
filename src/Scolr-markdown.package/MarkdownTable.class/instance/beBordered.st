@@ -1,3 +1,0 @@
-accessing
-beBordered
-	bordered := true
