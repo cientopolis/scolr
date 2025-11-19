@@ -1,16 +1,16 @@
-|  debug adminEmail senderForNotificationEmails scolrApplication |
+|  debug adminEmail senderForNotificationEmails scolrApplication toUnregister |
+
+toUnregister := { 'browse'. 'examples'. 'seaside'. 'status'. 'tests'. 'tools'. 'welcome'. 'config' }.
 
 debug := (OSEnvironment current at: 'DEBUG' ifAbsent: 'false') = 'true'.
 adminEmail := (OSEnvironment current at: 'ADMIN_EMAIL' ifAbsent: nil).
 senderForNotificationEmails := (OSEnvironment current at: 'NOTIFICATION_EMAIL' ifAbsent: nil).
 
 debug ifFalse: [
-	WAAdmin defaultServerManager adaptors
-        do: [ :each | WAAdmin defaultServerManager unregister: each ].
+	toUnregister do: [ :each | WAAdmin unregister: each ].
 	WAAdmin applicationDefaults
 		removeParent: WADevelopmentConfiguration instance.
 ].
-
 
 scolrApplication := WAAdmin register: LandingComponent asApplicationAt: LandingComponent relativeUrl.
 
